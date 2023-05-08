@@ -9,12 +9,13 @@ public class GatchaManager : MonoBehaviour
     [SerializeField] private GatchaRate[] gatcha;
     [SerializeField] private Transform parent, pos;
     [SerializeField] private GameObject characterCardGO;
+    [SerializeField] private int time;
 
     GameObject characterCard;
     Cards card;
     public DataManager Data;
 
-    public int time;
+    
     public int cost_gatcha;
     public int cost_scout;
 
