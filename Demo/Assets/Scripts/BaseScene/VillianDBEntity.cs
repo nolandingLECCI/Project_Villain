@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 [System.Serializable]
-public class VillainDBEntity
+public class VillianDBEntity
 {
     public int      id;
     public string   Vil_Name;
@@ -20,4 +16,5 @@ public class VillainDBEntity
     public int      Vil_Str_Min;
     public int      Vil_Str_Max;
     public bool     Vil_Demon;
+    public int      Vil_Royalty;
 }

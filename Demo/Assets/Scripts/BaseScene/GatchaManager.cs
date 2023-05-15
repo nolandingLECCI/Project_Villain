@@ -20,8 +20,10 @@ public class GatchaManager : MonoBehaviour
     public int cost_scout;
 
     private int cost;
-    [SerializeField] private bool reroll=true;
+    private bool reroll=true;
+    private bool paid = false;
 
+    private int Num = 0;
 
     public List<Characters> SelectedCharacters = new List<Characters>();
 
@@ -34,6 +36,7 @@ public class GatchaManager : MonoBehaviour
         }
         else
         {
+            paid = true;
             Data.gold -= cost;
             reroll = true;
             Select();
@@ -44,10 +47,8 @@ public class GatchaManager : MonoBehaviour
     CardInfo Reward(string rarity)
     {
         GatchaRate gr = Array.Find(gatcha , rt => rt.rarity == rarity);
-        CardInfo[] reward = gr.reward;
-
-        int rnd = UnityEngine.Random.Range(0,reward.Length);
-
+        List<CardInfo> reward = gr.reward;
+        int rnd = UnityEngine.Random.Range(0,reward.Count);
         return reward[rnd];
     }
 
@@ -57,9 +58,11 @@ public class GatchaManager : MonoBehaviour
         {
             for(int i = 0 ; i < time ; i++)
             {
+                SelectedCharacters[0].getNum = ++Num;
                 Data.CharacterPool.Add(SelectedCharacters[0]);
                 SelectedCharacters.RemoveAt(0);
             }
+            paid = false;
         }
         else // 캐릭터 풀이 가득 찼을때
         {
@@ -69,7 +72,7 @@ public class GatchaManager : MonoBehaviour
     }
     public void Reroll()
     {
-        if(reroll)
+        if(reroll&&paid)
         {
             reroll = false;
             Select();
@@ -97,8 +100,8 @@ public class GatchaManager : MonoBehaviour
                     if(rnd <= gatcha[i].rate+adj)
                     {
                         card.card = Reward(gatcha[i].rarity);
+                        card.UpdateUniqueData();
                         card.frame.sprite = gatcha[i].frame;
-                        //GetCard(card.card);
                         SelectedCharacters.Add(card.card.characters);
                         break;
                     }

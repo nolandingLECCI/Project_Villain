@@ -49,13 +49,25 @@ public class Promotion : MonoBehaviour
                 Debug.Log("20% 확률 걸림");
             }
             chara.BWTime++;
-            chara.Royalty += (int)(chara.Royalty/10*3);
+            chara.Vil_Royalty += 30;
+            if(chara.Vil_Royalty > 100)
+                 chara.Vil_Royalty = 100;
         }
     }
     public void enlighten()
     {
         
     }
+
+    // public void addCharacter(Characters character)
+    // {
+    //     chara.add(character);
+    // }
+    // public void removeCharacter(Characters character)
+    // {
+    //     chara.remove(character);
+    // }
+
     private void Init()
     {
         costAdj=1;
@@ -63,8 +75,6 @@ public class Promotion : MonoBehaviour
         EdCost_gold = (int)(InitialEdCost_gold*costAdj);
         BWCost_gold = (int)(InitialBWCost_gold*costAdj);
         BWCost_darkMatter = (int)(BWCost_darkMatter*costAdj);
-        
-        chara = data.CharacterPool[0];
     }
     private void calcAdj()
     {

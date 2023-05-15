@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91ea1dbbdb230044b5211ba362d5bf5, type: 3}
-  m_Name: VillainDB
+  m_Script: {fileID: 11500000, guid: fcc4df4812bace547882d40484bc1d91, type: 3}
+  m_Name: VillianDB
   m_EditorClassIdentifier: 
-  Villain:
+  Villian:
   - id: 0
     Vil_Name: "\uAC10\uC790"
     Vil_Grade: 1
@@ -28,6 +28,7 @@ MonoBehaviour:
     Vil_Str_Min: 10
     Vil_Str_Max: 30
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 1
     Vil_Name: "\uACE0\uAD6C\uB9C8"
     Vil_Grade: 1
@@ -43,6 +44,7 @@ MonoBehaviour:
     Vil_Str_Min: 20
     Vil_Str_Max: 50
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 2
     Vil_Name: "\uC6B0\uC5C9"
     Vil_Grade: 2
@@ -58,6 +60,7 @@ MonoBehaviour:
     Vil_Str_Min: 200
     Vil_Str_Max: 300
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 3
     Vil_Name: "\uC5F0\uADFC"
     Vil_Grade: 3
@@ -73,6 +76,7 @@ MonoBehaviour:
     Vil_Str_Min: 400
     Vil_Str_Max: 500
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 4
     Vil_Name: "\uCE58\uCEE4\uB9AC"
     Vil_Grade: 1
@@ -88,6 +92,7 @@ MonoBehaviour:
     Vil_Str_Min: 40
     Vil_Str_Max: 100
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 5
     Vil_Name: "\uCF00\uC77C"
     Vil_Grade: 2
@@ -103,6 +108,7 @@ MonoBehaviour:
     Vil_Str_Min: 200
     Vil_Str_Max: 300
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 6
     Vil_Name: "\uB85C\uBA54\uC778"
     Vil_Grade: 2
@@ -118,6 +124,7 @@ MonoBehaviour:
     Vil_Str_Min: 250
     Vil_Str_Max: 300
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 7
     Vil_Name: "\uC0D0\uB7EC\uB9AC"
     Vil_Grade: 2
@@ -133,6 +140,7 @@ MonoBehaviour:
     Vil_Str_Min: 200
     Vil_Str_Max: 250
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 8
     Vil_Name: "\uC2E0\uB3C4A"
     Vil_Grade: 1
@@ -148,6 +156,7 @@ MonoBehaviour:
     Vil_Str_Min: 100
     Vil_Str_Max: 100
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 9
     Vil_Name: "\uC2E0\uB3C4B"
     Vil_Grade: 1
@@ -163,6 +172,7 @@ MonoBehaviour:
     Vil_Str_Min: 100
     Vil_Str_Max: 300
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 10
     Vil_Name: "\uC2E0\uAD00"
     Vil_Grade: 2
@@ -178,6 +188,7 @@ MonoBehaviour:
     Vil_Str_Min: 200
     Vil_Str_Max: 600
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 11
     Vil_Name: "\uAD50\uC8FC"
     Vil_Grade: 3
@@ -193,6 +204,7 @@ MonoBehaviour:
     Vil_Str_Min: 400
     Vil_Str_Max: 600
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 12
     Vil_Name: "\uBC15\uC950"
     Vil_Grade: 1
@@ -208,6 +220,7 @@ MonoBehaviour:
     Vil_Str_Min: 100
     Vil_Str_Max: 100
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 13
     Vil_Name: "\uAE40\uC950"
     Vil_Grade: 1
@@ -223,6 +236,7 @@ MonoBehaviour:
     Vil_Str_Min: 100
     Vil_Str_Max: 300
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 14
     Vil_Name: "\uC774\uC950"
     Vil_Grade: 2
@@ -238,6 +252,7 @@ MonoBehaviour:
     Vil_Str_Min: 200
     Vil_Str_Max: 600
     Vil_Demon: 0
+    Vil_Royalty: 50
   - id: 15
     Vil_Name: MZ
     Vil_Grade: 3
@@ -253,3 +268,4 @@ MonoBehaviour:
     Vil_Str_Min: 400
     Vil_Str_Max: 600
     Vil_Demon: 0
+    Vil_Royalty: 50
