@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Succubus_Kiss_3: 7108280613880342753
+      Succubus_Kiss_0: 2465692243436253436
+      Succubus_Kiss_2: 5357139402674314134
+      Succubus_Kiss_4: 7136514459934677249
+      Succubus_Kiss_5: -5863587547787123785
+      Succubus_Kiss_7: -8763401547785182773
+      Succubus_Kiss_6: -507950954091991056
+      Succubus_Kiss_1: 7439453281187810286
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

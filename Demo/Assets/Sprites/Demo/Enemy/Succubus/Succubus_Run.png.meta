@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -244,6 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Succubus_Run_2: 6134391434426335887
+      Succubus_Run_4: 1458782051790084838
+      Succubus_Run_0: 5367377454546164635
+      Succubus_Run_5: 8300416318631281945
+      Succubus_Run_1: -1767816055525514784
+      Succubus_Run_3: -7188146578425230664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
