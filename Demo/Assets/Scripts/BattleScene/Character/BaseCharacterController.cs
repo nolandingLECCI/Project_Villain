@@ -16,9 +16,10 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public bool allignTrigger = false;
     public bool waitingTrigger = false; // 모두 정렬할 때까지 기다리고 있는가 
     public bool waitingToMoveTrigger = false; // 모두 정렬하고 이동할 수 있는가
+    public bool jumpTrigger = false;
     public float allignPoint; // 캐릭터 정렬 시 이동하는 x좌표 위치
     public GroupObject MyGroup; // 캐릭터 자신이 속해있는 그룹
-    public GameObject hitEffectPrefab;
+    public Transform hitEffectPoint;
     
     public int strength = 10;
     public int maxHealth = 100;
@@ -37,7 +38,12 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public float fallBackTime; // 유닛 실제 도망 최대 시간
     public Transform projectileTransform; // 원거리 유닛 공격 시 발사체의 격발 위치
 
-
+    public bool isJump;
+    public Transform jumpEnd;
+    [SerializeField]
+    float jumpHeight = 10;
+    [SerializeField]
+    float rigidGravityScale = 5;
 
     public List<AttackBehaviour> attackBehaviours = new List<AttackBehaviour>(); // 가능한 공격 및 스킬을 담은 리스트
 
@@ -89,9 +95,11 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+
         stateMachine = new StateMachine<BaseCharacterController>(this, new NonCombatMoveState());
         stateMachine.AddState(new AllignState());
         stateMachine.AddState(new NonCombatIdleState());
+        stateMachine.AddState(new JumpState());
 
         stateMachine.AddState(new CombatIdleState());
         stateMachine.AddState(new CombatMoveState());
@@ -110,6 +118,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     private void Update()
     {
+        Jump();
         InAttackRangeCheck();
         AllignCheck();
         WaitingCheck();
@@ -218,6 +227,31 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         }
     }
 
+    public void JumpCheck()
+    {
+
+        isJump = true;
+       
+    }
+
+    private void Jump()
+    {
+        if(jumpTrigger == true)
+        {
+            stateMachine.ChangeState<JumpState>();
+        }
+
+        //GetComponent<Rigidbody2D>().gravityScale = rigidGravityScale;
+        //float jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * GetComponent<Rigidbody2D>().gravityScale));
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        //if (GetComponent<Rigidbody2D>().velocity.y > 0)
+        //{
+        //    GetComponent<Rigidbody2D>().gravityScale = rigidGravityScale;
+        //}
+    }
+
+
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
     //    if (collision.tag == "enemyRespawn")
@@ -320,9 +354,16 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
         health -= (int)(damage * damageDecreaseMult);
 
-        Debug.Log("Damage : " + (int)(damage * damageDecreaseMult));
+        if(hittEffectPrefab != null) // 임시로 원거리 캐릭터 공격에만 구현해놨다.
+        {
+            GameObject hitEffect = Instantiate(hittEffectPrefab, hitEffectPoint.position, Quaternion.identity);
 
+            Destroy(hitEffect, 0.6f);
+        }         
+
+        Debug.Log("Damage : " + (int)(damage * damageDecreaseMult));
         StartCoroutine("GetDamage");
+
 
 
         if (IsAlive)
@@ -342,15 +383,22 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         float blinkTime = 0.1f;
         int blinkCount = 2;
         
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
 
         for (int i = 0; i < blinkCount; i++)
         {
-            sprite.color = Color.red;
+            foreach(SpriteRenderer sprite in sprites) 
+            {
+                sprite.color = Color.red;
+            }
+           
 
             yield return new WaitForSeconds(blinkTime);
 
-            sprite.color = Color.white;
+            foreach (SpriteRenderer sprite in sprites)
+            {
+                sprite.color = Color.white;
+            }
 
             yield return new WaitForSeconds(blinkTime);
         }
@@ -362,6 +410,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         rigid.AddForce(Vector2.right * -1 * dir * knockBackForce, ForceMode2D.Impulse);
         //rigidbody.AddForce(transform.up, ForceMode2D.Impulse);
     }
+
     #endregion IDamageable Interfaces
 
 

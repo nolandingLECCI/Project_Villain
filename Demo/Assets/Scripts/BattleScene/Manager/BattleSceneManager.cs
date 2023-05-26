@@ -118,8 +118,8 @@ public class BattleSceneManager : MonoBehaviour
         
         for (int i = 0; i < gameObjects.Length; i++)
         {
-            
-            GameObject playerClone = Instantiate(gameObjects[i], new Vector3 (characPos[i],-2 + (0.00001f * i)), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
+            float randPos = Random.Range(-0.3f, 0.3f);
+            GameObject playerClone = Instantiate(gameObjects[i], new Vector3 (characPos[i],-2 + randPos), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
             BaseCharacterController character = playerClone.GetComponent<BaseCharacterController>(); // 캐릭터에서 컨트롤러를 가져와 그룹에 넣어준다
             playerGroup.characterGroup.Add(character);
             character.MyGroup = playerGroup;
@@ -153,8 +153,8 @@ public class BattleSceneManager : MonoBehaviour
         
         for (int i = 0; i < gameObjects.Length; i++)
         {
-            //float yPos = Random.Range(0, 1.0f);
-            GameObject enemyClone = Instantiate(gameObjects[gameObjects.Length - i -1], new Vector3(enemyPos[i], -2 + (0.00001f * i)), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
+            float randPos = Random.Range(-0.3f, 0.3f);
+            GameObject enemyClone = Instantiate(gameObjects[gameObjects.Length - i -1], new Vector3(enemyPos[i], -2 + randPos), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
             BaseCharacterController enemy = enemyClone.GetComponent<BaseCharacterController>(); // 캐릭터에서 컨트롤러를 가져와 그룹에 넣어준다
             enemyGroup.characterGroup.Add(enemy);
             enemy.MyGroup = enemyGroup;
