@@ -106,32 +106,32 @@ ScriptedImporter:
     spriteID: a3b7f3c041dcd3a458c57e1cae6250b0
     spriteBone:
     - name: RIghtHand
-      guid: 
-      position: {x: 71.95283, y: -0.000030402753, z: 0}
-      rotation: {x: 0, y: 0, z: -0.029091768, w: 0.99957675}
-      length: 32.55623
+      guid: 1a231500172a6d349beff747933022e5
+      position: {x: 71.95293, y: -0.0000048812453, z: 0}
+      rotation: {x: 0, y: 0, z: -0.029091818, w: 0.9995768}
+      length: 32.556236
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4286578943
     - name: RIghtArmUp
-      guid: 
-      position: {x: 77.04768, y: 0.00007535174, z: 0}
-      rotation: {x: 0, y: 0, z: 0.07870983, w: 0.9968976}
-      length: 71.95286
+      guid: 59621f394a917b74fbd3e34872c2475b
+      position: {x: 77.0476, y: 0.000011795924, z: 0}
+      rotation: {x: 0, y: 0, z: 0.07870992, w: 0.99689764}
+      length: 71.952896
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255488
     - name: RightArmDown
-      guid: 
+      guid: 43d97e7e562f13e49bb67f1a07dab769
       position: {x: 106.5105, y: 161.76352, z: 0}
-      rotation: {x: 0, y: 0, z: 0.88599783, w: -0.46368957}
-      length: 77.04765
+      rotation: {x: 0, y: 0, z: 0.88599765, w: -0.46368966}
+      length: 77.04766
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278223103
     spriteOutline: []
     vertices:
     - position: {x: 27.495972, y: 0.22999954}
@@ -885,14 +885,14 @@ ScriptedImporter:
     spriteID: 6fb8416338c864e419a85f9fae88511c
     spriteBone:
     - name: RightArmDown
-      guid: 
+      guid: 43d97e7e562f13e49bb67f1a07dab769
       position: {x: 63.510498, y: 91.76352, z: 0}
-      rotation: {x: 0, y: 0, z: 0.88599783, w: -0.46368957}
-      length: 77.04765
+      rotation: {x: 0, y: 0, z: 0.88599765, w: -0.46368966}
+      length: 77.04766
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278223103
     spriteOutline: []
     vertices:
     - position: {x: 24.320007, y: 8.206001}
@@ -1712,23 +1712,23 @@ ScriptedImporter:
     spriteID: f2957aef0453ed540b414813074b6c57
     spriteBone:
     - name: Chest
-      guid: 
+      guid: d5c03e70ab70b444cb036d860fecf2ef
       position: {x: 270.70523, y: -13.648193, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7133751, w: 0.7007824}
+      rotation: {x: 0, y: 0, z: 0.7133752, w: 0.7007823}
       length: 21.5784
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255615
     - name: Head
-      guid: 
-      position: {x: 21.578402, y: -0.000013573024, z: 0}
-      rotation: {x: 0, y: 0, z: -0.021934347, w: 0.9997595}
+      guid: bcde982830271f646bcce0915e5716eb
+      position: {x: 21.578402, y: -0.000017838376, z: 0}
+      rotation: {x: 0, y: 0, z: -0.02193456, w: 0.9997595}
       length: 392.7895
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255360
     spriteOutline: []
     vertices:
     - position: {x: 282.27, y: 4.001999}
@@ -4413,32 +4413,32 @@ ScriptedImporter:
     spriteID: 832ef90ebe40f7843a128f962c5798e9
     spriteBone:
     - name: Body
-      guid: 
+      guid: a4a95776ec462d74a94b2616e2d09890
       position: {x: 73.76343, y: 3.7547607, z: 0}
       rotation: {x: 0, y: 0, z: 0.69797903, w: 0.7161182}
-      length: 66.481636
+      length: 66.481606
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278190335
     - name: Chest
-      guid: 
-      position: {x: 73.14776, y: -0.00000019325807, z: 0}
-      rotation: {x: 0, y: 0, z: 0.017356178, w: 0.9998494}
-      length: 21.578402
+      guid: d5c03e70ab70b444cb036d860fecf2ef
+      position: {x: 73.14779, y: -0.00000019325807, z: 0}
+      rotation: {x: 0, y: 0, z: 0.017356345, w: 0.9998494}
+      length: 21.5784
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255615
     - name: Body_1
-      guid: 
-      position: {x: 66.48161, y: 0.000025608106, z: 0}
-      rotation: {x: 0, y: 0, z: 0.004374111, w: 0.9999905}
-      length: 73.14775
+      guid: 9c3279b8ff10f7b46b9e96c39fa58188
+      position: {x: 66.48158, y: 0.000024825313, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0043741115, w: 0.99999046}
+      length: 73.147766
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255615
     spriteOutline: []
     vertices:
     - position: {x: 84.90997, y: 0.0009994507}
@@ -5788,32 +5788,32 @@ ScriptedImporter:
     spriteID: 2d53fd20b7b3cae408ce4a4510a2c0d1
     spriteBone:
     - name: LeftArmDown
-      guid: 
+      guid: b6f321dda46a5a54399bff86badc5e3e
       position: {x: -10.498413, y: 157.69696, z: 0}
-      rotation: {x: 0, y: 0, z: -0.57594424, w: 0.81748897}
-      length: 80.33274
+      rotation: {x: 0, y: 0, z: -0.5759441, w: 0.817489}
+      length: 80.332756
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4286643968
     - name: LeftArmHand
-      guid: 
-      position: {x: 62.937157, y: 0.00008889309, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0078477375, w: 0.99996924}
-      length: 21.903101
+      guid: 10b2eb51c10f50f43a6caa0be52ce145
+      position: {x: 62.937164, y: 0.00007606358, z: 0}
+      rotation: {x: 0, y: 0, z: -0.00784777, w: 0.99996924}
+      length: 21.9031
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901760
     - name: LeftArmUp
-      guid: 
-      position: {x: 80.33272, y: -0.0000618333, z: 0}
-      rotation: {x: 0, y: 0, z: 0.019240657, w: 0.99981487}
+      guid: 8652092570fa2d641af335dc0abc8a63
+      position: {x: 80.33272, y: -0.00007517102, z: 0}
+      rotation: {x: 0, y: 0, z: 0.01924069, w: 0.99981487}
       length: 62.937122
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967040
     spriteOutline: []
     vertices:
     - position: {x: 50.492004, y: 0.44100952}
@@ -6561,14 +6561,14 @@ ScriptedImporter:
     spriteID: 2e0f02f8a4b1c154c844e56e3adbcddb
     spriteBone:
     - name: LeftArmDown
-      guid: 
+      guid: b6f321dda46a5a54399bff86badc5e3e
       position: {x: 9.501587, y: 82.69696, z: 0}
-      rotation: {x: 0, y: 0, z: -0.57594424, w: 0.81748897}
-      length: 80.33274
+      rotation: {x: 0, y: 0, z: -0.5759441, w: 0.817489}
+      length: 80.332756
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4286643968
     spriteOutline: []
     vertices:
     - position: {x: 39.461975, y: 0.014007568}
@@ -7273,23 +7273,23 @@ ScriptedImporter:
     spriteID: aae598f4579430943830d819839bce3a
     spriteBone:
     - name: RightLegDown
-      guid: 
-      position: {x: 53.68656, y: 0.00003682294, z: 0}
-      rotation: {x: 0, y: 0, z: 0.022474214, w: 0.99974746}
-      length: 51.550304
+      guid: 41cee9b6a10ad9c46bb1b8faa899e995
+      position: {x: 53.686474, y: -0.000018327179, z: 0}
+      rotation: {x: 0, y: 0, z: 0.022474175, w: 0.99974746}
+      length: 51.55028
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967040
     - name: RightLegUp
-      guid: 
+      guid: 6a7098d47f2f3d14b9e4cfd6e746bc3c
       position: {x: 47.39856, y: 66.66025, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7860029, w: -0.61822283}
-      length: 53.686523
+      rotation: {x: 0, y: 0, z: 0.78600276, w: -0.618223}
+      length: 53.686543
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255360
     spriteOutline: []
     vertices:
     - position: {x: 37.583984, y: 0.011993408}
@@ -7935,32 +7935,32 @@ ScriptedImporter:
     spriteID: b6b875af4ac96704286ca40ffaae955b
     spriteBone:
     - name: RightFoot
-      guid: 
-      position: {x: 51.55028, y: 0.000045347024, z: 0}
-      rotation: {x: 0, y: 0, z: 0.28027222, w: 0.9599206}
-      length: 28.038937
+      guid: 9acd13b1034695345b47a761639ec067
+      position: {x: 51.550247, y: 0.000048039175, z: 0}
+      rotation: {x: 0, y: 0, z: 0.2802721, w: 0.9599206}
+      length: 28.038923
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294934528
     - name: RightLegDown
-      guid: 
-      position: {x: 53.686527, y: 0.000044468976, z: 0}
-      rotation: {x: 0, y: 0, z: 0.022474214, w: 0.99974746}
-      length: 51.550304
+      guid: 41cee9b6a10ad9c46bb1b8faa899e995
+      position: {x: 53.686504, y: -0.0000398558, z: 0}
+      rotation: {x: 0, y: 0, z: 0.022474175, w: 0.99974746}
+      length: 51.55028
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967040
     - name: RightLegUp
-      guid: 
-      position: {x: 64.39856, y: 135.66025, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7860029, w: -0.61822283}
-      length: 53.686523
+      guid: 6a7098d47f2f3d14b9e4cfd6e746bc3c
+      position: {x: 64.39856, y: 135.66028, z: 0}
+      rotation: {x: 0, y: 0, z: 0.78600276, w: -0.618223}
+      length: 53.686543
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255360
     spriteOutline: []
     vertices:
     - position: {x: 42.539978, y: 0.09899902}
@@ -8705,23 +8705,23 @@ ScriptedImporter:
     spriteID: d2c9b3b7f14774749863c3237fb597e7
     spriteBone:
     - name: LeftLegDown
-      guid: 
-      position: {x: 51.263035, y: -0.000020581097, z: 0}
-      rotation: {x: 0, y: 0, z: -0.04210488, w: 0.9991132}
-      length: 54.19201
+      guid: 3294b37523539c34fa4ac224ec21f4f8
+      position: {x: 51.26303, y: 0.00001908655, z: 0}
+      rotation: {x: 0, y: 0, z: -0.04210526, w: 0.9991132}
+      length: 54.191998
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294902015
     - name: LeftLegUp
-      guid: 
+      guid: 2ea740b7995697f43b8745407c9d4b6b
       position: {x: 23.384521, y: 62.079132, z: 0}
-      rotation: {x: 0, y: 0, z: -0.59455764, w: 0.804053}
-      length: 51.263054
+      rotation: {x: 0, y: 0, z: -0.59455776, w: 0.80405295}
+      length: 51.263035
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901760
     spriteOutline: []
     vertices:
     - position: {x: 36.56201, y: 0.015014648}
@@ -9313,32 +9313,32 @@ ScriptedImporter:
     spriteID: 04e0254cdd025074f9f0d5ef99223939
     spriteBone:
     - name: LeftFoot
-      guid: 
-      position: {x: 54.19201, y: -0.000026312126, z: 0}
-      rotation: {x: 0, y: 0, z: 0.31114733, w: 0.95036167}
-      length: 36.961246
+      guid: a5847d79435797540bc6e1a54cda0158
+      position: {x: 54.19194, y: 0.0000044949184, z: 0}
+      rotation: {x: 0, y: 0, z: 0.31114778, w: 0.9503616}
+      length: 36.96124
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901888
     - name: LeftLegDown
-      guid: 
-      position: {x: 51.263042, y: 0.000005495678, z: 0}
-      rotation: {x: 0, y: 0, z: -0.04210488, w: 0.9991132}
-      length: 54.19201
+      guid: 3294b37523539c34fa4ac224ec21f4f8
+      position: {x: 51.263073, y: -0.000011044616, z: 0}
+      rotation: {x: 0, y: 0, z: -0.04210526, w: 0.9991132}
+      length: 54.191998
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294902015
     - name: LeftLegUp
-      guid: 
+      guid: 2ea740b7995697f43b8745407c9d4b6b
       position: {x: 13.3845215, y: 132.07913, z: 0}
-      rotation: {x: 0, y: 0, z: -0.59455764, w: 0.804053}
-      length: 51.263054
+      rotation: {x: 0, y: 0, z: -0.59455776, w: 0.80405295}
+      length: 51.263035
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901760
     spriteOutline: []
     vertices:
     - position: {x: 49.869995, y: 0.002998352}
@@ -10040,149 +10040,149 @@ ScriptedImporter:
   characterData:
     bones:
     - name: Body
-      guid: 
+      guid: a4a95776ec462d74a94b2616e2d09890
       position: {x: 286.7634, y: 140.75476, z: 0}
       rotation: {x: 0, y: 0, z: 0.69797903, w: 0.7161182}
-      length: 66.481636
+      length: 66.481606
       parentId: -1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278190335
     - name: Chest
-      guid: 
-      position: {x: 73.14776, y: -0.000030382198, z: 0}
-      rotation: {x: 0, y: 0, z: 0.017356148, w: 0.99984944}
+      guid: d5c03e70ab70b444cb036d860fecf2ef
+      position: {x: 73.14777, y: -0.000030382198, z: 0}
+      rotation: {x: 0, y: 0, z: 0.017356321, w: 0.9998494}
       length: 21.578402
       parentId: 12
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255615
     - name: RightLegUp
-      guid: 
+      guid: 6a7098d47f2f3d14b9e4cfd6e746bc3c
       position: {x: 6.9701033, y: 36.555653, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9943776, w: 0.105892934}
-      length: 53.686512
+      rotation: {x: 0, y: -0, z: 0.99437755, w: 0.105892666}
+      length: 53.686546
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255360
     - name: RightLegDown
-      guid: 
-      position: {x: 53.68652, y: 0.000017766319, z: 0}
+      guid: 41cee9b6a10ad9c46bb1b8faa899e995
+      position: {x: 53.686558, y: -0.000016016946, z: 0}
       rotation: {x: 0, y: 0, z: 0.022474203, w: 0.99974746}
-      length: 51.550293
+      length: 51.55029
       parentId: 2
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967040
     - name: LeftLegUp
-      guid: 
+      guid: 2ea740b7995697f43b8745407c9d4b6b
       position: {x: 7.133386, y: -31.448511, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9869857, w: 0.16080822}
-      length: 51.26305
+      rotation: {x: 0, y: -0, z: -0.9869857, w: 0.1608081}
+      length: 51.263035
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901760
     - name: LeftLegDown
-      guid: 
-      position: {x: 51.263035, y: 0.00000077277855, z: 0}
-      rotation: {x: 0, y: 0, z: -0.042104885, w: 0.9991132}
-      length: 54.192005
+      guid: 3294b37523539c34fa4ac224ec21f4f8
+      position: {x: 51.26303, y: 0.000025587386, z: 0}
+      rotation: {x: 0, y: 0, z: -0.042105235, w: 0.9991132}
+      length: 54.191994
       parentId: 4
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294902015
     - name: RightArmDown
-      guid: 
+      guid: 43d97e7e562f13e49bb67f1a07dab769
       position: {x: 16.214102, y: 44.913082, z: 0}
       rotation: {x: 0, y: -0, z: 0.9516762, w: 0.30710325}
-      length: 77.04766
+      length: 77.047646
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278223103
     - name: RIghtArmUp
-      guid: 
-      position: {x: 77.04766, y: -0.0000035930116, z: 0}
+      guid: 59621f394a917b74fbd3e34872c2475b
+      position: {x: 77.04765, y: 0.0000010926042, z: 0}
       rotation: {x: 0, y: 0, z: 0.078709885, w: 0.9968976}
-      length: 71.95287
+      length: 71.952896
       parentId: 6
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255488
     - name: LeftArmDown
-      guid: 
+      guid: b6f321dda46a5a54399bff86badc5e3e
       position: {x: 10.634648, y: -39.992104, z: 0}
       rotation: {x: 0, y: -0, z: -0.98678786, w: 0.16201761}
-      length: 80.33274
+      length: 80.33275
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4286643968
     - name: RightFoot
-      guid: 
-      position: {x: 51.55029, y: 0.000023228215, z: 0}
-      rotation: {x: 0, y: 0, z: 0.28027216, w: 0.9599206}
+      guid: 9acd13b1034695345b47a761639ec067
+      position: {x: 51.550285, y: 0.0000116510455, z: 0}
+      rotation: {x: 0, y: 0, z: 0.280272, w: 0.9599207}
       length: 28.038927
       parentId: 3
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294934528
     - name: LeftFoot
-      guid: 
-      position: {x: 54.192005, y: -0.000039417057, z: 0}
-      rotation: {x: 0, y: 0, z: 0.3111473, w: 0.9503617}
+      guid: a5847d79435797540bc6e1a54cda0158
+      position: {x: 54.191994, y: -0.000010517355, z: 0}
+      rotation: {x: 0, y: 0, z: 0.31114775, w: 0.95036155}
       length: 36.961243
       parentId: 5
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901888
     - name: RIghtHand
-      guid: 
-      position: {x: 71.95288, y: 0.000009367314, z: 0}
-      rotation: {x: 0, y: 0, z: -0.029091781, w: 0.9995768}
+      guid: 1a231500172a6d349beff747933022e5
+      position: {x: 71.952896, y: 0.000007045071, z: 0}
+      rotation: {x: 0, y: 0, z: -0.029091813, w: 0.9995768}
       length: 32.55624
       parentId: 7
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4286578943
     - name: Body_1
-      guid: 
-      position: {x: 66.48163, y: -0.000015187307, z: 0}
-      rotation: {x: 0, y: 0, z: 0.00437414, w: 0.99999046}
-      length: 73.14775
+      guid: 9c3279b8ff10f7b46b9e96c39fa58188
+      position: {x: 66.4816, y: -0.000015970101, z: 0}
+      rotation: {x: 0, y: 0, z: 0.004374111, w: 0.9999905}
+      length: 73.147766
       parentId: 0
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255615
     - name: Head
-      guid: 
-      position: {x: 21.57839, y: -0.00003250356, z: 0}
-      rotation: {x: 0, y: 0, z: -0.021934336, w: 0.9997595}
+      guid: bcde982830271f646bcce0915e5716eb
+      position: {x: 21.5784, y: -0.00003086313, z: 0}
+      rotation: {x: 0, y: 0, z: -0.021934533, w: 0.99975944}
       length: 392.7895
       parentId: 1
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4278255360
     - name: LeftArmUp
-      guid: 
-      position: {x: 80.33273, y: -0.000008704853, z: 0}
+      guid: 8652092570fa2d641af335dc0abc8a63
+      position: {x: 80.332726, y: -0.000037313082, z: 0}
       rotation: {x: 0, y: 0, z: 0.019240698, w: 0.99981487}
-      length: 62.93711
+      length: 62.93712
       parentId: 8
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967040
     - name: LeftArmHand
-      guid: 
-      position: {x: 62.937126, y: -0.0000026808839, z: 0}
-      rotation: {x: 0, y: 0, z: -0.007847788, w: 0.99996924}
+      guid: 10b2eb51c10f50f43a6caa0be52ce145
+      position: {x: 62.93713, y: -0.0000042117845, z: 0}
+      rotation: {x: 0, y: 0, z: -0.007847806, w: 0.99996924}
       length: 21.903101
       parentId: 14
       color:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294901760
     parts:
     - spritePosition:
         x: 138
