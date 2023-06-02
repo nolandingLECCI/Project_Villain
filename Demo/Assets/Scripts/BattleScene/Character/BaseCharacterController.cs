@@ -40,12 +40,12 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     public bool isJump;
     public Transform jumpEnd;
-    [SerializeField]
-    float jumpHeight = 10;
+
+    public float jumpHeight = 100;
     [SerializeField]
     float rigidGravityScale = 5;
 
-    public List<AttackBehaviour> attackBehaviours = new List<AttackBehaviour>(); // 가능한 공격 및 스킬을 담은 리스트
+    public List<AttackBehavior> attackBehaviours = new List<AttackBehavior>(); // 가능한 공격 및 스킬을 담은 리스트
 
     public List<SynergyBase> synergys = new List<SynergyBase>(); // 보유한 시너지들을 담은 리스트
     
@@ -82,7 +82,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             
         }
 
-        foreach (AttackBehaviour attackBehaviour in this.GetComponents<AttackBehaviour>())
+        foreach (AttackBehavior attackBehaviour in this.GetComponents<AttackBehavior>())
         {
             if(attackBehaviour != null)
             {
@@ -118,7 +118,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     private void Update()
     {
-        Jump();
+        JumpCheck();
         InAttackRangeCheck();
         AllignCheck();
         WaitingCheck();
@@ -230,35 +230,27 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public void JumpCheck()
     {
 
-        isJump = true;
-       
+        if (jumpTrigger == true)
+        {
+            Jump();
+        }
+
+        jumpTrigger = false;
+
     }
 
     private void Jump()
     {
-        if(jumpTrigger == true)
+        if (jumpTrigger == true)
         {
             stateMachine.ChangeState<JumpState>();
         }
 
-        //GetComponent<Rigidbody2D>().gravityScale = rigidGravityScale;
-        //float jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * GetComponent<Rigidbody2D>().gravityScale));
-        //GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-        //if (GetComponent<Rigidbody2D>().velocity.y > 0)
-        //{
-        //    GetComponent<Rigidbody2D>().gravityScale = rigidGravityScale;
-        //}
+
+       
     }
 
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "enemyRespawn")
-    //    {
-    //        BattleSceneManager.instance.CreateEnemy();
-    //    }
-    //}
 
     private void OnDrawGizmos() // 중요
     {
@@ -282,12 +274,12 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     private void InitAttackBehaviour()
     {
-        foreach (AttackBehaviour behaviour in attackBehaviours)
+        foreach (AttackBehavior behaviour in attackBehaviours)
         {
-            if (CurrentAttackBehaviour == null)
+            if (CurrentAttackBehavior == null)
             {
                 //Debug.Log("bahaviour : " + behaviour.animationIndex);
-                CurrentAttackBehaviour = behaviour;
+                CurrentAttackBehavior = behaviour;
             }
 
             behaviour.targetMask = TargetMask;
@@ -299,25 +291,25 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     private bool CheckAttackBehaviour()
     {
 
-        CurrentAttackBehaviour = null;
+        CurrentAttackBehavior = null;
 
-        foreach (AttackBehaviour behaviour in attackBehaviours)
+        foreach (AttackBehavior behaviour in attackBehaviours)
         {
 
             if (behaviour.IsAvailable)
             {
-                if ((CurrentAttackBehaviour == null) ||
-                    (CurrentAttackBehaviour.priority < behaviour.priority))
+                if ((CurrentAttackBehavior == null) ||
+                    (CurrentAttackBehavior.priority < behaviour.priority))
                 {
                     
-                    CurrentAttackBehaviour = behaviour;
+                    CurrentAttackBehavior = behaviour;
                     //Debug.Log("CurrentAttackBehaviour.priority  = " + CurrentAttackBehaviour.priority);
                 }
             }
 
         }
 
-        return CurrentAttackBehaviour; 
+        return CurrentAttackBehavior; 
 
     }
 
@@ -325,17 +317,17 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     #region IAttackable interfaces
 
-    public AttackBehaviour CurrentAttackBehaviour
+    public AttackBehavior CurrentAttackBehavior
     {
         get;
         private set;
     }
     public void OnExecuteAttack(int attackIndex)
     {
-        if (CurrentAttackBehaviour != null && attackTarget != null)
+        if (CurrentAttackBehavior != null && attackTarget != null)
         {
             //Debug.Log("OnExecuteAttack : " + attackIndex);
-            CurrentAttackBehaviour.ExecuteAttack(attackTarget.gameObject, projectileTransform, attackDefault);
+            CurrentAttackBehavior.ExecuteAttack(attackTarget.gameObject, projectileTransform, attackDefault);
         }
     }
 

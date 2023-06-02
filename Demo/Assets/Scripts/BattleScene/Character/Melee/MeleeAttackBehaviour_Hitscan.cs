@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeAttackBehaviour_Hitscan : AttackBehaviour
+public class MeleeAttackBehaviour_Hitscan : AttackBehavior
 {
     [SerializeField]
     private float MultNum = 1f; // 기본적으로 공격 스킬에 곱해주는 mult 수치

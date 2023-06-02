@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangeAttackBehaviour_Hitscan : AttackBehaviour // 원거리 캐릭터 히트 스캔 공격
+public class RangeAttackBehaviour_Hitscan : AttackBehavior // 원거리 캐릭터 히트 스캔 공격
 {
 
     [SerializeField]

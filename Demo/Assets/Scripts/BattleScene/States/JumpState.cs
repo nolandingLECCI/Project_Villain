@@ -19,11 +19,7 @@ public class JumpState : State<BaseCharacterController>
 
     public override void Update(float deltaTime)
     {
-        if (context.jumpEnd != null && context.jumpTrigger == true && context.isJump)
-        {
-            context.transform.position = Vector3.Lerp(context.transform.position, context.jumpEnd.position, 0.01f);
-        }
-
+     
         if(context.jumpTrigger == false)
         {
             stateMachine.ChangeState<NonCombatMoveState>();

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6467493245135064635}
   - component: {fileID: 2063774373008542105}
   m_Layer: 0
-  m_Name: JumpTriggerStart
+  m_Name: JumpTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,6 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9935e1ea87d7e4c8dc9bb361f58366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpStartAndEnd:
-  - {fileID: 0}
-  - {fileID: 0}
+  dir: 1
+  height: 50
+  width: 12

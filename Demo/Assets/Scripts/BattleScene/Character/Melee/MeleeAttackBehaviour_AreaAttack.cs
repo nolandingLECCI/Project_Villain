@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeAttackBehaviour_AreaAttack : AttackBehaviour
+public class MeleeAttackBehaviour_AreaAttack : AttackBehavior
 {
     public ManualCollision attackCollision;
 

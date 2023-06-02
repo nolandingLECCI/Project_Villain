@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangeAttackBehaviour_PJT : AttackBehaviour // 원거리 캐릭터 발사체 공격
+public class RangeAttackBehaviour_PJT : AttackBehavior // 원거리 캐릭터 발사체 공격
 {
     [SerializeField]
     GameObject bullet;

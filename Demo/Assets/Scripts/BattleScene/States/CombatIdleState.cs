@@ -20,6 +20,7 @@ public class CombatIdleState : State<BaseCharacterController>
 
     public override void Update(float deltaTime)
     {
+        
         if (BattleSceneManager.instance.isEngaging)
         {
             if (context.FallBack)

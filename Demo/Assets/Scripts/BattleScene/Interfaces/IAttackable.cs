@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IAttackable 
 {
-    AttackBehaviour CurrentAttackBehaviour
+    AttackBehavior CurrentAttackBehavior
     {
         get;
     }
@@ -12,3 +12,4 @@ public interface IAttackable
     void OnExecuteAttack(int attackIndex);
 
 }
+

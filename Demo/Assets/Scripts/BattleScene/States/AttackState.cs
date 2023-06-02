@@ -32,7 +32,7 @@ public class AttackState : State<BaseCharacterController>
         attackStateController.exitAttackStateHandler += OnExitAttackState;
         
         
-        if (attackable.CurrentAttackBehaviour == null)
+        if (attackable.CurrentAttackBehavior == null)
         {
             Debug.Log("CurrentAttackBehaviour == null");
             stateMachine.ChangeState<CombatIdleState>();
@@ -40,7 +40,7 @@ public class AttackState : State<BaseCharacterController>
         }
 
         
-        animator?.SetInteger(attackIndexHash, attackable.CurrentAttackBehaviour.animationIndex);
+        animator?.SetInteger(attackIndexHash, attackable.CurrentAttackBehavior.animationIndex);
         animator?.SetTrigger(attackTriggerHash);
 
 
