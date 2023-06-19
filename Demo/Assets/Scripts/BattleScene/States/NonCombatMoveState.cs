@@ -26,13 +26,11 @@ public class NonCombatMoveState : State<BaseCharacterController>
             return;
         }
 
-        Transform tf = context.transform;
-
-        tf.Translate(tf.right * context.dir * context.MyGroup.groupSpeed * Time.deltaTime);
-     
-    
+        Transform tf = context.rigid.transform;
+        tf.Translate(tf.right * context.dir * context.MyGroup.groupSpeed * Time.deltaTime);   
+        
     }
-
+    
     public override void OnExit()
     {
         animator?.SetBool(hashMove, false);

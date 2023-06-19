@@ -22,7 +22,7 @@ public class JumpState : State<BaseCharacterController>
      
         if(context.jumpTrigger == false)
         {
-            stateMachine.ChangeState<NonCombatMoveState>();
+            //stateMachine.ChangeState<NonCombatMoveState>(); // 바로 가면 안된다.
         }
 
     }

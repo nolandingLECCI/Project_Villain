@@ -10,8 +10,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     protected StateMachine<BaseCharacterController> stateMachine;
 
-    [SerializeField]
-    private Rigidbody2D rigid;
+    public Rigidbody2D rigid;
 
     public bool allignTrigger = false;
     public bool waitingTrigger = false; // 모두 정렬할 때까지 기다리고 있는가 
@@ -232,23 +231,15 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
         if (jumpTrigger == true)
         {
-            Jump();
-        }
-
-        jumpTrigger = false;
-
-    }
-
-    private void Jump()
-    {
-        if (jumpTrigger == true)
-        {
             stateMachine.ChangeState<JumpState>();
         }
-
-
+        else
+        {
+            stateMachine.ChangeState<NonCombatMoveState>();
+        }
 
        
+
     }
 
 
@@ -267,6 +258,20 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         Gizmos.DrawRay(rayPoint.position, direction2);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Floor"))
+        {
+            StartCoroutine("ChangeJumpState");
+        }
+    }
+
+    IEnumerator ChangeJumpState()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        jumpTrigger = false;
+    }
     #endregion
 
     #region Helper Methods
