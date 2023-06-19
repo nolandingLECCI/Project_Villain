@@ -18,12 +18,12 @@ TagManager:
   - 
   - Player
   - Enemy
-  - Floor
   - 
   - 
   - 
   - 
   - 
+  - DeathState
   - 
   - 
   - 

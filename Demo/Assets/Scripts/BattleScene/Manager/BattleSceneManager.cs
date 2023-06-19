@@ -9,16 +9,20 @@ public class BattleSceneManager : MonoBehaviour
     public bool isEngaging = false; // 교전 중인가?
     
     public GroupObject playerGroup; // 플레이어 그룹, 게임 매니저에서 공격대 배치 씬에서 넘어올 때 초기화시켜준다.
-
-    public GameObject enemyTrigger; // 이 오브젝트와 트리거되면 적이 생성되도록 한다.
-
     public GroupObject enemyGroup; // 교전 그룹
 
-    public float playerGroupRespawnPosX; // 우리 팀 생성 위치
+    public Transform playerGroupSpawnPoint; // 우리 팀 생성 위치
 
-    public float enemyGroupRespawnPosx; // 적들 생성 위치
+    public Transform[] enemyGroupSpawnPoints; // 적 팀 생성 위치
 
-    public float bossRespawnPosX; // 보스 생성 위치
+    private float playerGroupRespawnPosX; // 우리 팀 생성 위치
+
+    private float enemyGroupRespawnPosx; // 적들 생성 위치
+
+    [SerializeField]
+    private int enemyWave; // 현재 나올 적그룹의 인덱스
+
+    private float bossRespawnPosX; // 보스 생성 위치
 
 
     //첫번째, prefab을 둬서 캐릭터를 생성하게 한다.
@@ -44,10 +48,7 @@ public class BattleSceneManager : MonoBehaviour
         enemyGroup.characterGroup.Clear();
 
         Invoke("CreatePlayer", 0f);
-
-        Invoke("CreateEnemy", 3f);
-
-        Invoke("CreateBoss", 33f);
+        enemyWave = 0;
 
     }
 
@@ -113,13 +114,14 @@ public class BattleSceneManager : MonoBehaviour
 
         // 지정한 groupCenterX에 플레이어들이 리스폰 할 위치들을 저장
 
+        playerGroupRespawnPosX = playerGroupSpawnPoint.position.x;
+
         float[] characPos = playerGroup.GetPoints(playerGroupRespawnPosX, gameObjects.Length, playerGroup.interval);
 
         
         for (int i = 0; i < gameObjects.Length; i++)
         {
-            float randPos = Random.Range(-0.3f, 0.3f);
-            GameObject playerClone = Instantiate(gameObjects[i], new Vector3 (characPos[i],-2 + randPos), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
+            GameObject playerClone = Instantiate(gameObjects[i], new Vector3 (characPos[i], playerGroupSpawnPoint.position.y -2.5f), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
             BaseCharacterController character = playerClone.GetComponent<BaseCharacterController>(); // 캐릭터에서 컨트롤러를 가져와 그룹에 넣어준다
             playerGroup.characterGroup.Add(character);
             character.MyGroup = playerGroup;
@@ -143,18 +145,19 @@ public class BattleSceneManager : MonoBehaviour
         {
             enemyGroup.characterGroup.Clear();
         }
-
+        // 여기서 각 웨이브에 맞게 적들을 받아와야 한다.
         GameObject[] gameObjects = GameManager.instance.GetEnemyList();
 
         // 지정한 groupCenterX에 적들이 리스폰 할 위치들을 저장
 
+        enemyGroupRespawnPosx = enemyGroupSpawnPoints[enemyWave].position.x;
+
         float[] enemyPos = enemyGroup.GetPoints(enemyGroupRespawnPosx, gameObjects.Length, enemyGroup.interval);
 
-        
         for (int i = 0; i < gameObjects.Length; i++)
         {
             float randPos = Random.Range(-0.3f, 0.3f);
-            GameObject enemyClone = Instantiate(gameObjects[gameObjects.Length - i -1], new Vector3(enemyPos[i], -2 + randPos), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
+            GameObject enemyClone = Instantiate(gameObjects[gameObjects.Length - i -1], new Vector3(enemyPos[i], enemyGroupSpawnPoints[enemyWave].position.y), gameObjects[i].transform.rotation); //  new Vector3 (characPos[i], -2) = 임시 위치
             BaseCharacterController enemy = enemyClone.GetComponent<BaseCharacterController>(); // 캐릭터에서 컨트롤러를 가져와 그룹에 넣어준다
             enemyGroup.characterGroup.Add(enemy);
             enemy.MyGroup = enemyGroup;

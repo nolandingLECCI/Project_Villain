@@ -233,11 +233,6 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         {
             stateMachine.ChangeState<JumpState>();
         }
-        else
-        {
-            stateMachine.ChangeState<NonCombatMoveState>();
-        }
-
        
 
     }

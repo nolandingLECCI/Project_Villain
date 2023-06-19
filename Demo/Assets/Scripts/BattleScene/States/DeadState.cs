@@ -16,6 +16,7 @@ public class DeadState : State<BaseCharacterController>
     public override void OnEnter()
     {
         animator?.SetBool(isAliveHash, false);
+        context.gameObject.layer = 16;
         context.MyGroup.RemoveCharacterInGroup(context);
     }
 

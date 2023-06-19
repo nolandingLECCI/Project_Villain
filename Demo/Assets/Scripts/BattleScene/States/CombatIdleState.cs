@@ -37,7 +37,7 @@ public class CombatIdleState : State<BaseCharacterController>
                         stateMachine.ChangeState<AttackState>();
                         return;
                     }
-                    return;
+                    //return;
                 }
                 else
                 {
