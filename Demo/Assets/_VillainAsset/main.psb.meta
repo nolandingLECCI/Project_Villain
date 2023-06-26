@@ -21,6 +21,8 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
@@ -47,6 +49,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -87,9 +90,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: ArmLeftUp
@@ -829,9 +830,7 @@ ScriptedImporter:
     - {x: 57, y: 58}
     - {x: 58, y: 59}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 625, y: 427}
-    spritePosition: {x: 138, y: 134}
+    uvTransform: {x: 487, y: 293}
   - name: ArmLeftDown
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1521,9 +1520,7 @@ ScriptedImporter:
     - {x: 48, y: 49}
     - {x: 49, y: 50}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 878, y: 427}
-    spritePosition: {x: 181, y: 204}
+    uvTransform: {x: 697, y: 223}
   - name: Face
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4213,9 +4210,7 @@ ScriptedImporter:
     - {x: 238, y: 239}
     - {x: 239, y: 240}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 19, y: 294}
+    uvTransform: {x: -15, y: -290}
   - name: Body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5568,9 +5563,7 @@ ScriptedImporter:
     - {x: 113, y: 114}
     - {x: 114, y: 115}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 854, y: 4}
-    spritePosition: {x: 213, y: 137}
+    uvTransform: {x: 641, y: -133}
   - name: LegLeftUp
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6221,9 +6214,7 @@ ScriptedImporter:
     - {x: 49, y: 50}
     - {x: 50, y: 51}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 854, y: 332}
-    spritePosition: {x: 203, y: 82}
+    uvTransform: {x: 651, y: 250}
   - name: LegLeftDown
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6972,9 +6963,7 @@ ScriptedImporter:
     - {x: 58, y: 59}
     - {x: 59, y: 60}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 796, y: 427}
-    spritePosition: {x: 186, y: 13}
+    uvTransform: {x: 610, y: 414}
   - name: LegRightUp
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -7561,9 +7550,7 @@ ScriptedImporter:
     - {x: 45, y: 46}
     - {x: 46, y: 47}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 939, y: 332}
-    spritePosition: {x: 295, y: 85}
+    uvTransform: {x: 644, y: 247}
   - name: LegRightDown
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -8299,9 +8286,7 @@ ScriptedImporter:
     - {x: 56, y: 57}
     - {x: 57, y: 58}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 710, y: 427}
-    spritePosition: {x: 305, y: 15}
+    uvTransform: {x: 405, y: 412}
   - name: LongKnife
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -11068,9 +11053,7 @@ ScriptedImporter:
     - {x: 215, y: 216}
     - {x: 216, y: 217}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 427}
-    spritePosition: {x: 315, y: 90}
+    uvTransform: {x: -311, y: 337}
   - name: Gun
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -12196,9 +12179,7 @@ ScriptedImporter:
     - {x: 94, y: 95}
     - {x: 95, y: 96}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 854, y: 190}
-    spritePosition: {x: 340, y: 50}
+    uvTransform: {x: 514, y: 140}
   - name: ThickKnife
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14879,9 +14860,7 @@ ScriptedImporter:
     - {x: 219, y: 220}
     - {x: 220, y: 221}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 523, y: 4}
-    spritePosition: {x: 341, y: 110}
+    uvTransform: {x: 182, y: -106}
   - name: Knife
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -16418,9 +16397,7 @@ ScriptedImporter:
     - {x: 125, y: 126}
     - {x: 126, y: 127}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 859}
-    spritePosition: {x: 186, y: 54}
+    uvTransform: {x: -182, y: 805}
   - name: Bat
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -18552,9 +18529,7 @@ ScriptedImporter:
     - {x: 170, y: 171}
     - {x: 171, y: 172}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 328, y: 427}
-    spritePosition: {x: 343, y: 113}
+    uvTransform: {x: -15, y: 314}
   - name: ArmRightUp
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -19286,9 +19261,7 @@ ScriptedImporter:
     - {x: 51, y: 52}
     - {x: 52, y: 53}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 957, y: 427}
-    spritePosition: {x: 340, y: 134}
+    uvTransform: {x: 617, y: 293}
   - name: ArmRightDown
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -19978,9 +19951,7 @@ ScriptedImporter:
     - {x: 48, y: 49}
     - {x: 49, y: 50}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 625, y: 541}
-    spritePosition: {x: 320, y: 209}
+    uvTransform: {x: 305, y: 332}
   characterData:
     bones:
     - name: Body
@@ -20283,6 +20254,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -20290,6 +20262,7 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
@@ -20302,6 +20275,7 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 1
   skeletonAssetReferenceID: 
+  padding: 4
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -20480,6 +20454,7 @@ ScriptedImporter:
     isVisible: 0
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
   generateGOHierarchy: 0
   textureAssetName: 
   prefabAssetName: 
