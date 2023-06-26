@@ -1,0 +1,6 @@
+.menu__background {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    background-color: rgba(43, 40, 40, 255);
+}

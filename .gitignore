@@ -76,3 +76,5 @@ crashlytics-build.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
 Demo/UserSettings/Layouts/default-2021.dwlt
+Demo/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+Demo/UserSettings/Layouts/default-2021.dwlt

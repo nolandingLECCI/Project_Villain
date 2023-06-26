@@ -9,8 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2dd035859774f4b9f414c37940203a, type: 3}
+  m_Script: {fileID: 11500000, guid: b931d66f00f42334fb1e23d2cdc8029a, type: 3}
   m_Name: "\uCE58\uCEE4\uB9AC"
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
   id: 4
+  Vil_Name: 
+  characterVisualsPrefab: {fileID: 0}
+  rarity: 0
+  Vil_Synergy_1: 0
+  Vil_Synergy_2: 0
+  Range_Normal: 6
+  Range_Escape: 3
+  Vil_Cooltime: 10
+  Vil_Hp_Min: 200
+  Vil_Str_Min: 40
+  Vil_Demon: 0

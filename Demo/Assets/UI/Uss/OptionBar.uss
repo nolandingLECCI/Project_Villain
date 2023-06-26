@@ -1,0 +1,62 @@
+.options-bar {
+    top: auto;
+    right: auto;
+    position: relative;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.options-bar-currency-group {
+    right: 2px;
+    flex-direction: row;
+    width: 225px;
+    height: 60px;
+    background-color: rgb(44, 62, 80);
+}
+
+.currency-hud {
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(56, 56, 56, 0.19);
+    position: absolute;
+    right: 370px;
+    align-items: center;
+    justify-content: center;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.55);
+    background-image: url('project://database/Assets/UI/Textures/Hud_bg.png?fileID=21300000&guid=e7853bb042b3ec749afe86a50f99d0bc&type=3#Hud_bg');
+}
+
+.options-bar-currency-icon {
+    position: absolute;
+    left: 22px;
+    top: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(52, 152, 219, 255);
+}
+
+.currency-hud-icon {
+    left: 0;
+    top: -3px;
+    width: 80px;
+    height: 70px;
+    background-color: rgba(52, 152, 219, 255);
+    background-image: url('project://database/Assets/UI/Textures/icon_gold.png?fileID=21300000&guid=fa790c91559b6d94987774e5b9cb1569&type=3#icon_gold');
+}
+
+.options-bar__button {
+    width: 70px;
+    height: 70px;
+    background-image: url('project://database/Assets/UI/Textures/icon_settings.png?fileID=21300000&guid=f1a0abb431e15a94cb1def19538ad738&type=3#icon_settings');
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
