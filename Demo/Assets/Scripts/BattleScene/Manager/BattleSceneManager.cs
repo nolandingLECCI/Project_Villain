@@ -62,6 +62,11 @@ public class BattleSceneManager : MonoBehaviour
        
     }
 
+    private void LateUpdate()
+    {
+        playerGroup.transform.position = playerGroup.characterGroup[0].transform.position; // 맨 앞에 있는 친구로 움직여준다.
+    }
+
     // playerGroup 전투 시작
     public void BattleStart() 
     {

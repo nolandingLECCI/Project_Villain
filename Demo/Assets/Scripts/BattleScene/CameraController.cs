@@ -5,22 +5,29 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject A;
+    public GroupObject playerGroup;
 
-    Transform AT;
     void Start()
     {
-        AT = A.transform;
+        //AT = A.transform;
     }
 
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, AT.position, 2f * Time.deltaTime);
+        if(playerGroup.characterGroup[0] != null)
+        {
+            float x1 = playerGroup.characterGroup[0].transform.position.x;
 
-        //카메라를 원래 z축으로 이동
-        Vector3 pos = transform.position;
-        pos.z = -10f;
-        transform.position =  pos; 
+            Vector3 a = new Vector3(x1, 8.3f, -14);
+
+            transform.position = Vector3.Lerp(transform.position, a, 2f * Time.deltaTime);
+
+            //카메라를 원래 z축으로 이동
+            Vector3 pos = transform.position;
+            pos.z = -10f;
+            transform.position = pos;
+        }
+      
     }
 }
 

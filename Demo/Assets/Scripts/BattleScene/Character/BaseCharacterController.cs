@@ -11,6 +11,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     protected StateMachine<BaseCharacterController> stateMachine;
 
     public Rigidbody2D rigid;
+    private Animator anim;
 
     public bool allignTrigger = false;
     public bool waitingTrigger = false; // 모두 정렬할 때까지 기다리고 있는가 
@@ -94,6 +95,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         stateMachine = new StateMachine<BaseCharacterController>(this, new NonCombatMoveState());
         stateMachine.AddState(new AllignState());
@@ -371,12 +373,14 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
     IEnumerator GetDamage() // 데미지를 받을 때마다 캐릭터가 빨간색으로 깜빡거림
     {
+        
+        //anim.SetTrigger("DoDamage");
 
         float blinkTime = 0.1f;
         int blinkCount = 2;
         
         SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
-
+        
         for (int i = 0; i < blinkCount; i++)
         {
             foreach(SpriteRenderer sprite in sprites) 
