@@ -156,7 +156,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     }
 
     // attackTarget 중에서 가장 가까운 적의 Transform 반환
-    Transform FindClosestTarget()
+    Transform FindClosestTarget() // 이 부분 수정해서 적을 공격할 때 사거리 내에서 적이 멀어지면 적이 null 되는 버그를 수정해야 함
     {
         if (targetsInRange == null || targetsInRange.Count == 0)
         {
