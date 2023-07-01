@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     public float defaultZoomSize; // 줌아웃할 때 크기, 원래 카메라 크기
     public float targetZoomSize; // 줌인할 때 크기
     public float targetZoomSpeed; // 줌인하는 속도
-
+    private Vector3 Combat; // 
     void Start()
     {
         mainCamera = Camera.main;
@@ -30,15 +30,13 @@ public class CameraController : MonoBehaviour
                     float x1 = playerGroup.characterGroup[0].transform.position.x;
                     float y1 = playerGroup.characterGroup[0].transform.position.y;
 
-                    Vector3 Combat = new Vector3(x1, y1 + 6.4f, -11);
-
-                    transform.position = Vector3.Lerp(transform.position, Combat, 2f * Time.deltaTime);
-
-                    battleArea.transform.position = Combat; // 배틀 공간도 똑같은 위치로 옮겨준다.
-                    battleArea.SetActive(true);
+                    Combat = new Vector3(x1, y1 + 6f, -11);
                 }
 
-               
+                transform.position = Vector3.Lerp(transform.position, Combat, 2f * Time.deltaTime);
+
+                battleArea.transform.position = Combat; // 배틀 공간도 똑같은 위치로 옮겨준다.
+                battleArea.SetActive(true);
 
             }
             

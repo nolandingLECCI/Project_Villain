@@ -6,8 +6,6 @@ public class DeadState : State<BaseCharacterController>
 {
     private Animator animator;
 
-    protected int isAliveHash = Animator.StringToHash("IsAlive");
-
     public override void OnInitialized()
     {
         animator = context.GetComponent<Animator>();
@@ -15,15 +13,16 @@ public class DeadState : State<BaseCharacterController>
 
     public override void OnEnter()
     {
-        animator?.SetBool(isAliveHash, false);
+        animator?.SetTrigger("DoDeath");
         context.gameObject.layer = 16;
-        context.MyGroup.RemoveCharacterInGroup(context);
+        
     }
 
     public override void Update(float deltaTime)
     {
         if (stateMachine.ElapsedTimeInState > 1.0f)
         {
+            context.MyGroup.RemoveCharacterInGroup(context);
             GameObject.Destroy(context.gameObject);
         }
     }

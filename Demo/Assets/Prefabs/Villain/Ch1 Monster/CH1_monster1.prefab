@@ -793,7 +793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886186402928730225}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.86, y: 3.63, z: 0}
+  m_LocalPosition: {x: -0.42, y: 3.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   developmentDescription: "\uADFC\uC811 \uCE90\uB9AD\uD130 \uC2A4\uD0AC \uACF5\uACA9\uC785\uB2C8\uB2E4."
-  animationIndex: 1
+  animationIndex: 0
   damage: 10
   defaultMult: 0
   priority: 1
@@ -987,7 +987,7 @@ MonoBehaviour:
     m_Bits: 512
   rayPoint: {fileID: 5130284412955591378}
   attackTarget: {fileID: 0}
-  attackRange: 1.5
+  attackRange: 3
   moveSpeed: 1
   fallBackCheckDistance: 0
   fallBackDistance: 0

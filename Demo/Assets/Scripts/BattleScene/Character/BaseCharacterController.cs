@@ -366,6 +366,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         }
         else
         {
+
             stateMachine.ChangeState<DeadState>();
         }
 
