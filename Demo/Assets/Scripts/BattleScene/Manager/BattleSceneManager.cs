@@ -146,7 +146,7 @@ public class BattleSceneManager : MonoBehaviour
         BuffManager.instance.SynergyCheck();
     }
 
-    public void CreateEnemy() // 적 트리거 발동 시, 적 생성
+    public void CreateEnemy() // 적 트리거 발동 시, 적 생성, 생성될 때 마다 다음 Wave 준비
     {
         //적 생성 전에 그룹을 비워준다.
 
@@ -155,7 +155,17 @@ public class BattleSceneManager : MonoBehaviour
             enemyGroup.characterGroup.Clear();
         }
         // 여기서 각 웨이브에 맞게 적들을 받아와야 한다.
-        GameObject[] gameObjects = GameManager.instance.GetEnemyList();
+        GameObject enemys = GameManager.instance.GetEnemyList(enemyWave); // wave에 맞게 가져옴
+
+        Debug.Log("enemyGroup.transform.childCount : " + enemys.transform.childCount);
+
+        GameObject[] gameObjects = new GameObject[enemys.transform.childCount];
+
+        for (int i = 0; i < enemys.transform.childCount; i++)
+        {
+            gameObjects[i] = enemys.transform.GetChild(i).gameObject;
+        }
+      
 
         // 지정한 groupCenterX에 적들이 리스폰 할 위치들을 저장
 
@@ -171,6 +181,8 @@ public class BattleSceneManager : MonoBehaviour
             enemyGroup.characterGroup.Add(enemy);
             enemy.MyGroup = enemyGroup;
         }
+
+        enemyWave++;
 
         BattleStart(); // 적 생성과 동시에 전투 진입
     }

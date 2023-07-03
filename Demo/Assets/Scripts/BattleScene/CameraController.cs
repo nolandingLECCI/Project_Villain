@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        if(playerGroup.characterGroup[0] != null) // 가장 앞에 있는 캐릭터 기준으로 변경
+        if(playerGroup.characterGroup.Count != 0) // 가장 앞에 있는 캐릭터 기준으로 변경
         {
             if(BattleSceneManager.instance.isEngaging)
             {

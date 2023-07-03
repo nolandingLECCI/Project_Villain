@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 1726909143180871034}
   - component: {fileID: 8317126071144935323}
   - component: {fileID: 4339786642406349958}
+  - component: {fileID: 9127865370994304681}
   m_Layer: 10
   m_Name: CH1_monster2
   m_TagString: Enemy
@@ -1011,6 +1012,17 @@ MonoBehaviour:
   synergyAttackMult: 1
   damageDecreaseMult: 1
   isVampire: 0
+--- !u!210 &9127865370994304681
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438857215348902289}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 99
 --- !u!1 &5485000893133691362
 GameObject:
   m_ObjectHideFlags: 0

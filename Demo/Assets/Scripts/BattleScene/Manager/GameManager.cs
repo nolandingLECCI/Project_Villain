@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance; // 싱글톤을 할당할 전역 변수
 
     public GameObject[] playerCharacters;
-    public GameObject[] enemyCharacters;
+    public GameObject[] enemyGroups;
     public GameObject bossCharacter;
 
     private void Awake()
@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour
         return playerCharacters;
     }
 
-    public GameObject[] GetEnemyList()
+    public GameObject GetEnemyList(int enemyWave)
     {
-        return enemyCharacters;
+        return enemyGroups[enemyWave];
     }
 
     public GameObject GetBoss()
