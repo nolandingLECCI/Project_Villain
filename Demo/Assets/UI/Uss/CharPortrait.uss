@@ -1,0 +1,11 @@
+.status_bar {
+    background-image: none;
+    width: 80px;
+    height: 25px;
+    background-color: rgb(32, 32, 32);
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    font-size: 12px;
+}

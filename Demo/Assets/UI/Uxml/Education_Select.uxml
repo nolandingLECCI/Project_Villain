@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="SeletMenu" src="project://database/Assets/UI/Uxml/SeletMenu.uxml?fileID=9197481963319205126&amp;guid=376df595a67d2804c9bf7f9f6eb8b563&amp;type=3#SeletMenu" />
+    <ui:ScrollView name="employ_menu-scrollview" picking-mode="Ignore" mode="Horizontal" vertical-scroller-visibility="Hidden" style="position: absolute; left: 0; top: 0; padding-bottom: 20px; padding-top: 3%; padding-right: 3%; padding-left: 3%; justify-content: center;">
+        <ui:VisualElement name="menuGroup" style="flex-direction: row;">
+            <ui:Instance template="SeletMenu" name="SeletMenu" style="margin-right: 20px;" />
+            <ui:Instance template="SeletMenu" name="SeletMenu" picking-mode="Ignore" style="margin-right: 20px;">
+                <AttributeOverrides element-name="select-Menu__parent-container" />
+            </ui:Instance>
+            <ui:Instance template="SeletMenu" name="SeletMenu" style="margin-right: 20px;" />
+        </ui:VisualElement>
+        <ui:Instance template="SeletMenu" name="SeletMenu" style="margin-right: 20px;" />
+    </ui:ScrollView>
+</ui:UXML>
