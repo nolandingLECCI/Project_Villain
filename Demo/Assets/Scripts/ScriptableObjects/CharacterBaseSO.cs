@@ -18,6 +18,13 @@ public enum Synergy
     Saibi,
     Vampire,
 }
+public enum Weapon
+{
+    LongSword,
+    Dagger,
+    Spear,
+    gun,
+}
 
 [CreateAssetMenu(fileName ="Assets/Resources/GameData/Characters/CharacterGameData", menuName = "vil/Character", order = 1)]
     public class CharacterBaseSO : ScriptableObject
@@ -28,6 +35,8 @@ public enum Synergy
         public Rarity rarity;
         public Synergy Vil_Synergy_1;
         public Synergy Vil_Synergy_2;
+        public GameObject skill;
+        public Weapon weapon;
 
         public int      Range_Normal;
         public int      Range_Escape;
