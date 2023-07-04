@@ -1,5 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="background" style="width: 1920px; height: 1080px; background-image: url(&apos;project://database/Assets/Sprites/BG_Base.png?fileID=2800000&amp;guid=728bd82cad457ea4f933fa1ca654f8cd&amp;type=3#BG_Base&apos;);">
-        <ui:Button text="임무 선택" display-tooltip-when-elided="true" style="width: 300px; height: 100px; bottom: auto; right: 0; top: 940px; font-size: 40px; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&amp;guid=c29ac6499bf2375459be9cd19be7e4c2&amp;type=3#KimjungchulMyungjo-Regular&apos;); background-image: url(&apos;project://database/Assets/Scripts/BaseScene/UI/Rectangle%201.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#Rectangle 1&apos;); background-color: rgba(255, 255, 255, 0); left: 1570px;" />
-    </ui:VisualElement>
-</ui:UXML>
