@@ -4,8 +4,8 @@
     <ui:Template name="EducationScreen" src="project://database/Assets/UI/Uxml/EducationScreen.uxml?fileID=9197481963319205126&amp;guid=a2b1b2609d49fa640b59bee9458be777&amp;type=3#EducationScreen" />
     <ui:Template name="MisssionScreen" src="project://database/Assets/UI/Uxml/MisssionScreen.uxml?fileID=9197481963319205126&amp;guid=69224e41a59163045bf91d1ef1465a21&amp;type=3#MisssionScreen" />
     <ui:VisualElement name="background-cursor" style="position: absolute; flex-grow: 1; width: 100%; height: 100%;" />
-    <ui:Instance template="HomeScreen" name="HomeScreen" style="height: 100%; position: absolute; left: 0; top: 0; width: 100%; display: none;" />
+    <ui:Instance template="HomeScreen" name="HomeScreen" style="height: 100%; position: absolute; left: 0; top: 0; width: 100%; display: flex;" />
     <ui:Instance template="EmployScreen" name="EmployScreen" style="height: 100%; width: 100%; align-items: center; justify-content: center; display: none;" />
     <ui:Instance template="EducationScreen" name="EducationScreen" style="width: 100%; height: 100%; display: none;" />
-    <ui:Instance template="MisssionScreen" name="MisssionScreen" style="width: 100%; height: 100%;" />
+    <ui:Instance template="MisssionScreen" name="MisssionScreen" style="width: 100%; height: 100%; display: none;" />
 </ui:UXML>
