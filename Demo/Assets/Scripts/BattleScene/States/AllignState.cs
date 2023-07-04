@@ -37,9 +37,12 @@ public class AllignState : State<BaseCharacterController>
             
             tf.Translate(tf.right * context.dir * context.moveSpeed * Time.deltaTime * -1); //왼쪽으로 이동 
 
-            if (dist < 0.01)
+            if (dist < 0.01f)
             {
-                context.Flip();
+                if (context.transform.rotation.eulerAngles.y >= 180)
+                {
+                    context.Flip();
+                }
                 context.waitingTrigger = true;
                 stateMachine.ChangeState<NonCombatIdleState>();
                 return;
@@ -50,8 +53,12 @@ public class AllignState : State<BaseCharacterController>
             
             tf.Translate(tf.right * context.dir * context.moveSpeed * Time.deltaTime); //오른쪽으로 이동
 
-            if(dist < 0.01)
+            if(dist < 0.01f)
             {
+                if (context.transform.rotation.eulerAngles.y >= 180)
+                {
+                    context.Flip();
+                }
                 context.waitingTrigger = true;
                 stateMachine.ChangeState<NonCombatIdleState>();
                 return;

@@ -350,7 +350,10 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
         if(hittEffectPrefab != null) // 임시로 원거리 캐릭터 공격에만 구현해놨다.
         {
-            GameObject hitEffect = Instantiate(hittEffectPrefab, hitEffectPoint.position, Quaternion.identity);
+            float randPosX = Random.Range(-0.5f, 0.5f);
+            float randPosY = Random.Range(-0.5f, 0.5f);
+
+            GameObject hitEffect = Instantiate(hittEffectPrefab, hitEffectPoint.position + new Vector3(randPosX, randPosY, 0), Quaternion.identity);
 
             Destroy(hitEffect, 0.6f);
         }         
