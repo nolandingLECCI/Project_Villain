@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{819CF417-C12B-4013-BBD7-6724A4061776}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Test_Main_Theme" ID="{8DEBD1BC-2D9D-4314-A620-11CF99B2971F}" ShortID="623191774">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
@@ -159,6 +166,11 @@
 								<MusicSegment Name="MUS_Stage1_Kawaii Bass_bpm150_4-4" ID="{A49846F2-A78A-47E9-A172-7C1E4921F43B}" ShortID="964808522">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="76800"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -256,7 +268,20 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{8E6AB71D-4ADB-45D0-84CC-6C669AC4D1A3}" ShortID="572943431"/>
+								<MusicPlaylistItem Name="" ID="{8E6AB71D-4ADB-45D0-84CC-6C669AC4D1A3}" ShortID="572943431">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{291A63A4-3DC4-40A7-9FE1-32A1E2AC8EEE}" ShortID="451315137">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="MUS_Stage1_Kawaii Bass_bpm150_4-4" ID="{A49846F2-A78A-47E9-A172-7C1E4921F43B}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4019F3A1-1174-4698-96F2-7333108D16CB}" SchemaVersion="103" RootDocumentID="{0777222E-0B56-4C20-A59D-2EEABB4A94AE}" ParentDocumentID="{0777222E-0B56-4C20-A59D-2EEABB4A94AE}">
+	<Events>
+		<WorkUnit Name="SFX" ID="{4019F3A1-1174-4698-96F2-7333108D16CB}" OwnerID="{0777222E-0B56-4C20-A59D-2EEABB4A94AE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Hit" ID="{F8E70DC3-6EEF-4328-9C4E-972EB7408278}">
+					<ChildrenList>
+						<Action Name="" ID="{7B159385-EB0B-4FCA-A03D-A4B673336B12}" ShortID="480352682">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{2701F326-C969-49AE-AA35-CE577D6787AD}" WorkUnitID="{8C446008-FA87-4AA3-851A-3ABEA543701D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{8EF5BB20-344C-432B-A768-129A68CD6E10}">
+					<ChildrenList>
+						<Action Name="" ID="{881769E2-B66C-4BB0-A9C4-96415B413DBA}" ShortID="645955996">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{AA686722-7C19-4611-9A30-80B396BDDD3A}" WorkUnitID="{8C446008-FA87-4AA3-851A-3ABEA543701D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

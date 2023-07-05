@@ -59,12 +59,12 @@
 	<ValidationCacheItem File="E:\GameDev\TooManyvillan\TooManyVillan\TooManyVillan\VillanSound\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1673852824" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Virtual Acoustics\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\VillanSound.wproj" DateLow="1686487300" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\VillanSound.User.wsettings" DateLow="1686487300" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\VillanSound.User.wsettings" DateLow="1688520906" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Triggers\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Switches\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\States\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\SoundBanks\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\SoundBanks\Default Work Unit.wwu" DateLow="1688520906" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Queries\Factory Queries.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Queries\Default Work Unit.wwu" DateLow="1686487300" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Presets\Factory Spatial Audio.wwu" DateLow="1686487300" DateHigh="0"/>
@@ -73,10 +73,11 @@
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Mixing Sessions\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Metadata\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1688520906" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Game Parameters\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Events\MUS.wwu" DateLow="1686487298" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Events\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Events\SFX.wwu" DateLow="1688520906" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Events\MUS.wwu" DateLow="1688520906" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Events\Default Work Unit.wwu" DateLow="1688520906" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Effects\Factory Mastering Suite.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Effects\Factory Effects.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Effects\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
@@ -86,5 +87,5 @@
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Control Surface Sessions\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Audio Devices\Default Work Unit.wwu" DateLow="1686487298" DateHigh="0"/>
 	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Attenuations\Default Work Unit.wwu" DateLow="1686487296" DateHigh="0"/>
-	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1686487296" DateHigh="0"/>
+	<ValidationCacheItem File="E:\GameDev\[Billon] Project_Villain\VillanSound\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1688520904" DateHigh="0"/>
 </ValidationCache>

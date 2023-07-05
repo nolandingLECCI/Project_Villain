@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MUS_Amargo" ID="{1ECB19FB-8322-4081-AF60-C777A319688B}">
+					<ChildrenList>
+						<Action Name="" ID="{374C9AD4-2FB8-40DD-8621-9379A2DD1FA0}" ShortID="113149102">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amargo" ID="{2F708771-792B-4BDF-960A-3D7A132744FD}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

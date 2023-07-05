@@ -268,6 +268,8 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         yield return new WaitForSeconds(0.2f);
 
         jumpTrigger = false;
+
+        AkSoundEngine.PostEvent("Jump",gameObject);
     }
     #endregion
 
@@ -402,6 +404,8 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
             yield return new WaitForSeconds(blinkTime);
         }
+
+        AkSoundEngine.PostEvent("Hit",gameObject);
 
     }
 
