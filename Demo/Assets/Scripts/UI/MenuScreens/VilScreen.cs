@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections;
 
-public class MissionScreen : MenuScreen
+public class VilScreen : MenuScreen
 {
-        
+    
 }

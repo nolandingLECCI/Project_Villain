@@ -236,6 +236,53 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &103324816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103324817}
+  - component: {fileID: 103324818}
+  m_Layer: 5
+  m_Name: ShopScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &103324817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103324816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674656421}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &103324818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103324816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f445a6b92794f4e911c55a8673ad00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenName: ShopScreen
+  m_MainMenuUIManager: {fileID: 1674656422}
+  m_Document: {fileID: 1674656420}
 --- !u!1 &143877894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1065914308}
+  - component: {fileID: 1065914309}
   m_Layer: 0
   m_Name: HomeScreenContorller
   m_TagString: Untagged
@@ -1406,6 +1454,18 @@ Transform:
   m_Father: {fileID: 1200396305}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065914309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065914307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7796267d036527e45a62073c17af86dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1073953118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1542,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073953118}
   m_CullTransparentMesh: 1
+--- !u!1 &1086245807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086245808}
+  - component: {fileID: 1086245809}
+  m_Layer: 5
+  m_Name: QuestScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086245808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086245807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674656421}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1086245809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086245807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fb617095b2c2049a8076081588287e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenName: QuestScreen
+  m_MainMenuUIManager: {fileID: 1674656422}
+  m_Document: {fileID: 1674656420}
 --- !u!1 &1094860749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,6 +1729,53 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8492430330165668648, guid: da2348c9a55a2534690115fbdeb669af, type: 3}
   m_PrefabInstance: {fileID: 577198793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1165422132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165422133}
+  - component: {fileID: 1165422134}
+  m_Layer: 5
+  m_Name: VilScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1165422133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165422132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674656421}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1165422134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165422132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587ef7ef25444cd4dbccdbec6a422fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenName: VilScreen
+  m_MainMenuUIManager: {fileID: 1674656422}
+  m_Document: {fileID: 1674656420}
 --- !u!224 &1176559286 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8492430330165668648, guid: da2348c9a55a2534690115fbdeb669af, type: 3}
@@ -1725,7 +1879,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1674656421}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1333897227
 MonoBehaviour:
@@ -2057,8 +2211,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 199321613}
+  - {fileID: 103324817}
+  - {fileID: 1165422133}
   - {fileID: 1962034937}
   - {fileID: 1847033546}
+  - {fileID: 1086245808}
   - {fileID: 1333897226}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2076,8 +2233,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HomeModalScreen: {fileID: 199321612}
+  m_ShopModalScreen: {fileID: 103324818}
+  m_VilModalScreen: {fileID: 1165422134}
   m_EducationModalScreen: {fileID: 1962034938}
   m_EmployModalScreen: {fileID: 1847033547}
+  m_QuestModalScreen: {fileID: 1086245809}
   m_MissionModalScreen: {fileID: 1333897227}
 --- !u!1 &1748447047
 GameObject:
@@ -2376,7 +2536,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1674656421}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1847033547
 MonoBehaviour:
@@ -2664,7 +2824,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1674656421}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1962034938
 MonoBehaviour:

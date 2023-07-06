@@ -1,7 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEngine.SceneManagement;
-using System;
+using System.Collections;
 
 public class EducationScreen : MenuScreen
 {

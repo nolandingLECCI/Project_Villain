@@ -12,6 +12,6 @@ public class DialogTest : MonoBehaviour
         yield return new WaitUntil(()=>dialogSystem01.UpdateDialog());
 
         yield return new WaitForSeconds(2);
-        UnityEditor.EditorApplication.ExitPlaymode();
+        //UnityEditor.EditorApplication.ExitPlaymode();
     }
 }
