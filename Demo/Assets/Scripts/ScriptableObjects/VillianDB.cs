@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//[ExcelAsset]
+[ExcelAsset]
 public class VillianDB : ScriptableObject
 {
-	public List<VillianDBEntity> Villian; 
+	public List<VillianDBEntity> Villian;
 }
+	

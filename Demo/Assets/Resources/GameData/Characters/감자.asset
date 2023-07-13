@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: "\uAC10\uC790"
   m_EditorClassIdentifier: 
   id: 0
-  Vil_Name: "\uAC10\uC790"
+  Vil_Name: 
   characterVisualsPrefab: {fileID: 0}
   rarity: 0
   Vil_Synergy_1: 0
   Vil_Synergy_2: 0
-  Range_Normal: 1
-  Range_Escape: 1
-  Vil_Cooltime: 5
-  Vil_Hp_Min: 250
-  Vil_Str_Min: 10
+  skill: {fileID: 0}
+  weapon: 0
+  Range_Normal: 0
+  Range_Escape: 0
+  Vil_Cooltime: 0
+  Vil_Hp_Min: 0
+  Vil_Str_Min: 0
   Vil_Demon: 0

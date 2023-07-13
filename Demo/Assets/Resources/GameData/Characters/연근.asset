@@ -13,14 +13,20 @@ MonoBehaviour:
   m_Name: "\uC5F0\uADFC"
   m_EditorClassIdentifier: 
   id: 3
-  Vil_Name: 
+  Vil_Name: "\uC5F0\uADFC"
+  characterProfile: {fileID: 0}
   characterVisualsPrefab: {fileID: 0}
-  rarity: 2
+  rarity: 0
   Vil_Synergy_1: 0
   Vil_Synergy_2: 0
+  skill: {fileID: 0}
+  weapon: 0
+  Vil_Demon: 0
   Range_Normal: 10
   Range_Escape: 5
   Vil_Cooltime: 10
   Vil_Hp_Min: 550
+  Vil_Hp_Max: 600
   Vil_Str_Min: 400
-  Vil_Demon: 0
+  Vil_Str_Max: 500
+  Vil_Loyalty: 0
