@@ -1186,6 +1186,8 @@ GameObject:
   - component: {fileID: 8701556936055372554}
   - component: {fileID: 6726766201363997020}
   - component: {fileID: 8824843556483028367}
+  - component: {fileID: 7610925510435099789}
+  - component: {fileID: 5287856527051372594}
   m_Layer: 9
   m_Name: Gunner
   m_TagString: Player
@@ -1293,6 +1295,7 @@ MonoBehaviour:
   allignPoint: 0
   MyGroup: {fileID: 0}
   hitEffectPoint: {fileID: 492144154}
+  profileSprite: {fileID: 0}
   strength: 10
   maxHealth: 200
   health: 0
@@ -1345,17 +1348,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   developmentDescription: "\uC6D0\uAC70\uB9AC \uCE90\uB9AD\uD130 \uC77C\uBC18 \uACF5\uACA9\uC785\uB2C8\uB2E4."
   animationIndex: 0
-  damage: 10
+  damage: 0
   defaultMult: 0
   priority: 0
   knockBackForce: 0
   coolTime: 1
   calcCoolTime: 0
-  effectPrefab: {fileID: 2499277236963918256, guid: 5b2189a0bf19c5c478fb8660a514cc46, type: 3}
+  hitEffectPrefab: {fileID: 2499277236963918256, guid: 5b2189a0bf19c5c478fb8660a514cc46, type: 3}
+  castEffect: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
-  MultNum: 1
+  MultNum: 0.8
 --- !u!114 &8701556936055372554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,18 +1374,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   developmentDescription: "\uC6D0\uAC70\uB9AC \uCE90\uB9AD\uD130 \uC2A4\uD0AC \uACF5\uACA9\uC785\uB2C8\uB2E4."
   animationIndex: 1
-  damage: 25
+  damage: 0
   defaultMult: 0
   priority: 1
   knockBackForce: 0
   coolTime: 10
   calcCoolTime: 0
-  effectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 2499277236963918256, guid: 5b2189a0bf19c5c478fb8660a514cc46, type: 3}
+  castEffect: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
   bullet: {fileID: 8738602517485687338, guid: 7e41e76819d70f3458280a354566c70b, type: 3}
-  MultNum: 2.5
+  MultNum: 1.2
 --- !u!95 &6726766201363997020
 Animator:
   serializedVersion: 4
@@ -1413,6 +1418,36 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
+--- !u!114 &7610925510435099789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812007348845459744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a416610bffb27dc4ab02195c94ff0bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synergyIcon: {fileID: 21300000, guid: 44c3d920c5b433f4686c43d02ebc2d80, type: 3}
+  mAtivateTime: 0
+  mType: 4
+--- !u!114 &5287856527051372594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812007348845459744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c884029c573b2a44bafd57d54304b5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  synergyIcon: {fileID: 21300000, guid: 03e22eb5929e83c4ba0b4e55ee52a8fb, type: 3}
+  mAtivateTime: 0
+  mType: 2
 --- !u!1 &4926850734153194686
 GameObject:
   m_ObjectHideFlags: 0

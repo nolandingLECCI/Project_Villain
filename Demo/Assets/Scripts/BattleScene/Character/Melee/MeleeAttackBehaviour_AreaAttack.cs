@@ -27,7 +27,7 @@ public class MeleeAttackBehaviour_AreaAttack : AttackBehavior
 
         foreach (Collider2D collider in colliders)
         {
-            collider.gameObject.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), effectPrefab);
+            collider.gameObject.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), hitEffectPrefab);
             collider.gameObject.GetComponent<BaseCharacterController>()?.KnockBack(knockBackForce);
 
             if (character != null && character.isVampire) // 캐릭터가 Null이 아니며, Vampire인 경우
@@ -39,4 +39,11 @@ public class MeleeAttackBehaviour_AreaAttack : AttackBehavior
         calcCoolTime = 0.0f;
     }
 
+    public override void ExecuteParticle(GameObject particle = null, Transform startPoint = null)
+    {
+        if(particle != null)
+        {
+
+        }
+    }
 }

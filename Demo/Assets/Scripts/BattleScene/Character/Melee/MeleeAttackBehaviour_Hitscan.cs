@@ -19,7 +19,7 @@ public class MeleeAttackBehaviour_Hitscan : AttackBehavior
     public override void ExecuteAttack(GameObject target = null, Transform startPoint = null, float attackMult = 1f)
     {
 
-        target.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), effectPrefab); // 쏘는 즉시 데미지가 들어가면 된다.
+        target.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), hitEffectPrefab); // 쏘는 즉시 데미지가 들어가면 된다.
 
         BaseCharacterController character = this.GetComponent<BaseCharacterController>();
 
@@ -29,5 +29,10 @@ public class MeleeAttackBehaviour_Hitscan : AttackBehavior
         }
 
         calcCoolTime = 0.0f;
+    }
+
+    public override void ExecuteParticle(GameObject particle = null, Transform startPoint = null)
+    {
+        
     }
 }

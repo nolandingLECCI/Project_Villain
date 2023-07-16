@@ -27,9 +27,11 @@ public abstract class AttackBehavior : MonoBehaviour
     public float coolTime;
 
     public float calcCoolTime = 0.0f;
+   
     //protected float calcCoolTime = 0.0f;
 
-    public GameObject effectPrefab;
+    public GameObject hitEffectPrefab;
+    public GameObject castEffect;
 
     //[HideInInspector]
 
@@ -60,4 +62,5 @@ public abstract class AttackBehavior : MonoBehaviour
 
     public abstract void ExecuteAttack(GameObject target = null, Transform startPoint = null, float attackMult = 1f);
 
+    public abstract void ExecuteParticle(GameObject particle = null, Transform startPoint = null);
 }

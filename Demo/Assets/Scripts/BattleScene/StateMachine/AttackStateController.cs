@@ -52,6 +52,12 @@ public class AttackStateController : MonoBehaviour
 
     }
 
+
+    public void SlashEffectActive(int attackIndex)
+    {
+        GetComponent<BaseCharacterController>()?.OnExcuteParticleSystem(attackIndex);
+    }
+    
     #endregion Helper Methods
 
    

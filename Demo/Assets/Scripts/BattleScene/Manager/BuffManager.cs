@@ -44,6 +44,7 @@ public class BuffManager : MonoBehaviour
         Buff_Interest();
     }
 
+
     #region Buff_Synergy
     // 뉴비 시너지 버프
     private void Buff_Newbie()

@@ -19,7 +19,7 @@ public class RangeAttackBehaviour_Hitscan : AttackBehavior // 원거리 캐릭�
 
     public override void ExecuteAttack(GameObject target = null, Transform startPoint = null, float attackMult = 1f)
     {
-        target.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), effectPrefab); // target은 attackTarget으로 받아온다.
+        target.GetComponent<IDamageable>()?.TakeDamage((int)(damage * attackMult), hitEffectPrefab); // target은 attackTarget으로 받아온다.
 
         BaseCharacterController character = this.GetComponent<BaseCharacterController>();
 
@@ -29,5 +29,10 @@ public class RangeAttackBehaviour_Hitscan : AttackBehavior // 원거리 캐릭�
         }
 
         calcCoolTime = 0.0f;
+    }
+
+    public override void ExecuteParticle(GameObject particle = null, Transform startPoint = null)
+    {
+
     }
 }

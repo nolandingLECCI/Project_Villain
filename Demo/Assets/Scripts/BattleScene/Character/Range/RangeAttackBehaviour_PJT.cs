@@ -36,4 +36,8 @@ public class RangeAttackBehaviour_PJT : AttackBehavior // 원거리 캐릭터 �
 
         calcCoolTime = 0.0f;
     }
+    public override void ExecuteParticle(GameObject particle = null, Transform startPoint = null)
+    {
+
+    }
 }

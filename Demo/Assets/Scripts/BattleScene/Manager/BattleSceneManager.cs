@@ -140,7 +140,11 @@ public class BattleSceneManager : MonoBehaviour
                 // 각 캐릭터들의 시너지들을 버프 매니저에 전달한다. 
                 character.synergys[j].AddSynergyCount();
             }
+
+            
         }
+
+
 
         // 버프 매니저쪽의 시너지 체크해주는 함수 호출 
         BuffManager.instance.SynergyCheck();

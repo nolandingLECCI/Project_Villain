@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable// BaseCharacterController에는 적 탐색을 위해서, 그러기 위해선 거리는 여기에 둬야 한다. 
 {
@@ -20,7 +21,8 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public float allignPoint; // 캐릭터 정렬 시 이동하는 x좌표 위치
     public GroupObject MyGroup; // 캐릭터 자신이 속해있는 그룹
     public Transform hitEffectPoint;
-    
+
+    public Image profileSprite;
     public int strength = 10;
     public int maxHealth = 100;
     public int health;
@@ -66,7 +68,6 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public bool CanAttack => CheckAttackBehaviour();// 현재 가능한 공격이 있는가? 
                                                     //public bool IsCurrentAttackBehaviourAvailable => (CurrentAttackBehaviour != null) && ();
     #endregion Properties
-
 
 
     #region Unity Methods
@@ -125,9 +126,15 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         WaitingCheck();
         stateMachine.Update(Time.deltaTime);
         attackTarget = FindAttackTarget();
-
-        
+   
     }
+
+
+    private void LateUpdate()
+    {
+                
+    }
+
 
     #endregion Unity Methods
 
@@ -333,6 +340,11 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             //Debug.Log("OnExecuteAttack : " + attackIndex);
             CurrentAttackBehavior.ExecuteAttack(attackTarget.gameObject, projectileTransform, attackDefault);
         }
+    }
+
+    public void OnExcuteParticleSystem(int attackIndex)
+    {
+       
     }
 
     #endregion IAttackable interfaces
