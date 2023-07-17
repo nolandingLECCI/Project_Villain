@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="MUS_Amargo" ID="{1ECB19FB-8322-4081-AF60-C777A319688B}" WorkUnitID="{2A6588F2-7DC5-4AF2-BACC-D5151CD7FFEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Test_BGM_Magye" ID="{A4B7D9D5-1082-42A4-8115-812613624026}" WorkUnitID="{2A6588F2-7DC5-4AF2-BACC-D5151CD7FFEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UITest" ID="{84786C3A-E4CC-4306-AC33-2E1239E80789}" WorkUnitID="{4019F3A1-1174-4698-96F2-7333108D16CB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hit" ID="{F8E70DC3-6EEF-4328-9C4E-972EB7408278}" WorkUnitID="{4019F3A1-1174-4698-96F2-7333108D16CB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{8EF5BB20-344C-432B-A768-129A68CD6E10}" WorkUnitID="{4019F3A1-1174-4698-96F2-7333108D16CB}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

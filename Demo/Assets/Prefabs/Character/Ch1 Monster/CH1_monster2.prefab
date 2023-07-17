@@ -165,8 +165,8 @@ MonoBehaviour:
   - {fileID: 8204818703779284973}
   - {fileID: 693185273665628696}
   m_Bounds:
-    m_Center: {x: -0.0017251372, y: -0.00000047683716, z: 0}
-    m_Extent: {x: 0.5375651, y: 0.9750005, z: 0}
+    m_Center: {x: -0.23786366, y: 0.17970562, z: 0}
+    m_Extent: {x: 0.7737037, y: 0.7952944, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -273,8 +273,8 @@ MonoBehaviour:
   - {fileID: 9179084163023855367}
   - {fileID: 4596099034427536843}
   m_Bounds:
-    m_Center: {x: 0.0013751984, y: 0.001045227, z: 0}
-    m_Extent: {x: 2.1986256, y: 2.178936, z: 0}
+    m_Center: {x: 0.25127697, y: 0.6116576, z: 0}
+    m_Extent: {x: 2.4997058, y: 2.1205053, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -476,8 +476,8 @@ MonoBehaviour:
   - {fileID: 6447223325440339495}
   - {fileID: 4274455275722283012}
   m_Bounds:
-    m_Center: {x: -0.000059843063, y: 0.00055480003, z: 0}
-    m_Extent: {x: 0.66969, y: 1.1731557, z: 0}
+    m_Center: {x: 0.15844995, y: 0.08834362, z: 0}
+    m_Extent: {x: 0.81778353, y: 1.0959375, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -583,8 +583,8 @@ MonoBehaviour:
   - {fileID: 5660789908578385494}
   - {fileID: 8666190471489029479}
   m_Bounds:
-    m_Center: {x: 0.0021448135, y: 0.002929926, z: 0}
-    m_Extent: {x: 2.1078148, y: 2.41207, z: 0}
+    m_Center: {x: 0.024173498, y: 0.11275458, z: 0}
+    m_Extent: {x: 2.127881, y: 2.395314, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 8317126071144935323}
   - component: {fileID: 4339786642406349958}
   - component: {fileID: 9127865370994304681}
+  - component: {fileID: 4413668932609098830}
   m_Layer: 10
   m_Name: CH1_monster2
   m_TagString: Enemy
@@ -960,7 +961,8 @@ MonoBehaviour:
   knockBackForce: 0
   coolTime: 3
   calcCoolTime: 0
-  effectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  castEffect: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
@@ -986,6 +988,7 @@ MonoBehaviour:
   allignPoint: 0
   MyGroup: {fileID: 0}
   hitEffectPoint: {fileID: 3566336431050509296}
+  profileSprite: {fileID: 0}
   strength: 10
   maxHealth: 100
   health: 0
@@ -1023,6 +1026,18 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 99
+--- !u!114 &4413668932609098830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438857215348902289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f4475af87610428670c1517c8736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5485000893133691362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,8 +1205,8 @@ MonoBehaviour:
   - {fileID: 240976576552230777}
   - {fileID: 7978222822504131978}
   m_Bounds:
-    m_Center: {x: -0.00013971329, y: -0.0014950037, z: 0}
-    m_Extent: {x: 1.2982697, y: 1.2362452, z: 0}
+    m_Center: {x: 0.00071907043, y: -0.0009148121, z: 0}
+    m_Extent: {x: 1.3056035, y: 1.2374983, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1457,8 +1472,8 @@ MonoBehaviour:
   - {fileID: 2201555904770905855}
   - {fileID: 4313460059199329158}
   m_Bounds:
-    m_Center: {x: -0.00045984983, y: 0.00068974495, z: 0}
-    m_Extent: {x: 0.54950964, y: 1.1243098, z: 0}
+    m_Center: {x: 0.05377692, y: 0.07162595, z: 0}
+    m_Extent: {x: 0.6732328, y: 1.0726082, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1564,8 +1579,8 @@ MonoBehaviour:
   - {fileID: 9092145431083402438}
   - {fileID: 8228262103522379363}
   m_Bounds:
-    m_Center: {x: -0.0009250641, y: 0.0020840168, z: 0}
-    m_Extent: {x: 0.70907545, y: 0.79285586, z: 0}
+    m_Center: {x: 0.05352509, y: 0.43563646, z: 0}
+    m_Extent: {x: 0.72893286, y: 0.6409106, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

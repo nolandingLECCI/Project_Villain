@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="UITest" ID="{84786C3A-E4CC-4306-AC33-2E1239E80789}">
+					<ChildrenList>
+						<Action Name="" ID="{F8C983F9-CD8E-4A20-BE66-6BC7CF9E06F3}" ShortID="688577330">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI" ID="{0F1633DB-BC2D-454C-9C79-DF16DE7E3461}" WorkUnitID="{8C446008-FA87-4AA3-851A-3ABEA543701D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

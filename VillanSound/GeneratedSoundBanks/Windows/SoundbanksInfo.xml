@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="2056994257">
+		<SoundBank Id="4056684167" Language="SFX" Hash="4183896881">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -58,6 +58,14 @@
 						<File Id="205671149" Language="SFX">
 							<ShortName>BGM_Main_Magyetheme.wav</ShortName>
 							<Path>SFX\BGM_Main_Magyetheme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2307877175" Name="UITest" ObjectPath="\Events\Default Work Unit\SFX\UITest" DurationType="OneShot" DurationMin="1.68" DurationMax="1.68">
+					<IncludedMemoryFiles>
+						<File Id="583159707" Language="SFX">
+							<ShortName>ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon.wav</ShortName>
+							<Path>SFX\ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

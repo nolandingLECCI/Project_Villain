@@ -57,6 +57,41 @@
 							</ReferenceList>
 							<ObjectLists/>
 						</Sound>
+						<RandomSequenceContainer Name="Wep_Gun" ID="{439C6C0F-BA06-444D-B1CA-C82EB7D699DA}" ShortID="72203660">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Gun1" ID="{FB1B7E3E-601C-4036-A4EA-3180F8CAFD62}" ShortID="108584825">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wep_Kni" ID="{57B71AC6-DF9F-487B-A777-D22350C21D67}" ShortID="751608263">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -79,7 +114,19 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon" ID="{1F94AFD0-FDBF-4D11-B12F-142592220710}">
+									<Language>SFX</Language>
+									<AudioFile>ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="583159707"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon" ID="{1F94AFD0-FDBF-4D11-B12F-142592220710}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Jump" ID="{AA686722-7C19-4611-9A30-80B396BDDD3A}" ShortID="342615263">
 							<PropertyList>
@@ -242,6 +289,89 @@
 					</ReferenceList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<ActorMixer Name="Monster" ID="{8651E337-2E5C-42A7-84F8-CF8150B5F38E}" ShortID="10119368">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mon1_Att" ID="{693F2B9F-DE85-430C-B229-BD7F7D0C909D}" ShortID="892294226">
+							<Comment>프레첼 어택
+</Comment>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Mon1_Die" ID="{C9C89830-9B98-4E21-A6CE-2AB2BFC72AEC}" ShortID="835066301">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Mon2_Att" ID="{269FA231-7330-4C13-9D1D-3013DAE59AE2}" ShortID="533865224">
+							<Comment>사탕이 어택
+</Comment>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Mon2_Die" ID="{DEB7F5FF-6859-4469-9034-6098DC4E5EC9}" ShortID="458299828">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Mon3_Att" ID="{18992205-4D3A-44E9-B6DA-D82317E788CE}" ShortID="375714533">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Mon3_Die" ID="{1DD0983E-0069-4072-A807-D148379DAF60}" ShortID="365213035">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

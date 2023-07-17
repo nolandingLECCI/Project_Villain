@@ -816,6 +816,7 @@ GameObject:
   - component: {fileID: 2435676614393931577}
   - component: {fileID: 3448349301973570697}
   - component: {fileID: 5688343722699193843}
+  - component: {fileID: 2060636376595197780}
   m_Layer: 10
   m_Name: CH1_monster1
   m_TagString: Enemy
@@ -953,7 +954,8 @@ MonoBehaviour:
   knockBackForce: 0
   coolTime: 2.5
   calcCoolTime: 0
-  effectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  castEffect: {fileID: 0}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
@@ -979,6 +981,7 @@ MonoBehaviour:
   allignPoint: 0
   MyGroup: {fileID: 0}
   hitEffectPoint: {fileID: 5721269525873652990}
+  profileSprite: {fileID: 0}
   strength: 10
   maxHealth: 100
   health: 0
@@ -1016,6 +1019,18 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
+--- !u!114 &2060636376595197780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4076380445180593046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f4475af87610428670c1517c8736a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4286452108891429183
 GameObject:
   m_ObjectHideFlags: 0
