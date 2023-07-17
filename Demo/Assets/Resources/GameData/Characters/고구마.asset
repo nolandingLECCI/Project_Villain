@@ -17,10 +17,10 @@ MonoBehaviour:
   characterProfile: {fileID: 0}
   characterVisualsPrefab: {fileID: 0}
   rarity: 0
-  Vil_Synergy_1: 0
-  Vil_Synergy_2: 0
-  skill: {fileID: 0}
-  weapon: 0
+  Vil_Synergy:
+  - {fileID: 11400000, guid: 5869ddf5a0425994fb1e1d979beaf96f, type: 2}
+  skill: {fileID: 11400000, guid: dec67eca9cfc1454aafd7eaed43df453, type: 2}
+  weapon: 3
   Vil_Demon: 0
   Range_Normal: 4
   Range_Escape: 2
@@ -29,4 +29,4 @@ MonoBehaviour:
   Vil_Hp_Max: 300
   Vil_Str_Min: 20
   Vil_Str_Max: 50
-  Vil_Loyalty: 0
+  Vil_Loyalty: 50

@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b931d66f00f42334fb1e23d2cdc8029a, type: 3}
   m_Name: "\uCE58\uCEE4\uB9AC"
   m_EditorClassIdentifier: 
-  id: 0
-  Vil_Name: 
+  id: 4
+  Vil_Name: "\uCE58\uCEE4\uB9AC"
   characterProfile: {fileID: 0}
   characterVisualsPrefab: {fileID: 0}
   rarity: 0
-  Vil_Synergy_1: 0
-  Vil_Synergy_2: 0
-  skill: {fileID: 0}
-  weapon: 0
+  Vil_Synergy:
+  - {fileID: 11400000, guid: 5869ddf5a0425994fb1e1d979beaf96f, type: 2}
+  skill: {fileID: 11400000, guid: dec67eca9cfc1454aafd7eaed43df453, type: 2}
+  weapon: 3
   Vil_Demon: 0
-  Range_Normal: 0
-  Range_Escape: 0
-  Vil_Cooltime: 0
-  Vil_Hp_Min: 0
-  Vil_Hp_Max: 0
-  Vil_Str_Min: 0
-  Vil_Str_Max: 0
-  Vil_Loyalty: 0
+  Range_Normal: 6
+  Range_Escape: 3
+  Vil_Cooltime: 10
+  Vil_Hp_Min: 200
+  Vil_Hp_Max: 300
+  Vil_Str_Min: 40
+  Vil_Str_Max: 100
+  Vil_Loyalty: 50

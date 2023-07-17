@@ -2946,12 +2946,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8429613580980529680, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8429613580980529681, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: villianDB
       value: 
       objectReference: {fileID: 11400000, guid: f7f9f3a6f56217b43a090ee14c77b0df, type: 2}
+    - target: {fileID: 8429613580980529681, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
+      propertyPath: SkillGO.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: dec67eca9cfc1454aafd7eaed43df453, type: 2}
     - target: {fileID: 8429613580980529694, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: m_RootOrder
       value: 10

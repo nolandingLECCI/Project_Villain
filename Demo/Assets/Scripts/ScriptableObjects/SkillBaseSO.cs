@@ -6,6 +6,10 @@ using UnityEngine;
 public class SkillBaseSO : ScriptableObject
 {
     public string Skill_Name;
+    public string Skill_Bio;
+    public float Skill_Cooldown;
+
+    public GameObject Skill_Effect;
     public Sprite SKill_Icon;
 }   
 

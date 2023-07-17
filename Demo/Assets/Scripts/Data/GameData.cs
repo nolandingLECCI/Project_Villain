@@ -1,11 +1,20 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Collections;
+using System.Collections.Generic;
 
 [SerializeField]
 public class GameData
 {
-    public uint gold = 500;
-    public uint darkMatter = 50;
+    //메뉴바 표시 항목
+    public uint gold;
+    public uint darkMatter;
+    public uint d_day;
+
+    //캐릭터 풀
+    public List<CharacterData> CharaData;
+    //캐릭터 수용치
+    public uint CharaCap;
 
     public string username;
     public string theme;
@@ -18,6 +27,10 @@ public class GameData
     {
         this.gold = 500;
         this.darkMatter = 50;
+        this.d_day = 99;
+
+        this.CharaData = new List<CharacterData>();
+        this.CharaCap  = 20;
         
         this.username = "빌런";
         this.theme = "Default";

@@ -10,22 +10,13 @@ public enum Rarity
     Epic,
     Demon,
 }
-// public enum Synergy
-// {
-//     None,
-//     Ace,
-//     Interest,
-//     Newbie,
-//     NightVil,
-//     Saibi,
-//     Vampire,
-// }
 public enum Weapon
 {
     LongSword,
     Dagger,
     Spear,
     Gun,
+    Club,
 }
 
 

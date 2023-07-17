@@ -73,3 +73,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e259b3a30bf6a4498b098552ebe7424, type: 2}
   - {fileID: 11400000, guid: 250ccb2b3d45d80499de346cab108e07, type: 2}
   - {fileID: 11400000, guid: f3b71ab664f07d744bd0bdb756ad706a, type: 2}
+  Effects:
+  - {fileID: 3121847219011696124, guid: f5fbdd99fba33c94cba4f486a2490313, type: 3}
+  - {fileID: 7708122250576129154, guid: 8593165f59d59814a9635da1c4e139c6, type: 3}
+  - {fileID: 7537630431865293994, guid: 784f90767fad69c41bdac946d0b46e90, type: 3}

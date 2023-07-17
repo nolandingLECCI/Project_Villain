@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class CharacterData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //기본 캐릭터 데이터
+    [SerializeField] CharacterBaseSO m_CharacterBaseData;
+    //강화 관련 변수
+    [SerializeField] uint m_TimeEducated = 0;
+    [SerializeField] uint m_TimeBrainwashed = 0;
+    [SerializeField] bool m_canPromote = true;
+    [SerializeField] uint m_TimeGot = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    GameObject m_PreviewInstance;
+
+    public GameObject PreviewInstance { get { return m_PreviewInstance; } set { m_PreviewInstance = value; } }
+    public CharacterBaseSO CharacterBaseData => m_CharacterBaseData;
+
+
 }

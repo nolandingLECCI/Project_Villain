@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class DBUpdate : MonoBehaviour
 {
-    public VillianDB villianDB;
+    public DB villianDB;
     public List<CharacterBaseSO> CharaGO;
     public List<SkillBaseSO> SkillGO;
     public List<SynergyBaseSO> SynergyGo;
-
+    public List<GameObject> Effects;
 
     void OnEnable()
     {
@@ -16,7 +17,28 @@ public class DBUpdate : MonoBehaviour
     }
     private void UpdateDB()
     {
+        UpdateSkill();
         UpdateChara();
+    }
+    private void UpdateSkill()
+    {
+        int i = 0;
+        foreach(SkillBaseSO GO in SkillGO)
+        {
+            GO.Skill_Name = villianDB.Skill[i].Skill_Name;
+            GO.Skill_Bio = villianDB.Skill[i].Skill_Bio;
+            GO.Skill_Cooldown = villianDB.Skill[i].Skill_Cooldown;
+
+            foreach(GameObject fx in Effects)
+            {
+                if(fx.name == villianDB.Skill[i].Skill_Effect)
+                {
+                    GO.Skill_Effect = fx;;
+                    break;
+                }
+            }
+            i++;
+        }
     }
     private void UpdateChara()
     {
@@ -55,14 +77,22 @@ public class DBUpdate : MonoBehaviour
             foreach(SkillBaseSO s in SkillGO)
             {
                 if(villianDB.Villian[i].Vil_Skill == s.Skill_Name)
+                {
                     GO.skill = s;
+                    break;
+                }
+                    
             }
             ////////////////// Set Synergy /////////////////////
             GO.Vil_Synergy = new List<SynergyBaseSO>();
             foreach(SynergyBaseSO s in SynergyGo)
             {
                 if(villianDB.Villian[i].Vil_Synergy_1 == s.Synergy_Name || villianDB.Villian[i].Vil_Synergy_2 == s.Synergy_Name)
+                {
                     GO.Vil_Synergy.Add(s);
+                    break;
+                }
+                    
             }
             i++;
         }

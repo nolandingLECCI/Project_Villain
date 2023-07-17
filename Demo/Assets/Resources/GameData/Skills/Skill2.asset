@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Skill2
   m_EditorClassIdentifier: 
   Skill_Name: Skill2
+  Skill_Bio: "\uCC0C\uB978\uB2E4"
+  Skill_Cooldown: 0
+  Skill_Effect: {fileID: 7708122250576129154, guid: 8593165f59d59814a9635da1c4e139c6, type: 3}
   SKill_Icon: {fileID: 0}

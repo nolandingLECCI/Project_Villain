@@ -269,3 +269,13 @@ MonoBehaviour:
     Vil_Str_Max: 600
     Vil_Demon: 0
     Vil_Loyalty: 50
+  Skill:
+  - Skill_Name: Skill1
+    Skill_Bio: "\uD718\uB450\uB978\uB2E4"
+    Skill_Effect: Destruction_air_normal
+  - Skill_Name: Skill2
+    Skill_Bio: "\uCC0C\uB978\uB2E4"
+    Skill_Effect: MuzzleFlash_3_purple
+  - Skill_Name: Skill3
+    Skill_Bio: "\uC544\uD504\uB2F9"
+    Skill_Effect: Electricity_Splash_Center

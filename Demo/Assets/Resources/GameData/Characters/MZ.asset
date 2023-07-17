@@ -19,7 +19,6 @@ MonoBehaviour:
   rarity: 2
   Vil_Synergy:
   - {fileID: 11400000, guid: a0dbf00b3edb44448a19e70de0d1fd56, type: 2}
-  - {fileID: 11400000, guid: a0dbf00b3edb44448a19e70de0d1fd56, type: 2}
   skill: {fileID: 11400000, guid: 02d87a2d9f9868241b9392edd58ba4fd, type: 2}
   weapon: 3
   Vil_Demon: 0
