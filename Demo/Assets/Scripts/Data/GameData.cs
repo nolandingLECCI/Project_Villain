@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
 
-[SerializeField]
+[System.Serializable]
 public class GameData
 {
     //메뉴바 표시 항목

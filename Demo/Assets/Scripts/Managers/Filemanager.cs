@@ -1,18 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.IO;
 
-public class Filemanager : MonoBehaviour
+public class FileManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static bool WriteToFile(string fileName, string fileContents)
+	{
+		var fullPath = Path.Combine(Application.persistentDataPath, fileName);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		try
+		{
+			File.WriteAllText(fullPath, fileContents);
+			return true;
+		}
+		catch (Exception e)
+		{
+			Debug.LogError($"Failed to write to {fullPath} with exception {e}");
+			return false;
+		}
+	}
+
+	public static bool LoadFromFile(string fileName, out string result)
+	{
+		var fullPath = Path.Combine(Application.persistentDataPath, fileName);
+		if (!File.Exists(fullPath))
+		{
+			File.WriteAllText(fullPath, "");
+		}
+		try
+		{
+			result = File.ReadAllText(fullPath);
+			return true;
+		}
+		catch (Exception e)
+		{
+			Debug.LogError($"Failed to read from {fullPath} with exception {e}");
+			result = "";
+			return false;
+		}
+	}
 }

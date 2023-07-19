@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameDataManager : MonoBehaviour
 {
     // public static event Action<GameData> PotionsUpdated;
-    // public static event Action<GameData> FundsUpdated;
+    public static event Action<GameData> FundsUpdated;
     // public static event Action<ShopItemType, uint, Vector2> RewardProcessed;
     // public static event Action<ShopItemSO, Vector2> TransactionProcessed;
     // public static event Action<ShopItemSO> TransactionFailed;
@@ -22,9 +22,9 @@ public class GameDataManager : MonoBehaviour
     SaveManager m_SaveManager;
     bool m_IsGameDataInitialized;
 
-    // void OnEnable()
-    // {
-    //     HomeScreen.HomeScreenShown += OnHomeScreenShown;
+    void OnEnable()
+    {
+        //HomeScreen.HomeScreenShown += OnHomeScreenShown;
 
     //     ShopController.ShopItemPurchasing += OnPurchaseItem;
 
@@ -34,11 +34,11 @@ public class GameDataManager : MonoBehaviour
     //     CharScreenController.CharacterShown += OnCharacterShown;
     //     CharScreenController.LevelPotionUsed += OnLevelPotionUsed;
     //     SettingsScreen.ResetPlayerFunds += OnResetFunds;
-    // }
+    }
 
-    // void OnDisable()
-    // {
-    //     HomeScreen.HomeScreenShown -= OnHomeScreenShown;
+    void OnDisable()
+    {
+        //HomeScreen.HomeScreenShown -= OnHomeScreenShown;
 
     //     ShopController.ShopItemPurchasing -= OnPurchaseItem;
 
@@ -49,7 +49,7 @@ public class GameDataManager : MonoBehaviour
     //     CharScreenController.LevelPotionUsed -= OnLevelPotionUsed;
 
     //     SettingsScreen.ResetPlayerFunds -= OnResetFunds;
-    // }
+    }
     void Awake()
     {
         m_SaveManager = GetComponent<SaveManager>();
@@ -71,7 +71,7 @@ public class GameDataManager : MonoBehaviour
     void UpdateFunds()
     {
         if (m_GameData != null)
-            return;//FundsUpdated?.Invoke(m_GameData);
+            FundsUpdated?.Invoke(m_GameData);
     }
     // update values from SettingsScreen
     void OnSettingsUpdated(GameData gameData)
@@ -87,9 +87,10 @@ public class GameDataManager : MonoBehaviour
     }
     void OnResetFunds()
     {
-            m_GameData.gold = 0;
-            m_GameData.darkMatter = 0;
-            UpdateFunds();
+        m_GameData.gold = 0;
+        m_GameData.darkMatter = 0;
+        m_GameData.d_day = 99;
+        UpdateFunds();
     }
 
 }

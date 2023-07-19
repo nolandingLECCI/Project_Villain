@@ -9,15 +9,19 @@ public class SaveManager : MonoBehaviour
 {
     GameDataManager m_GameDataManager;
     [SerializeField] string m_SaveFilename = "savegame.dat";
+    [Tooltip("Show Debug messages.")]
+    [SerializeField] bool m_DebugValues;
+
+    public static event Action<GameData> GameDataLoaded;
 
     void Awake()
     {
         m_GameDataManager = GetComponent<GameDataManager>();
     }
     void OnApplicationQuit()
-        {
-            SaveGame();
-        }
+    {
+        SaveGame();
+    }
 
         // void OnEnable()
         // {
@@ -45,41 +49,41 @@ public class SaveManager : MonoBehaviour
         {
             // load saved data from FileDataHandler
 
-            // if (m_GameDataManager.GameData == null)
-            // {
-            //     if (m_DebugValues)
-            //     {
-            //         Debug.Log("GAME DATA MANAGER LoadGame: Initializing game data.");
-            //     }
+            if (m_GameDataManager.GameData == null)
+            {
+                if (m_DebugValues)
+                {
+                    Debug.Log("GAME DATA MANAGER LoadGame: Initializing game data.");
+                }
                 
-            //     m_GameDataManager.GameData = NewGame();
-            // }
-            // else if (FileManager.LoadFromFile(m_SaveFilename, out var jsonString))
-            // {
-            //     m_GameDataManager.GameData.LoadJson(jsonString);
+                m_GameDataManager.GameData = NewGame();
+            }
+            else if (FileManager.LoadFromFile(m_SaveFilename, out var jsonString))
+            {
+                m_GameDataManager.GameData.LoadJson(jsonString);
 
-            //     if (m_DebugValues)
-            //     {
-            //         Debug.Log("SaveManager.LoadGame: " + m_SaveFilename + " json string: " + jsonString);
-            //     }
-            // }
+                if (m_DebugValues)
+                {
+                    Debug.Log("SaveManager.LoadGame: " + m_SaveFilename + " json string: " + jsonString);
+                }
+            }
 
             // notify other game objects 
-            // if (m_GameDataManager.GameData != null)
-            // {
-            //     GameDataLoaded?.Invoke(m_GameDataManager.GameData);
-            // }
+            if (m_GameDataManager.GameData != null)
+            {
+                GameDataLoaded?.Invoke(m_GameDataManager.GameData);
+            }
         }
 
         public void SaveGame()
         {
             string jsonFile = m_GameDataManager.GameData.ToJson();
 
-            // save to disk with FileDataHandler
-            // if (FileManager.WriteToFile(m_SaveFilename, jsonFile) && m_DebugValues)
-            // {
-            //     Debug.Log("SaveManager.SaveGame: " + m_SaveFilename + " json string: " + jsonFile);
-            // }
+            //save to disk with FileDataHandler
+            if (FileManager.WriteToFile(m_SaveFilename, jsonFile) && m_DebugValues)
+            {
+                Debug.Log("SaveManager.SaveGame: " + m_SaveFilename + " json string: " + jsonFile);
+            }
         }
 
         // void OnSettingsShown()

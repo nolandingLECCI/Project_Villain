@@ -19,6 +19,11 @@ using System;
         [SerializeField] QuestScreen m_QuestModalScreen;
         [SerializeField] MissionScreen m_MissionModalScreen;
 
+        [Header("Toolbars")]
+        [Tooltip("Toolbars remain active at all times unless explicitly disabled.")]
+        [SerializeField] Topbar m_Topbar;
+        
+
         List<MenuScreen> m_AllModalScreens = new List<MenuScreen>();
 
         UIDocument m_MainMenuDocument;
@@ -29,6 +34,7 @@ using System;
             m_MainMenuDocument = GetComponent<UIDocument>();
             SetupModalScreens();
             ShowHomeScreen();
+            //ShowEducationScreen();
         }
 
         void Start()

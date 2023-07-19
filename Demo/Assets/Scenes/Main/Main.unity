@@ -2119,6 +2119,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370964142}
   m_CullTransparentMesh: 1
+--- !u!1 &1504082824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504082825}
+  - component: {fileID: 1504082826}
+  m_Layer: 5
+  m_Name: Topbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504082825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504082824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674656421}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504082826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504082824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d68e72730be0b946b0cd098b28ff842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ScreenName: Topbar
+  m_MainMenuUIManager: {fileID: 1674656422}
+  m_Document: {fileID: 1674656420}
 --- !u!1 &1547817308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,6 +2295,7 @@ Transform:
   - {fileID: 1847033546}
   - {fileID: 1086245808}
   - {fileID: 1333897226}
+  - {fileID: 1504082825}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2270,6 +2318,7 @@ MonoBehaviour:
   m_EmployModalScreen: {fileID: 1847033547}
   m_QuestModalScreen: {fileID: 1086245809}
   m_MissionModalScreen: {fileID: 1333897227}
+  m_Topbar: {fileID: 1504082826}
 --- !u!1 &1748447047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,6 +2929,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7142543332485256784, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_DebugValues
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142543332485256784, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_SaveFilename
       value: save.dat
       objectReference: {fileID: 0}
@@ -2946,6 +2999,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8429613580980529680, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429613580980529681, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8429613580980529681, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
@@ -2955,7 +3012,7 @@ PrefabInstance:
     - target: {fileID: 8429613580980529681, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: SkillGO.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: dec67eca9cfc1454aafd7eaed43df453, type: 2}
+      objectReference: {fileID: 11400000, guid: 09f4fbb323cd1ec40a52025889ba32be, type: 2}
     - target: {fileID: 8429613580980529694, guid: 0b02881c1f871d940a8b8e2405e39a8a, type: 3}
       propertyPath: m_RootOrder
       value: 10
