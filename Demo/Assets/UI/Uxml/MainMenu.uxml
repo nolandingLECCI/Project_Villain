@@ -6,12 +6,15 @@
     <ui:Template name="ShopScreen" src="project://database/Assets/UI/Uxml/ShopScreen.uxml?fileID=9197481963319205126&amp;guid=505bca970fd9a16428c02a06ae288d39&amp;type=3#ShopScreen" />
     <ui:Template name="VilScreen" src="project://database/Assets/UI/Uxml/VilScreen.uxml?fileID=9197481963319205126&amp;guid=bcbe670b4380f854fb71085be2d8049d&amp;type=3#VilScreen" />
     <ui:Template name="QuestScreen" src="project://database/Assets/UI/Uxml/QuestScreen.uxml?fileID=9197481963319205126&amp;guid=26dbc5287a3c5d842ba15e12006011d0&amp;type=3#QuestScreen" />
+    <ui:Template name="Topbar" src="project://database/Assets/UI/Uxml/Topbar.uxml?fileID=9197481963319205126&amp;guid=b56a6a6578596324cbdae87643f024b8&amp;type=3#Topbar" />
     <ui:VisualElement name="background-cursor" style="position: absolute; flex-grow: 1; width: 100%; height: 100%;" />
     <ui:Instance template="HomeScreen" name="HomeScreen" style="height: 100%; position: absolute; left: 0; top: 0; width: 100%; display: flex;" />
-    <ui:Instance template="EmployScreen" name="EmployScreen" style="height: 100%; width: 100%; align-items: center; justify-content: center; display: none;" />
-    <ui:Instance template="EducationScreen" name="EducationScreen" style="width: 100%; height: 100%; display: none;" />
-    <ui:Instance template="MisssionScreen" name="MissionScreen" style="width: 100%; height: 100%; display: none;" />
-    <ui:Instance template="ShopScreen" name="ShopScreen" style="width: 100%; height: 100%; display: none;" />
-    <ui:Instance template="VilScreen" name="VilScreen" style="width: 100%; height: 100%; display: none;" />
-    <ui:Instance template="QuestScreen" name="QuestScreen" style="width: 100%; height: 100%; display: none;" />
+    <ui:Instance template="EmployScreen" name="EmployScreen" style="height: 100%; width: 100%; align-items: center; justify-content: center; display: none; position: absolute;" />
+    <ui:Instance template="EducationScreen" name="EducationScreen" style="width: 100%; height: 100%; display: none; position: absolute;" />
+    <ui:Instance template="MisssionScreen" name="MissionScreen" style="width: 100%; height: 100%; display: none; position: absolute;" />
+    <ui:Instance template="ShopScreen" name="ShopScreen" style="width: 100%; height: 100%; display: none; position: absolute;" />
+    <ui:Instance template="VilScreen" name="VilScreen" style="width: 100%; height: 100%; display: none; position: absolute;" />
+    <ui:Instance template="QuestScreen" name="QuestScreen" style="width: 100%; height: 100%; display: none; position: absolute;" />
+    <ui:Instance template="Topbar" name="Topbar" style="top: 31%; position: absolute; align-items: auto; left: auto; width: 100%; height: 100%;" />
+    <ui:VisualElement picking-mode="Ignore" name="main-menu-screen-fader" />
 </ui:UXML>

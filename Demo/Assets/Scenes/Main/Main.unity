@@ -2130,7 +2130,7 @@ GameObject:
   - component: {fileID: 1504082825}
   - component: {fileID: 1504082826}
   m_Layer: 5
-  m_Name: Topbar
+  m_Name: OptionsBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,10 +2160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504082824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d68e72730be0b946b0cd098b28ff842, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d0250ed28e7e5449ad042481525d0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ScreenName: Topbar
+  m_ScreenName: OptionsBar
   m_MainMenuUIManager: {fileID: 1674656422}
   m_Document: {fileID: 1674656420}
 --- !u!1 &1547817308
@@ -2318,7 +2318,7 @@ MonoBehaviour:
   m_EmployModalScreen: {fileID: 1847033547}
   m_QuestModalScreen: {fileID: 1086245809}
   m_MissionModalScreen: {fileID: 1333897227}
-  m_Topbar: {fileID: 1504082826}
+  m_OptionsBar: {fileID: 1504082826}
 --- !u!1 &1748447047
 GameObject:
   m_ObjectHideFlags: 0

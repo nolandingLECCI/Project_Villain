@@ -49,32 +49,38 @@ public class HomeScreen : MenuScreen
         m_MissionScreenMenuButton?.RegisterCallback<ClickEvent>(ShowMissionScreen);
 
     }
-
+    ////////////////////// Buttons /////////////////////////////////////////
+    // Shop button
     void ShowShopScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowShopScreen();
     }
+    // Villian button
     void ShowVilScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowVilScreen();
     }
+    // Education button
     void ShowEducationScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowEducationScreen();
     }
+    // Employ button
     void ShowEmployScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowEmployScreen();
     }
+    // Quest button
     void ShowQuestScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowQuestScreen();
     }
+    //Mission button
     void ShowMissionScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowMissionScreen();
     }
-
+    /////////////////////////////////////////////////////
     public override void ShowScreen()
     {
         base.ShowScreen();

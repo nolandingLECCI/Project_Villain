@@ -21,7 +21,7 @@ using System;
 
         [Header("Toolbars")]
         [Tooltip("Toolbars remain active at all times unless explicitly disabled.")]
-        [SerializeField] Topbar m_Topbar;
+        [SerializeField] OptionsBar m_OptionsBar;
         
 
         List<MenuScreen> m_AllModalScreens = new List<MenuScreen>();
@@ -34,7 +34,6 @@ using System;
             m_MainMenuDocument = GetComponent<UIDocument>();
             SetupModalScreens();
             ShowHomeScreen();
-            //ShowEducationScreen();
         }
 
         void Start()
@@ -87,6 +86,7 @@ using System;
         public void ShowHomeScreen()
         {
             ShowModalScreen(m_HomeModalScreen);
+            //m_Topbar.OnOffTopbar(true);
         }
 
         public void ShowShopScreen()
