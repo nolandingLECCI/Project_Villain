@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class Bullet : MonoBehaviour
 {
@@ -38,7 +39,14 @@ public class Bullet : MonoBehaviour
 
             if (shooter != null && shooter.isVampire) // 캐릭터가 Null이 아니며, Vampire인 경우
             {
-                shooter.health += (int)(damage * 0.2f); // 가한 데미지의 20퍼센트만큼씩 회복
+                if (shooter.health + (int)(damage * 0.2f) >= shooter.maxHealth)
+                {
+                    shooter.health = shooter.maxHealth;
+                }
+                else
+                {
+                    shooter.health += (int)(damage * 0.2f); // 가한 데미지의 20퍼센트만큼씩 회복
+                }
             }
         }
 

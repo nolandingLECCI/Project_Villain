@@ -1226,6 +1226,7 @@ Transform:
   - {fileID: 8596664710042722388}
   - {fileID: 188802972}
   - {fileID: 492144154}
+  - {fileID: 4156458333346701087}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1296,6 +1297,8 @@ MonoBehaviour:
   allignPoint: 0
   MyGroup: {fileID: 0}
   hitEffectPoint: {fileID: 492144154}
+  damageText: {fileID: 2824637420208284667, guid: cc9b0709172fc7e4e8c80274e31ecedf, type: 3}
+  damageTextPoint: {fileID: 4156458333346701087}
   profileSprite: {fileID: 0}
   strength: 10
   maxHealth: 200
@@ -1312,10 +1315,6 @@ MonoBehaviour:
   fallBackDistance: 1.5
   fallBackTime: 1
   projectileTransform: {fileID: 188802972}
-  isJump: 0
-  jumpEnd: {fileID: 0}
-  jumpHeight: 10
-  rigidGravityScale: 5
   attackBehaviours: []
   synergys: []
   healthAdd: 0
@@ -1493,6 +1492,37 @@ Transform:
   - {fileID: 1629186127215866116}
   m_Father: {fileID: 8577126457379754521}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5034840210834725716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4156458333346701087}
+  m_Layer: 0
+  m_Name: DmgTxtPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4156458333346701087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034840210834725716}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.24, y: 7.62, z: 0.044002227}
+  m_LocalScale: {x: 1.4285713, y: 1.4285713, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5913145928680464707}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6043594056677218164
 GameObject:

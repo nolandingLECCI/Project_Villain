@@ -25,7 +25,14 @@ public class RangeAttackBehaviour_Hitscan : AttackBehavior // 원거리 캐릭�
 
         if (character != null && character.isVampire) // 캐릭터가 Null이 아니며, Vampire인 경우
         {
-            character.health += (int)(damage * attackMult * 0.2f); // 가한 데미지의 20퍼센트만큼씩 회복
+            if (character.health + (int)(damage * attackMult * 0.2f) >= character.maxHealth)
+            {
+                character.health = character.maxHealth;
+            }
+            else
+            {
+                character.health += (int)(damage * attackMult * 0.2f); // 가한 데미지의 20퍼센트만큼씩 회복
+            }
         }
 
         calcCoolTime = 0.0f;

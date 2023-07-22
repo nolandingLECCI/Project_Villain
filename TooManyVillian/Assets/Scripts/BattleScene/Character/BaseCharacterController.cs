@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +23,8 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public float allignPoint; // 캐릭터 정렬 시 이동하는 x좌표 위치
     public GroupObject MyGroup; // 캐릭터 자신이 속해있는 그룹
     public Transform hitEffectPoint;
-
+    public TextMeshPro damageText;
+    public Transform damageTextPoint;
     public Image profileSprite;
     public int strength = 10;
     public int maxHealth = 100;
@@ -40,15 +43,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
     public float fallBackTime; // 유닛 실제 도망 최대 시간
     public Transform projectileTransform; // 원거리 유닛 공격 시 발사체의 격발 위치
 
-    public bool isJump;
-    public Transform jumpEnd;
-
-    public float jumpHeight = 100;
-    [SerializeField]
-    float rigidGravityScale = 5;
-
     public List<AttackBehavior> attackBehaviours = new List<AttackBehavior>(); // 가능한 공격 및 스킬을 담은 리스트
-
     public List<SynergyBase> synergys = new List<SynergyBase>(); // 보유한 시너지들을 담은 리스트
     
     public int healthAdd = 0; // 체력 및 보호막 버프 시 더해주는 수치
@@ -110,7 +105,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         stateMachine.AddState(new DeadState());
 
         // 이 부분의 healthAdd는 흰색 체력으로 대신할 예정
-        health = maxHealth + healthAdd;
+        health = maxHealth;
         // 시너지로 인한 버프는 다음과 같이 기본 공격력으로 세팅
         attackDefault = attackDefault * synergyAttackMult;
         InitAttackBehaviour();
@@ -359,10 +354,41 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
         {
             return;
         }
+ 
 
-        health -= (int)(damage * damageDecreaseMult);
+        int randCritical = Random.Range(0, 100);
 
-        if(hittEffectPrefab != null) // 임시로 원거리 캐릭터 공격에만 구현해놨다.
+        if(randCritical < 20 ) // 20퍼센트 확률로 크리티컬 발동  // 그리고 받는 데미지 감소 퍼센트 확인
+        {
+            damage = damage * 2;
+            damage = (int)(damage * damageDecreaseMult);
+            TextMeshPro dmgText = Instantiate(damageText, damageTextPoint.position, Quaternion.identity);
+
+            dmgText.text = damage.ToString();
+            dmgText.color = Color.red;
+
+            Destroy(dmgText, 0.3f);
+        }
+        else
+        {
+            damage = (int)(damage * damageDecreaseMult);
+            TextMeshPro dmgText = Instantiate(damageText, damageTextPoint.position, Quaternion.identity);
+            dmgText.text = damage.ToString();
+
+            Destroy(dmgText, 0.3f);
+        }
+
+        if (healthAdd > 0)
+        {
+            healthAdd -= damage;
+        }
+        else
+        {
+            health -= damage;
+        }
+       
+
+        if (hittEffectPrefab != null) 
         {
             float randPosX = Random.Range(-0.5f, 0.5f);
             float randPosY = Random.Range(-0.5f, 0.5f);
@@ -379,11 +405,11 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
         if (IsAlive)
         {
-      
+            
         }
         else
         {
-
+            health = 0;
             stateMachine.ChangeState<DeadState>();
         }
 
