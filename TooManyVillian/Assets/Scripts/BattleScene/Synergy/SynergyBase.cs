@@ -11,7 +11,7 @@ public abstract class SynergyBase : MonoBehaviour
     public enum ESynergyType
     {
         None,
-        Newbie,
+        Newbie, 
         Saibi,
         NightVil, 
         Vampire, // 뱀파이어인지 아닌지는 isVampire로 BaseCharacterController 쪽에 구현함

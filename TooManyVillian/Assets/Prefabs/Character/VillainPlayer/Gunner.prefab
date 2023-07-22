@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188802971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.94, y: 3.13, z: 0}
+  m_LocalPosition: {x: 1.95, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1182,7 +1182,7 @@ GameObject:
   - component: {fileID: 28312335389245541}
   - component: {fileID: 5155398178844890043}
   - component: {fileID: 7048658067460589853}
-  - component: {fileID: 2595666077746037947}
+  - component: {fileID: 3414029694534271164}
   - component: {fileID: 8701556936055372554}
   - component: {fileID: 6726766201363997020}
   - component: {fileID: 8824843556483028367}
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5db7848906cba84c8d71bd404792e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2595666077746037947
+--- !u!114 &3414029694534271164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4812007348845459744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05fde77bfdccbe74ba53419baaefa522, type: 3}
+  m_Script: {fileID: 11500000, guid: da49bbc98272bf64fb120871d063e4d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   developmentDescription: "\uC6D0\uAC70\uB9AC \uCE90\uB9AD\uD130 \uC77C\uBC18 \uACF5\uACA9\uC785\uB2C8\uB2E4."
@@ -1355,10 +1355,11 @@ MonoBehaviour:
   coolTime: 1
   calcCoolTime: 0
   hitEffectPrefab: {fileID: 2499277236963918256, guid: 5b2189a0bf19c5c478fb8660a514cc46, type: 3}
-  castEffect: {fileID: 0}
+  castEffect: {fileID: 5557425664878321788, guid: f6100d56fb7345b4eb13d22650c0a61e, type: 3}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
+  bullet: {fileID: 3551597606300281390, guid: 97f72a9884aa5d948be402fe10ac691c, type: 3}
   MultNum: 0.8
 --- !u!114 &8701556936055372554
 MonoBehaviour:
@@ -1380,12 +1381,12 @@ MonoBehaviour:
   knockBackForce: 0
   coolTime: 10
   calcCoolTime: 0
-  hitEffectPrefab: {fileID: 2499277236963918256, guid: 5b2189a0bf19c5c478fb8660a514cc46, type: 3}
-  castEffect: {fileID: 0}
+  hitEffectPrefab: {fileID: 2481858765149539425, guid: bb0ae5c2341d1a74893f095104b6de07, type: 3}
+  castEffect: {fileID: 5557425664878321788, guid: f6100d56fb7345b4eb13d22650c0a61e, type: 3}
   targetMask:
     serializedVersion: 2
     m_Bits: 0
-  bullet: {fileID: 8738602517485687338, guid: 7e41e76819d70f3458280a354566c70b, type: 3}
+  bullet: {fileID: 2481858765149539425, guid: bb0ae5c2341d1a74893f095104b6de07, type: 3}
   MultNum: 1.2
 --- !u!95 &6726766201363997020
 Animator:

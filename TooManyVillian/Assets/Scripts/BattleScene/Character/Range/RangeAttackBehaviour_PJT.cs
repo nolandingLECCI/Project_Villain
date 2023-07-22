@@ -15,6 +15,7 @@ public class RangeAttackBehaviour_PJT : AttackBehavior // 원거리 캐릭터 �
         base.Awake();
 
         defaultMult = MultNum;
+
         damage = (int)(damage * defaultMult);
     }
 
@@ -27,6 +28,13 @@ public class RangeAttackBehaviour_PJT : AttackBehavior // 원거리 캐릭터 �
             vec = firePoint.position;
         }
 
+        if(castEffect!= null) 
+        {
+            GameObject shotEffect = Instantiate(castEffect, vec, transform.rotation);
+
+            Destroy(shotEffect, 0.3f);
+        }
+      
         GameObject go = Instantiate(bullet, vec, transform.rotation);
 
         go.GetComponent<Bullet>().shooter = this.GetComponent<BaseCharacterController>();
@@ -35,6 +43,7 @@ public class RangeAttackBehaviour_PJT : AttackBehavior // 원거리 캐릭터 �
         go.GetComponent<Bullet>().SetTarget(targetMask);
 
         calcCoolTime = 0.0f;
+       
     }
     public override void ExecuteParticle(GameObject particle = null, Transform startPoint = null)
     {

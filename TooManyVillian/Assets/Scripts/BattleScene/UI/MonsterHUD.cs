@@ -16,7 +16,6 @@ public class MonsterHUD : MonoBehaviour
     }
     private void LateUpdate()
     {
-       
         float maxHp = monster.maxHealth;
         float curHp = monster.health;
         myImage.fillAmount = Mathf.Lerp(myImage.fillAmount, curHp / maxHp / 1 / 1, Time.deltaTime * 5); // 좀 천천히 줄어들도록 함

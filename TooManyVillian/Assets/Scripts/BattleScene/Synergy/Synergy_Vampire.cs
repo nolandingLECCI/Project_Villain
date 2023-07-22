@@ -11,7 +11,7 @@ public class Synergy_Vampire : SynergyBase
     }
 
     public override void AddSynergyCount()
-    {
+    { 
         mAtivateTime = EActivateTime.Always;
         mType = ESynergyType.Vampire;
         BuffManager.instance.count_Vampire += 1;

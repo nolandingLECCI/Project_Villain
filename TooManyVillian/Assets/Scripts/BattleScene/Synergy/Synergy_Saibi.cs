@@ -11,7 +11,7 @@ public class Synergy_Saibi : SynergyBase
         base.Awake();
         mAtivateTime = EActivateTime.Always;
         mType = ESynergyType.Saibi;
-    }
+    } 
 
     public override void AddSynergyCount()
     {

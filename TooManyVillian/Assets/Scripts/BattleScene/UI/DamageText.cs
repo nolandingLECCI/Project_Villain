@@ -17,6 +17,7 @@ public class DamageText : MonoBehaviour
     {
         float randForce = Random.Range(-1f, 1f);
         rigid.AddForce((Vector2.up * 5f) + (Vector2.right * randForce), ForceMode2D.Impulse);
+
     }
 
 }

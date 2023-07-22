@@ -15,7 +15,6 @@
 
 //    #endregion Variables
 
-    
 
 //    #region Unity Methods
 //    protected override void Start()

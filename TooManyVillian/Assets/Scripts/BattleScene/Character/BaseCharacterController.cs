@@ -367,7 +367,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             dmgText.text = damage.ToString();
             dmgText.color = Color.red;
 
-            Destroy(dmgText, 0.3f);
+            Destroy(dmgText.gameObject, 0.3f);
         }
         else
         {
@@ -375,7 +375,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             TextMeshPro dmgText = Instantiate(damageText, damageTextPoint.position, Quaternion.identity);
             dmgText.text = damage.ToString();
 
-            Destroy(dmgText, 0.3f);
+            Destroy(dmgText.gameObject, 0.3f);
         }
 
         if (healthAdd > 0)

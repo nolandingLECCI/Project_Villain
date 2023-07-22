@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
         {
             //Debug.Log("collision.gameObject.layer : " + collision.gameObject.layer);
 
-            collision.gameObject.GetComponent<IDamageable>()?.TakeDamage(damage, hitFx);
+            collision.gameObject.GetComponent<IDamageable>()?.TakeDamage(damage, hitFx); 
             
             Destroy(this.gameObject);
 
