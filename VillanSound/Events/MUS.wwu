@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="MUS" ID="{2A6588F2-7DC5-4AF2-BACC-D5151CD7FFEF}" OwnerID="{0777222E-0B56-4C20-A59D-2EEABB4A94AE}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Test_BGM_Magye" ID="{A4B7D9D5-1082-42A4-8115-812613624026}">
+				<Event Name="MUS_Magye" ID="{A4B7D9D5-1082-42A4-8115-812613624026}">
 					<ChildrenList>
 						<Action Name="" ID="{94269677-0160-41E6-B9B6-4DAFDCA778A9}" ShortID="89130165">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Test_Main_Theme" ID="{8DEBD1BC-2D9D-4314-A620-11CF99B2971F}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
+									<ObjectRef Name="Magye_Theme" ID="{8DEBD1BC-2D9D-4314-A620-11CF99B2971F}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -20,6 +20,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Amargo" ID="{2F708771-792B-4BDF-960A-3D7A132744FD}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MUS_Terror" ID="{E2C703FE-B833-47B8-83C7-F29C3EDFF95C}">
+					<ChildrenList>
+						<Action Name="" ID="{D9DDF669-CD3F-4BED-93C6-12FEE0FDFEEF}" ShortID="751167944">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mission_Terror" ID="{5E0D8048-4FAC-4FDD-BC17-0223E6AACFCB}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MUS_Kutoroka" ID="{1955A802-6460-4C60-95BA-EC769A9E7964}">
+					<ChildrenList>
+						<Action Name="" ID="{FD21998B-2C3E-491E-9E52-FFB41BD7892F}" ShortID="294127655">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kutoroka" ID="{35839D80-72BD-4289-8AED-B484EA6E9D00}" WorkUnitID="{819CF417-C12B-4013-BBD7-6724A4061776}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

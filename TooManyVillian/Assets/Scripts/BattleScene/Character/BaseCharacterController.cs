@@ -430,6 +430,8 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             foreach(SpriteRenderer sprite in sprites) 
             {
                 sprite.color = Color.red;
+                //피격시 사운드 재생
+                AkSoundEngine.PostEvent("Hit", gameObject);
             }
            
 
@@ -442,8 +444,6 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
 
             yield return new WaitForSeconds(blinkTime);
         }
-
-        AkSoundEngine.PostEvent("Hit",gameObject);
 
     }
 

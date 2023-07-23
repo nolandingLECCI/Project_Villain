@@ -16,32 +16,32 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="4183896881">
+		<SoundBank Id="4056684167" Language="SFX" Hash="19505964">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\SFX\Hit" DurationType="OneShot" DurationMin="0.822841" DurationMax="1.098676">
+				<Event Id="1226245493" Name="Mon_1_1" ObjectPath="\Events\Default Work Unit\SFX\Mon_1_1" DurationType="OneShot" DurationMin="0.506961" DurationMax="0.506961">
 					<IncludedMemoryFiles>
-						<File Id="120839895" Language="SFX">
-							<ShortName>FF_AF_foley_bullet_flyby_indigo.wav</ShortName>
-							<Path>SFX\FF_AF_foley_bullet_flyby_indigo_99E280A3.wem</Path>
-						</File>
-						<File Id="395564050" Language="SFX">
-							<ShortName>FF_AF_foley_groan_male_blue.wav</ShortName>
-							<Path>SFX\FF_AF_foley_groan_male_blue_50C07544.wem</Path>
-						</File>
-						<File Id="736870312" Language="SFX">
-							<ShortName>FF_AF_fx_whoosh_bullet_flyby_turquoise.wav</ShortName>
-							<Path>SFX\FF_AF_fx_whoosh_bullet_flyby_turquoise_A4174281.wem</Path>
+						<File Id="883658904" Language="SFX">
+							<ShortName>TS_FUTURE_fx_one_shot_whip_chase.wav</ShortName>
+							<Path>SFX\TS_FUTURE_fx_one_shot_whip_chase_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\SFX\Jump" DurationType="OneShot" DurationMin="0.218594" DurationMax="0.218594">
+				<Event Id="1226245494" Name="Mon_1_2" ObjectPath="\Events\Default Work Unit\SFX\Mon_1_2" DurationType="OneShot" DurationMin="0.783628" DurationMax="0.783628">
 					<IncludedMemoryFiles>
-						<File Id="987665194" Language="SFX">
-							<ShortName>ESM_Ninja_Jump_2_Airy_Whoosh_Pass_By.wav</ShortName>
-							<Path>SFX\ESM_Ninja_Jump_2_Airy_Whoosh_Pass_By_10C4C929.wem</Path>
+						<File Id="128003867" Language="SFX">
+							<ShortName>ESM_Game_Item_Pick_Up_3_Impact_Electronic_Pick_Up_Sci_Fi.wav</ShortName>
+							<Path>SFX\ESM_Game_Item_Pick_Up_3_Impact_Electronic_Pick_Up_Sci_Fi_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1226245495" Name="Mon_1_3" ObjectPath="\Events\Default Work Unit\SFX\Mon_1_3" DurationType="OneShot" DurationMin="0.891542" DurationMax="0.891542">
+					<IncludedMemoryFiles>
+						<File Id="405925872" Language="SFX">
+							<ShortName>ESM_Hollow_Power_Up_1_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
+							<Path>SFX\ESM_Hollow_Power_Up_1_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,7 +53,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4043457044" Name="Test_BGM_Magye" ObjectPath="\Events\Default Work Unit\MUS\Test_BGM_Magye" DurationType="Infinite">
+				<Event Id="2893004387" Name="MUS_Kutoroka" ObjectPath="\Events\Default Work Unit\MUS\MUS_Kutoroka" DurationType="OneShot" DurationMin="38." DurationMax="38.">
+					<IncludedMemoryFiles>
+						<File Id="618044836" Language="SFX">
+							<ShortName>쿠토로카_연합 버전.wav</ShortName>
+							<Path>SFX\쿠토로카_연합 버전_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4158128212" Name="MUS_Magye" ObjectPath="\Events\Default Work Unit\MUS\MUS_Magye" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="205671149" Language="SFX">
 							<ShortName>BGM_Main_Magyetheme.wav</ShortName>
@@ -61,11 +69,87 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2307877175" Name="UITest" ObjectPath="\Events\Default Work Unit\SFX\UITest" DurationType="OneShot" DurationMin="1.68" DurationMax="1.68">
+				<Event Id="210525899" Name="MUS_Terror" ObjectPath="\Events\Default Work Unit\MUS\MUS_Terror" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="583159707" Language="SFX">
-							<ShortName>ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon.wav</ShortName>
-							<Path>SFX\ESM_Recieve_Message_1_Notification_Synth_Electronic_Particle_Cute_Cartoon_10C4C929.wem</Path>
+						<File Id="910585342" Language="SFX">
+							<ShortName>terror_New.wav</ShortName>
+							<Path>SFX\terror_New_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1294103118" Name="UI_Change" ObjectPath="\Events\Default Work Unit\SFX\UI_Change" DurationType="OneShot" DurationMin="0.270317" DurationMax="0.270317">
+					<IncludedMemoryFiles>
+						<File Id="1021820050" Language="SFX">
+							<ShortName>ESM_Main_Button_Tonal_Classic_Game_Synth_Click.wav</ShortName>
+							<Path>SFX\ESM_Main_Button_Tonal_Classic_Game_Synth_Click_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2563992102" Name="UI_Loading" ObjectPath="\Events\Default Work Unit\SFX\UI_Loading" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="284545888" Language="SFX">
+							<ShortName>ESM_Card_Game_Achievement_Chime_Light_01_Magic_Upgrade_Positive_Enahance_Level_Up.wav</ShortName>
+							<Path>SFX\ESM_Card_Game_Achievement_Chime_Light_01_Magic_Upgrade_Positive_Enahance_Level_Up_10C4C929.wem</Path>
+						</File>
+						<File Id="629730966" Language="SFX">
+							<ShortName>ESM_Level_Up_Sound_FX_Arcade_Casino_Kids_Mobile_App.wav</ShortName>
+							<Path>SFX\ESM_Level_Up_Sound_FX_Arcade_Casino_Kids_Mobile_App_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\SFX\UI_Select" DurationType="OneShot" DurationMin="0.144" DurationMax="0.144">
+					<IncludedMemoryFiles>
+						<File Id="328539730" Language="SFX">
+							<ShortName>ButtonPressType2_HV.111.wav</ShortName>
+							<Path>SFX\ButtonPressType2_HV.111_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4032266626" Name="Uni_Gun" ObjectPath="\Events\Default Work Unit\SFX\Uni_Gun" DurationType="OneShot" DurationMin="1.258667" DurationMax="3.530667">
+					<IncludedMemoryFiles>
+						<File Id="80175734" Language="SFX">
+							<ShortName>GunshotRevolver_BW.57316.wav</ShortName>
+							<Path>SFX\GunshotRevolver_BW.57316_10C4C929.wem</Path>
+						</File>
+						<File Id="326894524" Language="SFX">
+							<ShortName>GunshotPistol_BW.56966.wav</ShortName>
+							<Path>SFX\GunshotPistol_BW.56966_10C4C929.wem</Path>
+						</File>
+						<File Id="491790252" Language="SFX">
+							<ShortName>GunshotRevolver_BW.57314.wav</ShortName>
+							<Path>SFX\GunshotRevolver_BW.57314_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3964023307" Name="Uni_Hit" ObjectPath="\Events\Default Work Unit\SFX\Uni_Hit" DurationType="OneShot" DurationMin="0.822841" DurationMax="1.040987">
+					<IncludedMemoryFiles>
+						<File Id="120839895" Language="SFX">
+							<ShortName>FF_AF_foley_bullet_flyby_indigo.wav</ShortName>
+							<Path>SFX\FF_AF_foley_bullet_flyby_indigo_99E280A3.wem</Path>
+						</File>
+						<File Id="736870312" Language="SFX">
+							<ShortName>FF_AF_fx_whoosh_bullet_flyby_turquoise.wav</ShortName>
+							<Path>SFX\FF_AF_fx_whoosh_bullet_flyby_turquoise_A4174281.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3114676872" Name="Uni_Jump" ObjectPath="\Events\Default Work Unit\SFX\Uni_Jump" DurationType="OneShot" DurationMin="0.218594" DurationMax="0.218594">
+					<IncludedMemoryFiles>
+						<File Id="987665194" Language="SFX">
+							<ShortName>ESM_Ninja_Jump_2_Airy_Whoosh_Pass_By.wav</ShortName>
+							<Path>SFX\ESM_Ninja_Jump_2_Airy_Whoosh_Pass_By_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2065478991" Name="Uni_Knife" ObjectPath="\Events\Default Work Unit\SFX\Uni_Knife" DurationType="OneShot" DurationMin="0.540021" DurationMax="0.597302">
+					<IncludedMemoryFiles>
+						<File Id="133509527" Language="SFX">
+							<ShortName>ESM_Empire_Game_Warfare_Dagger_2_Knife_Weapon_Slash_Attack.wav</ShortName>
+							<Path>SFX\ESM_Empire_Game_Warfare_Dagger_2_Knife_Weapon_Slash_Attack_10C4C929.wem</Path>
+						</File>
+						<File Id="477401204" Language="SFX">
+							<ShortName>ESM_Empire_Game_Warfare_Dagger_1_Knife_Weapon_Slash_Attack.wav</ShortName>
+							<Path>SFX\ESM_Empire_Game_Warfare_Dagger_1_Knife_Weapon_Slash_Attack_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

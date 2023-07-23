@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{819CF417-C12B-4013-BBD7-6724A4061776}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicPlaylistContainer Name="Test_Main_Theme" ID="{8DEBD1BC-2D9D-4314-A620-11CF99B2971F}" ShortID="623191774">
+				<MusicPlaylistContainer Name="Magye_Theme" ID="{8DEBD1BC-2D9D-4314-A620-11CF99B2971F}" ShortID="623191774">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -121,6 +121,9 @@
 					<ObjectLists/>
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{9257A7CD-3CC9-4867-978F-B5CCADFD92BC}" ShortID="119419676">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<MusicPlaylistItem Name="" ID="{66F5C371-5938-49FD-86AA-18F37BA2186B}" ShortID="1023716264">
 									<PropertyList>
@@ -153,6 +156,11 @@
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="150"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -284,6 +292,135 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Kutoroka" ID="{35839D80-72BD-4289-8AED-B484EA6E9D00}" ShortID="734903510">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="쿠토로카_연합 버전" ID="{1AE93C96-1D7C-46CA-AFED-C370A3B46069}" ShortID="891717952">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="38000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="쿠토로카_연합 버전" ID="{D4456F68-D36F-4C95-902A-3CCE7EE09122}" ShortID="796583325">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="쿠토로카_연합 버전" ID="{D0D2ECA0-B589-436C-997C-9B3A549C854C}">
+													<Language>SFX</Language>
+													<AudioFile>쿠토로카_연합 버전.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="618044836"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E1D2A62B-4B80-4BE2-8177-7BFEC7FDD5D8}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{399CCECE-D984-4640-AD67-1CE75E42CC6C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="쿠토로카_연합 버전" ID="{43421AA1-50ED-4EEA-B54F-09040477D086}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="38000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="쿠토로카_연합 버전" ID="{D0D2ECA0-B589-436C-997C-9B3A549C854C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{A486845F-1DCF-47C7-8B1F-B022ECECD9B9}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{E2F3A41A-14E2-4943-8DFC-8922555D544D}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="38000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{D98484B9-577A-44E9-A60F-7CD3DA1D53E9}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{FB836463-ABCD-40CC-A4FE-D61F06C7BB5D}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{9B1E5F58-F20B-429A-85B4-9CCA33090B1F}" ShortID="648331912">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{0F524706-124C-474A-B451-8195D70E13F8}" ShortID="370855544">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="쿠토로카_연합 버전" ID="{1AE93C96-1D7C-46CA-AFED-C370A3B46069}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{786A0659-7568-4CA0-9BCB-7E32451BF63B}">
@@ -300,6 +437,132 @@
 					</TransitionList>
 					<ObjectLists/>
 				</MusicSwitchContainer>
+				<MusicPlaylistContainer Name="Mission_Terror" ID="{5E0D8048-4FAC-4FDD-BC17-0223E6AACFCB}" ShortID="564001158">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="terror_New" ID="{F8104641-50F8-486B-9985-8C9C202C305A}" ShortID="662633315">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="51200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{338DCBD4-0FE8-44AA-96FC-7B4D3D913514}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="terror_New" ID="{A02FE53E-6BE7-498F-A75E-B87CCDB915A2}" ShortID="498389336">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6D59613-D9EF-4411-A8C7-25F9987BFAD4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="terror_New" ID="{1016D3F3-BA6D-4B2C-A5CF-6F6981729E1B}">
+											<Language>SFX</Language>
+											<AudioFile>terror_New.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="910585342"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C13020FE-041E-475C-8858-E5F96DBCBAA7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{65B49D49-FA93-41BF-A9B5-2C8BC9132E26}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="terror_New" ID="{D31EE6C0-1C08-4958-9CD1-18670E06CDF4}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="51200"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="terror_New" ID="{1016D3F3-BA6D-4B2C-A5CF-6F6981729E1B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{A0C7ADB4-045E-43A5-B152-D37820C7A816}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E5230DFC-3295-4A80-8773-6B03DB663F64}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="51200"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{2D8F60CD-BD81-4EB3-A885-3080065CF381}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{FDEEC9EA-6EE7-4D12-B0D6-E9C666E5A391}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{37C8A41B-39A6-425E-B9D6-92E0A240340A}" ShortID="811356569">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{E3F0A0E8-F156-43FB-ACF8-729EA5E0D8C2}" ShortID="1043560027">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="terror_New" ID="{F8104641-50F8-486B-9985-8C9C202C305A}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

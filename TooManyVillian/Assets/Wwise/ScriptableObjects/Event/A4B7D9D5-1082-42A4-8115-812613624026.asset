@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941a018f7f4cd314fb2cf7dac969dea0, type: 3}
   m_Name: A4B7D9D5-1082-42A4-8115-812613624026
   m_EditorClassIdentifier: 
-  objectName: Test_BGM_Magye
-  id: 4043457044
+  objectName: MUS_Magye
+  id: 4158128212
   guid: A4B7D9D5-1082-42A4-8115-812613624026
