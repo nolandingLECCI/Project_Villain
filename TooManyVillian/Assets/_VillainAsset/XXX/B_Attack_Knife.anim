@@ -2343,7 +2343,7 @@ AnimationClip:
   m_Events:
   - time: 0.41666666
     functionName: PlayEvent
-    data: Wep_Kni
+    data: Uni_Knife
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

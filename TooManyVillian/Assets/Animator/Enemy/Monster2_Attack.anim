@@ -3313,7 +3313,7 @@ AnimationClip:
   m_Events:
   - time: 0.43333334
     functionName: PlayEvent
-    data: Mon2_Att
+    data: Mon_1_2
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

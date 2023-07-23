@@ -3676,7 +3676,7 @@ AnimationClip:
     messageOptions: 0
   - time: 0.45
     functionName: PlayEvent
-    data: Wep_Gun
+    data: Uni_Gun
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

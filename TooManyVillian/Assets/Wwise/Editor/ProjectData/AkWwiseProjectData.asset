@@ -226,8 +226,8 @@ MonoBehaviour:
         guid: 27ffd30bc829984b80c72640c67d36e8
       Path: Events\Default Work Unit\SFX\Mon_1_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.506961
+      minDuration: 0.506961
     - name: Mon_1_2
       guid: 8c3a1f9818cc3b4cb846b3f2a7e0d2df
       id: 1226245494
@@ -246,8 +246,8 @@ MonoBehaviour:
         guid: 8c3a1f9818cc3b4cb846b3f2a7e0d2df
       Path: Events\Default Work Unit\SFX\Mon_1_2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.783628
+      minDuration: 0.783628
     - name: Mon_1_3
       guid: 7a3e49339b0a5c4fa4fa7152a8b17892
       id: 1226245495
@@ -266,8 +266,8 @@ MonoBehaviour:
         guid: 7a3e49339b0a5c4fa4fa7152a8b17892
       Path: Events\Default Work Unit\SFX\Mon_1_3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.891542
+      minDuration: 0.891542
     - name: UI_Change
       guid: 046c3c87f133c444b97dd0064ffd428e
       id: 1294103118
@@ -286,8 +286,8 @@ MonoBehaviour:
         guid: 046c3c87f133c444b97dd0064ffd428e
       Path: Events\Default Work Unit\SFX\UI_Change
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.270317
+      minDuration: 0.270317
     - name: UI_Loading
       guid: 4c1a385327d55d41a65b944abc0451a5
       id: 2563992102
@@ -326,8 +326,8 @@ MonoBehaviour:
         guid: a4f2b7bea195724eb7a9b7b9240baf4f
       Path: Events\Default Work Unit\SFX\UI_Select
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.144
+      minDuration: 0.144
     - name: Uni_Gun
       guid: d29d2a44f56d9d4fbda65904bbce7a14
       id: 4032266626
@@ -346,8 +346,8 @@ MonoBehaviour:
         guid: d29d2a44f56d9d4fbda65904bbce7a14
       Path: Events\Default Work Unit\SFX\Uni_Gun
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.530667
+      minDuration: 1.258667
     - name: Uni_Hit
       guid: c30de7f8ef6e28439c4e972eb7408278
       id: 3964023307
@@ -366,8 +366,8 @@ MonoBehaviour:
         guid: c30de7f8ef6e28439c4e972eb7408278
       Path: Events\Default Work Unit\SFX\Uni_Hit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.040987
+      minDuration: 0.822841
     - name: Uni_Jump
       guid: 20bbf58e4c342b43a768129a68cd6e10
       id: 3114676872
@@ -386,8 +386,8 @@ MonoBehaviour:
         guid: 20bbf58e4c342b43a768129a68cd6e10
       Path: Events\Default Work Unit\SFX\Uni_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.218594
+      minDuration: 0.218594
     - name: Uni_Knife
       guid: 71d907ef723ddf45b61a8f286160ef97
       id: 2065478991
@@ -406,8 +406,8 @@ MonoBehaviour:
         guid: 71d907ef723ddf45b61a8f286160ef97
       Path: Events\Default Work Unit\SFX\Uni_Knife
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.597302
+      minDuration: 0.540021
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -465,8 +465,8 @@ MonoBehaviour:
     m_lastTime: -8585115710874775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 020000000300000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
