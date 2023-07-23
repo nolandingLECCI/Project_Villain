@@ -7,7 +7,6 @@ public class OptionsBar : MenuScreen
 {
     //buttons
     const string k_OptionButton = "topbar__option";
-    const string k_HomeButton = "topbar-back_button";
 
     //label
     const string k_GoldCount = "option-bar__gold-count";
@@ -15,24 +14,22 @@ public class OptionsBar : MenuScreen
     const string k_DDCount = "option-bar__DD-count";
 
     const string k_MenuName = "MenuName";
+    //VisualElement
+    const string k_OptionsBar = "options-bar";
 
     //class
-    const string k_TopbarDefaultClass = "topbar--active";
-    const string k_TopbarHomeClass = "topbar";
-
-    const string k_OptionsDefaultClass = "options-bar--default";
-    const string k_OptionsHomeClass = "options-bar--home";
+    const string k_OptionsbarDefaultClass = "options-bar--default";
+    const string k_OptionsbarHomeClass = "options-bar--home";
 
     const float k_LerpTime = 0.6f;
 
-    VisualElement m_OptionButton;
-    VisualElement m_HomeButton;
+    Button m_OptionButton;
+
+    VisualElement m_OptionsBar;
 
     Label m_GoldLabel;
     Label m_DMLabel;
     Label m_DDLabel;
-
-    Label m_MenuName;
 
     private void OnEnable()
     {
@@ -49,34 +46,29 @@ public class OptionsBar : MenuScreen
     {
         base.SetVisualElements();
 
-        m_OptionButton = m_Root.Q(k_OptionButton);
-        m_HomeButton = m_Root.Q(k_HomeButton);
+        m_OptionButton = m_Root.Q<Button>(k_OptionButton);
+
+        m_OptionsBar = m_Root.Q(k_OptionsBar);
 
         m_GoldLabel = m_Root.Q<Label>(k_GoldCount);
         m_DMLabel = m_Root.Q<Label>(k_DMCount);
         m_DDLabel = m_Root.Q<Label>(k_DDCount);
 
-        m_MenuName = m_Root.Q<Label>(k_MenuName);
     }
 
     // set up button click events
     protected override void RegisterButtonCallbacks()
     {
-        //m_OptionButton?.RegisterCallback<ClickEvent>(ShowOptionScreen);
-        m_HomeButton?.RegisterCallback<ClickEvent>(ShowHomeScreen);
+        m_OptionButton?.RegisterCallback<ClickEvent>(ShowSettingScreen);
     }
 
     ///////////////////// Buttons //////////////////////////////
     // setting button
-    // void ShowOptionsScreen(ClickEvent evt)
-    // {
-    //     m_MainMenuUIManager?.ShowSettingsScreen();
-    // }
-    // home button
-    void ShowHomeScreen(ClickEvent evt)
+    void ShowSettingScreen(ClickEvent evt)
     {
-        m_MainMenuUIManager?.ShowHomeScreen();
+        m_MainMenuUIManager?.ShowSettingsScreen();
     }
+    // home button
     ///////////////////// fund //////////////////////////////////////
     public void SetGold(uint gold)
     {
@@ -122,26 +114,18 @@ public class OptionsBar : MenuScreen
         label.text = endValue.ToString();
     }
 
-    public void SetMenuName(string name)
-    {
-        m_MenuName.text = name;
-    }
-
-    public void OnOffTopbar(bool onoff)
+    public void OptionsBarAtHome(bool onoff)
     {
         if(onoff)
         {
-            OnOffElement(m_MenuName, k_TopbarDefaultClass, k_TopbarHomeClass);
+            m_OptionsBar.RemoveFromClassList(k_OptionsbarDefaultClass);
+            m_OptionsBar.AddToClassList(k_OptionsbarHomeClass);
         }
+        else
+        {
+            m_OptionsBar.RemoveFromClassList(k_OptionsbarHomeClass);
+            m_OptionsBar.AddToClassList(k_OptionsbarDefaultClass);
+        }
+    }
         
-    }
-
-    void OnOffElement(VisualElement visualElem, string inactiveClass, string activeClass)
-    {
-        if (visualElem == null)
-            return;
-
-        visualElem.RemoveFromClassList(inactiveClass);
-        visualElem.AddToClassList(activeClass);
-    }
 }

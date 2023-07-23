@@ -1,0 +1,33 @@
+.settings__panel {
+    width: 1110px;
+    height: 740px;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+
+.settings__panel--inactive {
+    opacity: 0.05;
+    width: 1110px;
+    height: 740px;
+    color: rgb(255, 255, 255);
+    scale: 0.8 0.8;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.progress__panel {
+    width: 490px;
+    height: 315px;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+
+.progress__panel--inactive {
+    opacity: 0.05;
+    width: 490px;
+    height: 315px;
+    color: rgb(255, 255, 255);
+    scale: 0.8 0.8;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}

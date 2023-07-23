@@ -9,6 +9,7 @@ public class GameDataManager : MonoBehaviour
 {
     // public static event Action<GameData> PotionsUpdated;
     public static event Action<GameData> FundsUpdated;
+    public static event Action<GameData> PoolUpdated;
     // public static event Action<ShopItemType, uint, Vector2> RewardProcessed;
     // public static event Action<ShopItemSO, Vector2> TransactionProcessed;
     // public static event Action<ShopItemSO> TransactionFailed;
@@ -64,7 +65,7 @@ public class GameDataManager : MonoBehaviour
         m_IsGameDataInitialized = true;
 
         UpdateFunds();
-            
+        UpdatePool();    
     }
 
     // transaction methods 
@@ -72,6 +73,11 @@ public class GameDataManager : MonoBehaviour
     {
         if (m_GameData != null)
             FundsUpdated?.Invoke(m_GameData);
+    }
+    void UpdatePool()
+    {
+        if(m_GameData != null)
+            PoolUpdated?.Invoke(m_GameData);
     }
     // update values from SettingsScreen
     void OnSettingsUpdated(GameData gameData)

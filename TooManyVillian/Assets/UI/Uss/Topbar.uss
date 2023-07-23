@@ -8,14 +8,17 @@
     height: 110px;
     left: auto;
     bottom: auto;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .options-bar--home {
     position: absolute;
-    left: -50%;
+    left: auto;
     align-items: center;
     width: 770px;
     height: 110px;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 48%;
 }

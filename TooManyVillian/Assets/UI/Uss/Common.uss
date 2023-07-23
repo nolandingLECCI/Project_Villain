@@ -29,7 +29,7 @@
 .menu_icon {
     top: 0;
     width: 85px;
-    height: 85px;
+    height: 55px;
     background-color: rgb(255, 255, 255);
     -unity-background-scale-mode: scale-to-fit;
 }
@@ -37,11 +37,11 @@
 .menu_label {
     position: relative;
     bottom: -4%;
-    font-size: 36px;
+    font-size: 24px;
     background-image: url('project://database/Assets/UI/Textures/icon_nametag.png?fileID=2800000&guid=df76c0427f2106341a9f712c475c4b55&type=3#icon_nametag');
-    width: 105px;
+    width: 108px;
     flex-direction: column;
-    flex-basis: auto;
+    flex-basis: 37px;
     flex-grow: 0;
     align-items: auto;
     justify-content: flex-start;
@@ -50,7 +50,7 @@
 .menu__button_home {
     background-color: rgba(255, 255, 255, 0);
     left: 0;
-    flex-basis: 12%;
+    flex-basis: 9%;
     width: 77%;
     justify-content: center;
     align-items: center;
@@ -70,4 +70,17 @@
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
     font-size: 24px;
+}
+
+.panel__active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.panel__inactive {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
 }

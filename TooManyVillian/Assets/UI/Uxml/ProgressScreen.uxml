@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="progress-screen-overlay" style="position: absolute; align-items: center; justify-content: center; width: 100%; height: 100%;">
+        <ui:VisualElement name="progress-screen-background" style="width: 100%; height: 100%; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.24);">
+            <ui:VisualElement name="progress__panel" style="width: 490px; height: 315px; align-items: auto; background-image: url(&apos;project://database/Assets/UI/Textures/Progress_Background.png?fileID=2800000&amp;guid=9cf974a6b1c3d254890220af572a0c29&amp;type=3#Progress_Background&apos;); color: rgb(255, 255, 255);">
+                <ui:VisualElement name="progress-header" style="width: 100%; height: 14%;">
+                    <ui:VisualElement name="progress-header__banner" style="position: absolute; align-items: center; justify-content: flex-start; left: 25%; width: 50%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Textures/Background_header.png?fileID=2800000&amp;guid=906e49b25f6ece041ac4e0af263e5151&amp;type=3#Background_header&apos;); top: 2px;" />
+                    <ui:Label text="확인" display-tooltip-when-elided="true" name="progress__panel-label" picking-mode="Ignore" style="-unity-text-align: middle-center; font-size: 18px; -unity-font-style: normal; top: 10%;" />
+                </ui:VisualElement>
+                <ui:Label text="[]를 진행하시겠습니까?" display-tooltip-when-elided="true" picking-mode="Ignore" name="progress-description" style="-unity-text-align: middle-center; width: 100%; font-size: 24px; top: 6%;" />
+                <ui:VisualElement name="progress-select" style="width: 100%; height: 20%; justify-content: center; flex-direction: row; bottom: 0; position: absolute; align-items: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="progress-no" style="margin-left: 2%; margin-right: 2%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                        <ui:VisualElement name="progress-button_background" style="background-image: url(&apos;project://database/Assets/UI/Textures/Progress_Select.png?fileID=2800000&amp;guid=576556e8e99dd2849a8a54d40809d0fb&amp;type=3#Progress_Select&apos;); width: 168px; height: 40px;" />
+                        <ui:Label text="아니요" display-tooltip-when-elided="true" name="progress-button_label" style="position: absolute; width: 100%; height: 100%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(46, 148, 242); -unity-font-style: bold; font-size: 16px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="progress-yes" style="margin-left: 2%; margin-right: 2%; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                        <ui:VisualElement name="progress-button_background" style="background-image: url(&apos;project://database/Assets/UI/Textures/Progress_Select.png?fileID=2800000&amp;guid=576556e8e99dd2849a8a54d40809d0fb&amp;type=3#Progress_Select&apos;); width: 168px; height: 40px;" />
+                        <ui:Label text="네" display-tooltip-when-elided="true" name="progress-button_label" style="position: absolute; width: 100%; height: 100%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgba(46, 148, 242, 255); -unity-font-style: bold; font-size: 16px;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

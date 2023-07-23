@@ -22,7 +22,11 @@ using System;
         [Header("Toolbars")]
         [Tooltip("Toolbars remain active at all times unless explicitly disabled.")]
         [SerializeField] OptionsBar m_OptionsBar;
+        [SerializeField] TopBar m_TopBar;
         
+        [Header("Full-screen overlays")]
+        [Tooltip("Full-screen overlays block other controls until dismissed.")]
+        [SerializeField] SettingScreen m_SettingScreen;
 
         List<MenuScreen> m_AllModalScreens = new List<MenuScreen>();
 
@@ -86,37 +90,66 @@ using System;
         public void ShowHomeScreen()
         {
             ShowModalScreen(m_HomeModalScreen);
-            //m_Topbar.OnOffTopbar(true);
+            SetToolBar(null);
         }
 
         public void ShowShopScreen()
         {
             ShowModalScreen(m_ShopModalScreen);
+            SetToolBar("상점");
         }
 
         public void ShowVilScreen()
         {
             ShowModalScreen(m_VilModalScreen);
+            SetToolBar("빌런");
         }
        
         public void ShowEducationScreen()
         {
             ShowModalScreen(m_EducationModalScreen);
+            SetToolBar("교육");
         }
 
         public void ShowEmployScreen()
         {
+            m_EmployModalScreen.ShowMainPanel();
             ShowModalScreen(m_EmployModalScreen);
+            SetToolBar("채용");
         }
 
         public void ShowQuestScreen()
         {
             ShowModalScreen(m_QuestModalScreen);
+            SetToolBar("퀘스트");
         }
 
         public void ShowMissionScreen()
         {
             ShowModalScreen(m_MissionModalScreen);
+            SetToolBar("임무");
+        }
+
+        // overlay screen methods
+        public void ShowSettingsScreen()
+        {
+            m_SettingScreen?.ShowScreen();
+        }
+
+        private void SetToolBar(string MenuName)
+        {
+            if(MenuName == null)
+            {
+                m_TopBar?.HideScreen();
+                m_OptionsBar.OptionsBarAtHome(true);
+            }
+            else
+            {
+                m_TopBar.SetMenuName(MenuName);
+                m_TopBar?.ShowScreen();
+                m_OptionsBar.OptionsBarAtHome(false);
+            }
+           
         }
 
     }
