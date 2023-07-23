@@ -431,7 +431,7 @@ public class BaseCharacterController : MonoBehaviour, IAttackable, IDamageable//
             {
                 sprite.color = Color.red;
                 //피격시 사운드 재생
-                AkSoundEngine.PostEvent("Hit", gameObject);
+                AkSoundEngine.PostEvent("Uni_Hit", gameObject);
             }
            
 
