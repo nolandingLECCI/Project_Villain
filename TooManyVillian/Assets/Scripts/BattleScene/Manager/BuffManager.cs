@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BuffManager : MonoBehaviour
 {
+
     public static BuffManager instance; // 싱글톤을 할당할 전역 변수
 
     public int count_Newbie = 0;
@@ -12,6 +13,15 @@ public class BuffManager : MonoBehaviour
     public int count_Vampire = 0;
     public int count_Ace = 0;
     public int count_Interest = 0;
+    public int count_Poly = 0;
+    private bool isPoly1;
+    private bool isPoly2;
+    
+    public int count_Partner = 0;
+    private bool isHalf;
+
+    private float polyCoolTimeMax;
+    private float polycoolTime;
     private void Awake()
     {
 
@@ -25,27 +35,116 @@ public class BuffManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-
+        polyCoolTimeMax = 5f;
     }
 
     private void Update()
     {
+        if(isPoly1)
+        {
+            if(BattleSceneManager.instance.isEngaging) // 교전 중에만
+            {
+                polycoolTime += Time.deltaTime;
 
+                if (polycoolTime > polyCoolTimeMax)
+                {
+                    for (int i = 0; i < BattleSceneManager.instance.playerGroup.characterGroup.Count; i++)
+                    {
+
+                        BattleSceneManager.instance.playerGroup.characterGroup[i].strength += 5;
+
+                        // 각각에게 이펙트 발동
+                    }
+
+                    polycoolTime = 0;
+
+                    
+                }
+                
+            }
+        }
+        else if(isPoly2) 
+        {
+            if (BattleSceneManager.instance.isEngaging) // 교전 중에만
+            {
+                polycoolTime += Time.deltaTime;
+
+                if (polycoolTime > polyCoolTimeMax)
+                {
+                    for (int i = 0; i < BattleSceneManager.instance.playerGroup.characterGroup.Count; i++)
+                    {
+
+                        BattleSceneManager.instance.playerGroup.characterGroup[i].strength += 10;
+
+                        // 각각에게 이펙트 발동
+                    }
+
+                    polycoolTime = 0;
+
+
+                }
+
+            }
+
+        }
+        if(isHalf)
+        {
+            int GroupCount = BattleSceneManager.instance.playerGroup.characterGroup.Count;
+
+            for (int i = 0; i < GroupCount; i++)
+            {
+                BaseCharacterController character = BattleSceneManager.instance.playerGroup.characterGroup[i];
+
+                for (int j = 0; j < character.synergys.Count; j++)
+                {
+                    if (character.synergys[j].mType == SynergyBase.ESynergyType.Partner) 
+                    {
+                        if (character.health <= character.maxHealth) // 반보다 줄어든다면 초기화
+                        {
+                            character.health = character.maxHealth;
+
+                            character.synergyAttackMult *= 1.2f;
+
+                            for (int l = 0; l < character.attackBehaviours.Count; l++)
+                            {
+                                character.attackBehaviours[l].coolTime *= 0.8f; // 각각의 스킬 쿨타임 20퍼 감소
+
+                            }
+                        }
+
+                    }
+
+
+                }
+
+
+            }
+
+            isHalf = false;
+        }
     }
-
 
     public void SynergyCheck()
     {
         Buff_Newbie();
+
         Buff_Saibi();
+
         Buff_NightVil();
+
         Buff_Vampire();
+
         Buff_Ace();
+
         Buff_Interest();
+
+        Buff_Poly();
+
+        Buff_Partner();
     }
 
-
     #region Buff_Synergy
+
     // 뉴비 시너지 버프
     private void Buff_Newbie()
     {
@@ -63,6 +162,7 @@ public class BuffManager : MonoBehaviour
 
         count_Newbie = 0;
     }
+
 
     // 사이비 시너지 버프
     private void Buff_Saibi()
@@ -256,6 +356,48 @@ public class BuffManager : MonoBehaviour
         }
 
         count_Interest = 0;
+    }
+
+    private void Buff_Poly() 
+    {
+       
+
+
+        switch (count_Poly)
+        {
+            case 0:
+                break;
+
+            case 1:
+                isPoly1 = true;
+                break;
+           
+            case 2:
+                isPoly2 = true;
+                break;
+
+            default:
+                break;
+        }
+
+        count_Poly = 0;
+    }
+
+
+    private void Buff_Partner()
+    {
+
+        int GroupCount = BattleSceneManager.instance.playerGroup.characterGroup.Count;
+
+        int Rand = Random.Range(0, 2); // 0과 1을 무작위로 뽑아냄
+        
+        if (count_Partner == 2)
+        {
+            isHalf = true;
+            
+        }
+
+        count_Partner = 0;
     }
 
     #endregion Buff_Synergy

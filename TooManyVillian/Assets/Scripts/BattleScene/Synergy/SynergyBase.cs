@@ -17,7 +17,9 @@ public abstract class SynergyBase : MonoBehaviour
         Vampire, // 뱀파이어인지 아닌지는 isVampire로 BaseCharacterController 쪽에 구현함
         Ace,
         Interest,
-        Wolf
+        Wolf,
+        Poly,
+        Partner
     }
 
 
