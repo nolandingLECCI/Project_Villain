@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22ff378033b9b44aa69652edf7c0e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SaveFilename: savegame.dat
+  m_DebugValues: 0
 --- !u!114 &3604618984879133272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,12 +59,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58efdc94c0e1e5845afe090df454eac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterPool: []
-  gold: 0
-  darkMatter: 0
-  poolSize: 20
-  Quests: []
-  Dday: 0
-  population: 0
-  InitialGold: 0
-  InitialDarkMatter: 0
+  m_GameData:
+    gold: 500
+    darkMatter: 50
+    d_day: 99
+    CharaData: []
+    CharaCap: 20
+    username: "\uBE4C\uB7F0"
+    theme: Default
+    musicVolume: 80
+    sfxVolume: 80
+  m_CharaData: {fileID: 0}
+  m_CharaList: {fileID: 11400000, guid: 6909d4e35b4f87941828ca71ca4ca145, type: 2}

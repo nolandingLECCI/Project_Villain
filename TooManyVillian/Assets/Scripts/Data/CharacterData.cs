@@ -1,21 +1,64 @@
+using UnityEngine;
+using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using static UnityEngine.Random;
 
-public class CharacterData : MonoBehaviour
+[System.Serializable]
+public class CharacterData
 {
     //기본 캐릭터 데이터
-    [SerializeField] CharacterBaseSO m_CharacterBaseData;
+     
+    public uint                    m_id;
+    public string                  m_Vil_Name;
+    public Sprite                  m_characterProfile;
+    public GameObject              m_characterVisualsPrefab;
+
+    public string                  m_rarity;
+    public List<SynergyBaseSO>     m_Vil_Synergy;
+    public SkillBaseSO             m_skill;
+    public string                  m_weapon;
+    public bool                    m_Vil_Demon;
+
+    
+    public uint                    m_Range_Normal;
+    public uint                    m_Range_Escape;
+    public float                   m_Vil_Cooltime;
+    public uint                    m_Vil_Hp;
+    public float                   m_Vil_Hp_Potential;
+    public uint                    m_Vil_Str;
+    public float                   m_Vil_Str_Potential;
+    public uint                    m_Vil_Loyalty;
+
     //강화 관련 변수
-    [SerializeField] uint m_TimeEducated = 0;
-    [SerializeField] uint m_TimeBrainwashed = 0;
-    [SerializeField] bool m_canPromote = true;
-    [SerializeField] uint m_TimeGot = 0;
+    public uint m_TimeEducated;
+    public uint m_TimeBrainwashed;
+    public bool m_canPromote;
 
-    GameObject m_PreviewInstance;
+    public CharacterData()
+    {
+        this.m_id = 999;
+        this.m_Vil_Name = null;
+        this.m_characterProfile = null;
+        this.m_characterVisualsPrefab = null;
 
-    public GameObject PreviewInstance { get { return m_PreviewInstance; } set { m_PreviewInstance = value; } }
-    public CharacterBaseSO CharacterBaseData => m_CharacterBaseData;
+        this.m_rarity = null;
+        this.m_Vil_Synergy = new List<SynergyBaseSO>(2);
+        this.m_skill  = null;
+        this.m_weapon = null;
+        this.m_Vil_Demon = false;
 
+        this.m_Range_Normal = 0;
+        this.m_Range_Escape = 0;
+        this.m_Vil_Cooltime = 0;
+        this.m_Vil_Hp = 0;
+        this.m_Vil_Hp_Potential = 0;
+        this.m_Vil_Str = 0;
+        this.m_Vil_Str_Potential =0;
+        this.m_Vil_Loyalty = 50;
 
+        this.m_TimeEducated = 0;
+        this.m_TimeBrainwashed = 0;
+        this.m_canPromote = true;
+    }
 }

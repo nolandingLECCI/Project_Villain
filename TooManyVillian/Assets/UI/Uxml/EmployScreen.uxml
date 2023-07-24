@@ -77,7 +77,8 @@
         <ui:VisualElement name="employ-screen__pool" style="width: 340px; height: 80px; position: absolute; left: 75%; top: 15%; flex-direction: row; align-items: center; justify-content: center;">
             <ui:VisualElement name="employ-screen__pool-background" style="width: 341px; height: 100%; background-image: url(&apos;project://database/Assets/UI/Textures/default_bar.png?fileID=21300000&amp;guid=053c04f8a3ff2b245bccfa1722daa31c&amp;type=3#default_bar&apos;); flex-direction: row; align-items: center; justify-content: flex-start;" />
             <ui:Label text="채용 가능 인원 :" display-tooltip-when-elided="true" name="employ-screen__pool-text" style="position: absolute; align-items: center; top: 27%; font-size: 25px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/KimjungchulMyungjo-Bold.ttf?fileID=12800000&amp;guid=c0f1cb6342e22af45af1d3eabcde2aa1&amp;type=3#KimjungchulMyungjo-Bold&apos;); -unity-font-style: bold; left: 3%; -unity-text-align: middle-left;" />
-            <ui:Label text="0 /" display-tooltip-when-elided="true" name="employ-screen__pool-count" style="position: absolute; -unity-text-align: middle-right; font-size: 25px; top: 31%; left: auto; right: 20%;" />
+            <ui:Label text="0" display-tooltip-when-elided="true" name="employ-screen__pool-count" style="position: absolute; -unity-text-align: middle-right; font-size: 25px; top: 31%; left: auto; right: 20%;" />
+            <ui:Label text="/" display-tooltip-when-elided="true" name="employ-screen__pool-slash" style="position: absolute; -unity-text-align: middle-right; font-size: 25px; top: 31%; left: auto; right: 16%;" />
             <ui:Label text="20" display-tooltip-when-elided="true" name="employ-screen__pool-max" style="position: absolute; top: 31%; left: auto; font-size: 25px; right: 6%; -unity-text-align: middle-left;" />
         </ui:VisualElement>
     </ui:VisualElement>

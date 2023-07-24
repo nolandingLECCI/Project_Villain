@@ -6,11 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class GatchaRate
 {
-   public string rarity;
-   public Sprite frame;
-
-   [Range(1,100)]
+   public Rarity rarity;
    public int rate;
-
-   public List<CardInfo> reward;
+   public List<CharacterBaseSO> reward;
 }

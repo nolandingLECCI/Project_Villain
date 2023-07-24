@@ -1511,7 +1511,7 @@ GameObject:
   - component: {fileID: 1065914308}
   - component: {fileID: 1065914309}
   m_Layer: 0
-  m_Name: HomeScreenContorller
+  m_Name: HomeScreenController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3026,6 +3026,110 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaData
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[0].rate
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[1].rate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[2].rate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6909d4e35b4f87941828ca71ca4ca145, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: b4bbd3702b0747941a3a9ea461e1caf4, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: f76c36b2026c32343ab5b1c886c3071e, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: f05bada47086f0643b28073ce8145d58, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5559574c0c566384b803484104233588, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: aed6d70e96673df45b12781afa8641fd, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: ce1d15565e1926d40a7eca391f57310f, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: deae39937da17694996aafbf3004daeb, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: fe9fabf264c7496428651116a162287e, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: d0ab7582e02ba4b46ab690a4f9c468d7, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 155e6308f3f9ce342983d0ac300696e6, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: ca04b1a67a149f045a2ee4e29ec5be70, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a83cee05a9d9f44f82b3d200404028b, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: ca4843e4e0df713468c8303ce0f74ad8, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: c5e4e81a060ec0a4da893d2896d2c0a0, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_CharaList.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ab308f312722674cb19f6fd0e4e6b8a, type: 2}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[0].rarity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[1].rarity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: gatcha.Array.data[2].rarity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_GameData.CharaData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7142543332485256784, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_DebugValues
       value: 0

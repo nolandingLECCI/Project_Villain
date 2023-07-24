@@ -6,6 +6,8 @@ using System.Collections;
 
 public class EmployScreen : MenuScreen
 {
+    public static event Action GetRandomCharacter;
+
     //buttons
     const string k_EmployButton = "select-button__Employ";
     const string k_ScoutButton = "select-button__Scout";
@@ -163,6 +165,8 @@ public class EmployScreen : MenuScreen
         m_PoolButton?.RegisterCallback<ClickEvent>(ShowProgressPool);
 
         m_EmployYesButton?.RegisterCallback<ClickEvent>(ShowEmployPanel);
+        m_EmployYesButton?.RegisterCallback<ClickEvent>(GetCharacter);
+
         m_EmployNoButton?.RegisterCallback<ClickEvent>(HideProgressEmploy);
         m_ScoutYesButton?.RegisterCallback<ClickEvent>(ShowScoutPanel);
         m_ScoutNoButton?.RegisterCallback<ClickEvent>(HideProgressScout);
@@ -250,11 +254,9 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ScoutPanel, false);
         ShowVisualElement(m_PoolPanel, false);
     }
-    // public void SetGold(uint gold)
-    // {
-    //     uint startValue = (uint) Int32.Parse(m_GoldLabel.text);
-    //     StartCoroutine(LerpRoutine(m_GoldLabel, startValue, gold, k_LerpTime));
-    // }
-
     
+    void GetCharacter(ClickEvent evt)
+    {
+        GetRandomCharacter?.Invoke();
+    }
 }
