@@ -5281,6 +5281,7 @@ GameObject:
   - component: {fileID: 1092681863}
   - component: {fileID: 1092681862}
   - component: {fileID: 1092681864}
+  - component: {fileID: 1092681865}
   m_Layer: 11
   m_Name: Tile1_S1 (0)
   m_TagString: Floor
@@ -5381,6 +5382,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.98, y: 0.35049963}
   m_EdgeRadius: 0
+--- !u!95 &1092681865
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092681861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7704c9f4ff99b2444a96f6e19c420d6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1098293623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6649492482342368094, guid: d366b7026503efb47a9f3cbd0dbf20ef, type: 3}
@@ -7230,6 +7251,8 @@ MonoBehaviour:
   count_Vampire: 0
   count_Ace: 0
   count_Interest: 0
+  count_Poly: 0
+  count_Partner: 0
 --- !u!4 &1466603826
 Transform:
   m_ObjectHideFlags: 0
@@ -7340,7 +7363,7 @@ Animator:
   m_GameObject: {fileID: 1467827246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8546585ac525b043b94c4eb10491348, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36eb2e5abf14c37418af49c88870cffb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
