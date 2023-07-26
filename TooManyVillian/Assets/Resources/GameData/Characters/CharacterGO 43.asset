@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b931d66f00f42334fb1e23d2cdc8029a, type: 3}
+  m_Name: CharacterGO 43
+  m_EditorClassIdentifier: 
+  id: 0
+  Vil_Name: 
+  characterProfile: {fileID: 0}
+  characterVisualsPrefab: {fileID: 0}
+  rarity: 0
+  Vil_Synergy: []
+  skill: {fileID: 0}
+  weapon: 0
+  Vil_Demon: 0
+  Range_Normal: 0
+  Range_Escape: 0
+  Vil_Cooltime: 0
+  Vil_Hp_Min: 0
+  Vil_Hp_Max: 0
+  Vil_Str_Min: 0
+  Vil_Str_Max: 0
+  Vil_Loyalty: 0

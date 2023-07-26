@@ -8,11 +8,18 @@ public class DBUpdate : MonoBehaviour
     public DB villianDB;
     public List<CharacterBaseSO> CharaGO;
     public List<SkillBaseSO> SkillGO;
-    public List<SynergyBaseSO> SynergyGo;
+    public List<SynergyBaseSO> SynergyGO;
     public List<GameObject> Effects;
+
+    [SerializeField] string m_ResourcePath = "GameData";
+    void Awake()
+    {
+
+    }
 
     void OnEnable()
     {
+        LoadData();
         UpdateDB();
     }
     private void UpdateDB()
@@ -27,7 +34,7 @@ public class DBUpdate : MonoBehaviour
         {
             GO.Skill_Name = villianDB.Skill[i].Skill_Name;
             GO.Skill_Bio = villianDB.Skill[i].Skill_Bio;
-            GO.Skill_Cooldown = villianDB.Skill[i].Skill_Cooldown;
+            GO.Skill_Cooltime = villianDB.Skill[i].Skill_Cooltime;
 
             foreach(GameObject fx in Effects)
             {
@@ -73,6 +80,8 @@ public class DBUpdate : MonoBehaviour
                 GO.weapon = Weapon.Spear;
             if(villianDB.Villian[i].Vil_Weapon == "Gun")
                 GO.weapon = Weapon.Gun;
+            if(villianDB.Villian[i].Vil_Weapon == "Club")
+                GO.weapon = Weapon.Club;
             ////////////////// Set Skill ///////////////////////
             foreach(SkillBaseSO s in SkillGO)
             {
@@ -85,16 +94,25 @@ public class DBUpdate : MonoBehaviour
             }
             ////////////////// Set Synergy /////////////////////
             GO.Vil_Synergy = new List<SynergyBaseSO>();
-            foreach(SynergyBaseSO s in SynergyGo)
+            foreach(SynergyBaseSO s in SynergyGO)
             {
                 if(villianDB.Villian[i].Vil_Synergy_1 == s.Synergy_Name || villianDB.Villian[i].Vil_Synergy_2 == s.Synergy_Name)
                 {
                     GO.Vil_Synergy.Add(s);
-                    break;
                 }
-                    
             }
             i++;
         }
+    }
+
+    private void LoadData()
+    {
+        CharaGO = new List<CharacterBaseSO>();
+        SkillGO = new List<SkillBaseSO>();
+        SynergyGO = new List<SynergyBaseSO>();
+
+        CharaGO.AddRange(Resources.LoadAll<CharacterBaseSO>(m_ResourcePath+"/Characters"));
+        SkillGO.AddRange(Resources.LoadAll<SkillBaseSO>(m_ResourcePath+"/Skills"));
+        SynergyGO.AddRange(Resources.LoadAll<SynergyBaseSO>(m_ResourcePath+"/Synergys"));
     }
 }

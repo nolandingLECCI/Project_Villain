@@ -20,7 +20,7 @@ public enum Weapon
 }
 
 
-[CreateAssetMenu(fileName ="Assets/Resources/GameData/Characters/CharacterGameData", menuName = "vil/Character", order = 1)]
+[CreateAssetMenu(fileName ="Assets/Resources/GameData/Characters/CharacterGO 00", menuName = "vil/Character", order = 1)]
     public class CharacterBaseSO : ScriptableObject
     {
         [Header("Desciption")]

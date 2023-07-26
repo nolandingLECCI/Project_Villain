@@ -7,7 +7,7 @@ public class SkillBaseSO : ScriptableObject
 {
     public string Skill_Name;
     public string Skill_Bio;
-    public float Skill_Cooldown;
+    public float Skill_Cooltime;
 
     public GameObject Skill_Effect;
     public Sprite SKill_Icon;

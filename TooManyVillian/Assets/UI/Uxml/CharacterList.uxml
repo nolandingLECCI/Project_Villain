@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />
+    <ui:VisualElement name="character_list-panel" style="width: 100%; height: 1100%;">
+        <ui:VisualElement name="education__sort-group" style="flex-direction: row-reverse; align-items: center; top: 11%; right: 1%;">
+            <ui:Button display-tooltip-when-elided="true" name="education__sort-button" class="menu__button_sort menu__button" style="flex-basis: 5%; background-image: url(&apos;project://database/Assets/UI/Textures/Sort_Descending.png?fileID=2800000&amp;guid=449d77cce9dfd7e4ab0e8c5382fa9bfe&amp;type=3#Sort_Descending&apos;); width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; top: 7%;" />
+            <ui:Button text="충성도" display-tooltip-when-elided="true" name="education__sort-button_loyalty" class="menu__button menu__button_sort" />
+            <ui:Button text="공격력" display-tooltip-when-elided="true" name="education__sort-button_strength" class="menu__button menu__button_sort" />
+            <ui:Button text="체력" display-tooltip-when-elided="true" name="education__sort-button_health" class="menu__button menu__button_sort" />
+            <ui:Button text="등급" display-tooltip-when-elided="true" name="education__sort-button_grade" class="menu__button menu__button_sort" />
+            <ui:Button text="전체" display-tooltip-when-elided="true" name="education__sort-button_all" class="menu__button menu__button_sort" />
+        </ui:VisualElement>
+        <ui:ScrollView name="character_list-scrollview" mode="Vertical" focusable="false" vertical-scroller-visibility="Hidden" touch-scroll-type="Elastic" horizontal-scroller-visibility="Hidden" nested-interaction-kind="StopScrolling" style="flex-direction: column; align-items: auto; top: 15%; margin-left: 3%; margin-right: 3%; height: 561px; flex-wrap: nowrap; justify-content: flex-start; flex-basis: auto;">
+            <ui:VisualElement name="character_list-group" style="flex-direction: row; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

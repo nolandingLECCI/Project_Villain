@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -14,11 +15,12 @@ public class GameDataManager : MonoBehaviour
     [SerializeField] GameData m_GameData;
     public GameData GameData { set => m_GameData = value; get => m_GameData; }
 
+    [SerializeField] private string m_ResourcePath = "GameData/Characters";
+    List<CharacterBaseSO> m_CharaList = new List<CharacterBaseSO>();
 
     [SerializeField] private GatchaRate[] gatcha;
-    [SerializeField] private List<CharacterBaseSO> m_CharaList;
     [SerializeField] private List<CharacterData> m_GatchaReward = new List<CharacterData>();
-    [SerializeField] private int GatchaTime = 10;
+    [SerializeField] private uint GatchaTime = 10;
 
     SaveManager m_SaveManager;
     bool m_IsGameDataInitialized;
@@ -27,11 +29,17 @@ public class GameDataManager : MonoBehaviour
     {
         SortByRarity();
         EmployScreen.GetRandomCharacter += GetRandomCharacters;
+        SettingScreen.ResetGame += OnResetGame;
+        SettingScreen.IncreaseGold += OnGoldIncrease;
+        SettingScreen.IncreaseDM += OnDMIncrease;
     }
 
     void OnDisable()
     {
         EmployScreen.GetRandomCharacter -= GetRandomCharacters;
+        SettingScreen.ResetGame -= OnResetGame;
+        SettingScreen.IncreaseGold -= OnGoldIncrease;
+        SettingScreen.IncreaseDM -= OnDMIncrease;
     }
     void Awake()
     {
@@ -80,13 +88,37 @@ public class GameDataManager : MonoBehaviour
         m_GameData.d_day = 99;
         UpdateFunds();
     }
+    void OnResetGame()
+    {
+        m_GameData = new GameData();
+        UpdateFunds();
+        UpdatePool();
+    }
+
+    void OnGoldIncrease()
+    {
+        m_GameData.gold += 1000;
+        UpdateFunds();
+    }
+
+    void OnDMIncrease()
+    {
+        m_GameData.darkMatter += 100;
+        UpdateFunds();
+    }
 
     void GetRandomCharacters()
     {
-        for(int i = 0 ; i< GatchaTime ; i++)
+        for(int i = 0 ; i< GatchaTime-1 ; i++)
         {
             m_GatchaReward.Add(GetRandomStat(SelectReward()));
         }
+        int tempRate = gatcha[0].rate;
+        gatcha[0].rate -= tempRate;
+        gatcha[1].rate += tempRate;
+        m_GatchaReward.Add(GetRandomStat(SelectReward()));
+        gatcha[0].rate += tempRate;
+        gatcha[1].rate -= tempRate;
         for(int i = 0 ; i < GatchaTime ; i++)
         {
             m_GameData.CharaData.Add(m_GatchaReward[i]);
@@ -97,6 +129,7 @@ public class GameDataManager : MonoBehaviour
     CharacterData GetRandomStat(CharacterBaseSO c)
     {
         CharacterData chara = new CharacterData();
+        m_GameData.HowManyCharacterGetTotal++;
 
         chara.m_id = c.id;
         chara.m_Vil_Name = c.Vil_Name;
@@ -117,10 +150,11 @@ public class GameDataManager : MonoBehaviour
         chara.m_Range_Escape = c.Range_Escape;
         chara.m_Vil_Cooltime = c.Vil_Cooltime;
         chara.m_Vil_Hp = (uint)Random.Range(c.Vil_Hp_Min, c.Vil_Hp_Max);
-        chara.m_Vil_Hp_Potential = (float)chara.m_Vil_Hp/(float)c.Vil_Hp_Max;
+        chara.m_Vil_Hp_Max= c.Vil_Hp_Max;
         chara.m_Vil_Str = (uint)Random.Range(c.Vil_Str_Min, c.Vil_Str_Max);
-        chara.m_Vil_Str_Potential = (float)chara.m_Vil_Str/(float)c.Vil_Str_Max;
+        chara.m_Vil_Str_Max = c.Vil_Str_Max;
         chara.m_Vil_Loyalty = c.Vil_Loyalty;
+        chara.m_OrderObtained = m_GameData.HowManyCharacterGetTotal;
 
         return chara;
     }
@@ -151,16 +185,35 @@ public class GameDataManager : MonoBehaviour
     }
     void SortByRarity()
     {
-        foreach(CharacterBaseSO b in m_CharaList)
-        {
+            m_CharaList.AddRange(Resources.LoadAll<CharacterBaseSO>(m_ResourcePath));
             foreach(GatchaRate g in gatcha)
             {
-                if(b.rarity == g.rarity)
-                {
-                    g.reward.Add(b);
-                }
+                g.reward = m_CharaList.Where(c => c.rarity == g.rarity).ToList();
             }
-        }
     }
-
+    void SortCharaListByObtained()
+    {
+       m_GameData.CharaData = m_GameData.CharaData.OrderBy(x=> x.m_OrderObtained).ToList();
+       UpdatePool();
+    }
+    void SortCharaListByRarity()
+    {
+       m_GameData.CharaData = m_GameData.CharaData.OrderBy(x=> x.m_rarity).ToList();
+       UpdatePool();
+    }
+    void SortCharaListByHp()
+    {
+       m_GameData.CharaData = m_GameData.CharaData.OrderBy(x=> x.m_Vil_Hp).ToList();
+       UpdatePool();
+    }
+    void SortCharaListByStr()
+    {
+       m_GameData.CharaData = m_GameData.CharaData.OrderBy(x=> x.m_Vil_Str).ToList();
+       UpdatePool();
+    }
+    void SortCharaListByLoyalty()
+    {
+       m_GameData.CharaData = m_GameData.CharaData.OrderBy(x=> x.m_Vil_Loyalty).ToList();
+       UpdatePool();
+    }
 }

@@ -25,15 +25,17 @@ public class CharacterData
     public uint                    m_Range_Escape;
     public float                   m_Vil_Cooltime;
     public uint                    m_Vil_Hp;
-    public float                   m_Vil_Hp_Potential;
+    public uint                   m_Vil_Hp_Max;
     public uint                    m_Vil_Str;
-    public float                   m_Vil_Str_Potential;
+    public uint                   m_Vil_Str_Max;
     public uint                    m_Vil_Loyalty;
 
     //강화 관련 변수
     public uint m_TimeEducated;
     public uint m_TimeBrainwashed;
     public bool m_canPromote;
+    // 획득 순서
+    public uint m_OrderObtained;
 
     public CharacterData()
     {
@@ -52,13 +54,15 @@ public class CharacterData
         this.m_Range_Escape = 0;
         this.m_Vil_Cooltime = 0;
         this.m_Vil_Hp = 0;
-        this.m_Vil_Hp_Potential = 0;
+        this.m_Vil_Hp_Max = 0;
         this.m_Vil_Str = 0;
-        this.m_Vil_Str_Potential =0;
+        this.m_Vil_Str_Max =0;
         this.m_Vil_Loyalty = 50;
 
         this.m_TimeEducated = 0;
         this.m_TimeBrainwashed = 0;
         this.m_canPromote = true;
+
+        this.m_OrderObtained = 0;
     }
 }

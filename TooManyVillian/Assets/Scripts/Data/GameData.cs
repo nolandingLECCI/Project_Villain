@@ -22,6 +22,8 @@ public class GameData
     public float musicVolume;
     public float sfxVolume;
 
+    public uint HowManyCharacterGetTotal;
+
     //초기값
     public GameData()
     {
@@ -37,6 +39,8 @@ public class GameData
 
         this.musicVolume = 80f;
         this.sfxVolume = 80f;
+
+        this.HowManyCharacterGetTotal = 0;
 
     }
     public string ToJson()
