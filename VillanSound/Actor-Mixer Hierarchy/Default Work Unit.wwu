@@ -302,7 +302,6 @@
 						<RandomSequenceContainer Name="LoadingCircle" ID="{FA8E44D8-B98D-4F40-BB1A-3D8EEA6E197F}" ShortID="579700866">
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>

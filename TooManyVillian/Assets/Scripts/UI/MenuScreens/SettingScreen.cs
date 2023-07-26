@@ -90,6 +90,7 @@ public class SettingScreen : MenuScreen
         SettingsUpdated?.Invoke(m_SettingsData);
 
         HideScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
 
     void IncreaseGoldValue(ClickEvent evt)

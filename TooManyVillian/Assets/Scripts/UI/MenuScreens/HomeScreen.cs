@@ -54,31 +54,37 @@ public class HomeScreen : MenuScreen
     void ShowShopScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowShopScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // Villian button
     void ShowVilScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowVilScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // Education button
     void ShowEducationScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowEducationScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // Employ button
     void ShowEmployScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowEmployScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // Quest button
     void ShowQuestScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowQuestScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     //Mission button
     void ShowMissionScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowMissionScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     /////////////////////////////////////////////////////
     public override void ShowScreen()

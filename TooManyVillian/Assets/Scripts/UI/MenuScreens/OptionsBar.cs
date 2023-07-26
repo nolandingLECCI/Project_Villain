@@ -67,6 +67,7 @@ public class OptionsBar : MenuScreen
     void ShowSettingScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowSettingsScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // home button
     ///////////////////// fund //////////////////////////////////////

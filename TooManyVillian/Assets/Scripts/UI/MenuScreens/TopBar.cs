@@ -36,11 +36,14 @@ public class TopBar : MenuScreen
     void ShowOptionsScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowHomeScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     //home button
     void ShowHomeScreen(ClickEvent evt)
     {
         m_MainMenuUIManager?.ShowHomeScreen();
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
+
     }
     
     public void SetMenuName(string name)

@@ -180,6 +180,7 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressEmployScreen, true);
         m_ProgressEmployPanel.RemoveFromClassList(k_ProgressInActiveClass);
         m_ProgressEmployPanel.AddToClassList(k_ProgressActiveClass);
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // 일반 채용 -> 예 button
     void ShowEmployPanel(ClickEvent evt)
@@ -190,6 +191,8 @@ public class EmployScreen : MenuScreen
 
         ShowVisualElement(m_MainPanel, false);
         ShowVisualElement(m_EmployPanel, true);
+
+        AkSoundEngine.PostEvent("UI_Loading", gameObject);
     }
     // 일반 채용 -> 아니요 button
     void HideProgressEmploy(ClickEvent evt)
@@ -197,6 +200,8 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressEmployScreen, false);
         m_ProgressEmployPanel.RemoveFromClassList(k_ProgressActiveClass);
         m_ProgressEmployPanel.AddToClassList(k_ProgressInActiveClass);
+
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // 스카우트 button
     void ShowProgressScout(ClickEvent evt)
@@ -204,6 +209,8 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressScoutScreen, true);
         m_ProgressScoutPanel.RemoveFromClassList(k_ProgressInActiveClass);
         m_ProgressScoutPanel.AddToClassList(k_ProgressActiveClass);
+
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // 스카우트 -> 예 button
     void ShowScoutPanel(ClickEvent evt)
@@ -214,6 +221,8 @@ public class EmployScreen : MenuScreen
 
         ShowVisualElement(m_MainPanel, false);
         ShowVisualElement(m_ScoutPanel, true);
+
+        AkSoundEngine.PostEvent("UI_Loading", gameObject);
     }
     // 스카우트 -> 아니요 button
     void HideProgressScout(ClickEvent evt)
@@ -221,6 +230,8 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressScoutScreen, false);
         m_ProgressScoutPanel.RemoveFromClassList(k_ProgressActiveClass);
         m_ProgressScoutPanel.AddToClassList(k_ProgressInActiveClass);
+
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // 마력풀 button
     void ShowProgressPool(ClickEvent evt)
@@ -228,6 +239,8 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressPoolScreen, true);
         m_ProgressPoolPanel.RemoveFromClassList(k_ProgressInActiveClass);
         m_ProgressPoolPanel.AddToClassList(k_ProgressActiveClass);
+
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
     // 마력풀 -> 예 button
     void ShowPoolPanel(ClickEvent evt)
@@ -238,6 +251,8 @@ public class EmployScreen : MenuScreen
 
         ShowVisualElement(m_MainPanel, false);
         ShowVisualElement(m_PoolPanel, true);
+
+        AkSoundEngine.PostEvent("UI_Loading", gameObject);
     }
     // 마력풀 -> 아니요 button
     void HideProgressPool(ClickEvent evt)
@@ -245,6 +260,8 @@ public class EmployScreen : MenuScreen
         ShowVisualElement(m_ProgressPoolScreen, false);
         m_ProgressPoolPanel.RemoveFromClassList(k_ProgressActiveClass);
         m_ProgressPoolPanel.AddToClassList(k_ProgressInActiveClass);
+
+        AkSoundEngine.PostEvent("UI_Select", gameObject);
     }
 
     public void ShowMainPanel()
