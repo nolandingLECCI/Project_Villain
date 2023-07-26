@@ -83,7 +83,7 @@ public class EmployScreen : MenuScreen
 
     private void OnDisable()
     {
-        GameDataManager.FundsUpdated -= OnPoolUpdated;
+        GameDataManager.PoolUpdated -= OnPoolUpdated;
     }
 
     void OnPoolUpdated(GameData gameData)

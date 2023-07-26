@@ -1854,7 +1854,6 @@ MonoBehaviour:
   m_ScreenName: VilScreen
   m_MainMenuUIManager: {fileID: 1674656422}
   m_Document: {fileID: 1674656420}
-  m_CharaListContainer: {fileID: 9197481963319205126, guid: 55ba1c4d4c4355044b0de5ecbe9a303e, type: 3}
   m_CharacterPortrait: {fileID: 9197481963319205126, guid: 44951b6df1f9a724ebb489f8905c445c, type: 3}
 --- !u!224 &1176559286 stripped
 RectTransform:

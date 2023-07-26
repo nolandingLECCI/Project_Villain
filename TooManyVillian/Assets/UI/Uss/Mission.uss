@@ -1,0 +1,57 @@
+.location-default {
+    width: 800px;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.location-selected {
+    width: 800px;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgb(46, 148, 242);
+    border-right-color: rgb(46, 148, 242);
+    border-top-color: rgb(46, 148, 242);
+    border-bottom-color: rgb(46, 148, 242);
+}
+
+.lifeGauge-life {
+    background-image: url('project://database/Assets/UI/Textures/Mission_lifeGauge_life.png?fileID=2800000&guid=026fb3d126486ec41b153fc6899b06f3&type=3#Mission_lifeGauge_life');
+    width: 11%;
+    height: 70%;
+    top: 7%;
+    left: auto;
+    margin-left: 1%;
+    margin-right: 0;
+}

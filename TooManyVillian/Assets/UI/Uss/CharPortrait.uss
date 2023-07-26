@@ -1,11 +1,89 @@
 .status_bar {
     background-image: none;
-    width: 80px;
+    width: 77px;
     height: 25px;
     background-color: rgb(32, 32, 32);
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-right: 1%;
-    margin-bottom: 2%;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
     font-size: 12px;
+}
+
+.rarity--epic {
+    width: 100%;
+    height: 100%;
+    background-image: url('project://database/Assets/UI/Textures/statusBar_grade_epic.png?fileID=2800000&guid=bfd98053cdf1d7945a79ccdc0545f2fc&type=3#statusBar_grade_epic');
+    position: absolute;
+}
+
+.rarity--rare {
+    width: 100%;
+    height: 100%;
+    background-image: url('project://database/Assets/UI/Textures/statusBar_grade_rare.png?fileID=2800000&guid=0fb6db8729f6c5c438357d88a419f2e0&type=3#statusBar_grade_rare');
+    position: absolute;
+}
+
+.rarity--common {
+    width: 100%;
+    height: 100%;
+    background-image: url('project://database/Assets/UI/Textures/statusBar_grade_common.png?fileID=2800000&guid=f96ce688d9299154c94f7c8e3315fdef&type=3#statusBar_grade_common');
+    position: absolute;
+}
+
+.rarity--demon {
+    width: 100%;
+    height: 100%;
+    background-image: url('project://database/Assets/UI/Textures/statusBar_grade_epic.png?fileID=2800000&guid=bfd98053cdf1d7945a79ccdc0545f2fc&type=3#statusBar_grade_epic');
+    position: absolute;
+}
+
+.Char--default {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Char--selected {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-color: rgba(46, 148, 242, 255);
+    border-right-color: rgba(46, 148, 242, 255);
+    border-top-color: rgba(46, 148, 242, 255);
+    border-bottom-color: rgba(46, 148, 242, 255);
 }
