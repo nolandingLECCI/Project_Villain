@@ -126,6 +126,7 @@ using System;
 
         public void ShowMissionScreen()
         {
+            m_MissionModalScreen.ShowLocationPanel();
             ShowModalScreen(m_MissionModalScreen);
             SetToolBar("임무");
         }

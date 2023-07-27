@@ -137,11 +137,8 @@ public class GameDataManager : MonoBehaviour
         chara.m_characterVisualsPrefab = c.characterVisualsPrefab;
 
         chara.m_rarity = c.rarity.ToString();
-        chara.m_Vil_Synergy = new List<SynergyBaseSO>();
-        foreach(SynergyBaseSO s in c.Vil_Synergy)
-        {
-           chara.m_Vil_Synergy.Add(s);
-        }
+        chara.m_Vil_Synergy_1 = c.Vil_Synergy_1;
+        chara.m_Vil_Synergy_2 = c.Vil_Synergy_2;
         chara.m_skill = c.skill;
         chara.m_weapon = c.weapon.ToString();
         chara.m_Vil_Demon = c.Vil_Demon;

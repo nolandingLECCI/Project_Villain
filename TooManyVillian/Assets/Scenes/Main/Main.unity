@@ -3184,15 +3184,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: gatcha.Array.data[0].rate
-      value: 89
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: gatcha.Array.data[1].rate
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: gatcha.Array.data[2].rate
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_CharaList.Array.data[0]
@@ -3276,7 +3276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7142543332485256784, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_DebugValues
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7142543332485256784, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_SaveFilename

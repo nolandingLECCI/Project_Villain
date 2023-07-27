@@ -4,10 +4,12 @@ using UnityEngine.UIElements;
 
 public class CharacterPortraitComponent
 {
-    //public static event Action<> CharacterClicked;
+    public static event Action<CharacterPortraitComponent> CharacterClicked;
 
+    bool Selected = false;
     
     const string k_ParentContainer = "CharPortrait__parent-container";
+    const string k_CharacterSelect = "CharPortrait__Select";
     //visual element
     const string k_ProfileImage = "CharPortrait__profile_image";
 
@@ -20,7 +22,7 @@ public class CharacterPortraitComponent
     const string k_CharaName = "CharPortrait__data-name";
     const string k_RarityLabel = "CharPortrait__data-grade_text";
     const string k_Synergy1Label = "CharPortrait__data-synergy1_text";
-    const string k_Synergy2Label = "CharPortrait__data-synergy2_textt";
+    const string k_Synergy2Label = "CharPortrait__data-synergy2_text";
     const string k_HpLabel = "CharPortrait__data-health_text";
     const string k_StrLabel = "CharPortrait__data-strength_text";
     const string k_LoyaltyLabel = "CharPortrait__data-loyalty_text";
@@ -31,10 +33,17 @@ public class CharacterPortraitComponent
     const string k_EpicClass = "rarity--epic";
     const string k_DemonClass = "rarity--demon";
 
+    const string k_TextClass = "status-text";
+
+    const string k_DefaultClass = "Char--default";
+    const string k_SelectedClass = "Char--selected";
+
 
     CharacterData m_CharaData;
 
     VisualElement m_ParentContainer;
+
+    VisualElement m_CharacterSelect;
 
     VisualElement m_profileImage;
 
@@ -61,6 +70,8 @@ public class CharacterPortraitComponent
         m_ParentContainer = characterPortraitElement.Q<VisualElement>(k_ParentContainer);
 
         m_profileImage = characterPortraitElement.Q<VisualElement>(k_ProfileImage);
+
+        m_CharacterSelect = characterPortraitElement.Q(k_CharacterSelect);
 
         m_HpBar = characterPortraitElement.Q<VisualElement>(k_HpBar);
         m_StrBar = characterPortraitElement.Q<VisualElement>(k_StrBar);
@@ -106,17 +117,53 @@ public class CharacterPortraitComponent
                 m_RarityBar.AddToClassList(k_DemonClass);
                 break;
         }
-
-        m_Synergy1Label.text = m_CharaData.m_Vil_Synergy[0].Synergy_Name;
-        // if(m_CharaData.m_Vil_Synergy.Count == 2)
-        //     m_Synergy2Label.text = m_CharaData.m_Vil_Synergy[1].Synergy_Name;
-        // else
-        //     m_Synergy2Label.text = "";
-        
+        if(m_CharaData.m_Vil_Synergy_1.Synergy_Name != null)
+        {
+            m_Synergy1Label.text = m_CharaData.m_Vil_Synergy_1.Synergy_Name;
+        }  
+        else
+        {
+            m_Synergy1Label.text = "";
+        }
+        if(m_CharaData.m_Vil_Synergy_2.Synergy_Name != null)
+        {
+            m_Synergy2Label.text = m_CharaData.m_Vil_Synergy_2.Synergy_Name;
+        }  
+        else
+        {
+            m_Synergy2Label.text = "";
+        } 
         m_HpLabel.text = m_CharaData.m_Vil_Hp.ToString();
         m_StrLabel.text = m_CharaData.m_Vil_Str.ToString();
         m_LoyaltyLabel.text = m_CharaData.m_Vil_Loyalty.ToString();
         
+    }
+    public void RegisterCallbacks()
+    {
+        if(m_CharacterSelect == null)
+            return;
+        m_CharacterSelect?.RegisterCallback<ClickEvent>(SelectCharacter);
+    }
+
+    void SelectCharacter(ClickEvent evt)
+    {
+        Debug.Log("Clicked");
+        ToggleSelected();
+        CharacterClicked?.Invoke(this);
+        
+    }
+    void ToggleSelected()
+    {
+        if(Selected)
+        {
+            m_CharacterSelect.AddToClassList(k_SelectedClass);
+            m_CharacterSelect.RemoveFromClassList(k_DefaultClass);
+        }
+        else
+        {
+            m_CharacterSelect.RemoveFromClassList(k_SelectedClass);
+            m_CharacterSelect.AddToClassList(k_DefaultClass);
+        }
     }
 
 }

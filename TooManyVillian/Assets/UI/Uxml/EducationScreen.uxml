@@ -17,7 +17,7 @@
             </ui:ScrollView>
         </ui:VisualElement>
         <ui:VisualElement name="Education_Select" style="top: 27%;">
-            <ui:ScrollView name="employ_menu-scrollview" picking-mode="Ignore" mode="Horizontal" vertical-scroller-visibility="Hidden" style="position: absolute; left: 0; top: 0; padding-bottom: 20px; padding-top: 3%; padding-right: 3%; padding-left: 3%; justify-content: center; color: rgb(255, 255, 255);">
+            <ui:ScrollView name="employ_menu-scrollview" picking-mode="Ignore" mode="Horizontal" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="AlwaysVisible" style="position: absolute; left: 0; top: 0; padding-bottom: 20px; padding-top: 3%; padding-right: 3%; padding-left: 3%; justify-content: center; color: rgb(255, 255, 255); width: 100%;">
                 <ui:VisualElement name="menuGroup" style="flex-direction: row;">
                     <ui:VisualElement name="SeletMenu-Education" style="margin-right: 20px;">
                         <ui:VisualElement name="select-Menu__parent-container" style="width: 580px; height: 600px; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); align-items: center; margin-left: 0; margin-right: 0;">

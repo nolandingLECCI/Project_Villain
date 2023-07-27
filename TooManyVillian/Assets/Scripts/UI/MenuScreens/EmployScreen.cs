@@ -43,8 +43,6 @@ public class EmployScreen : MenuScreen
     const string k_ProgressInActiveClass = "progress__panel--inactive";
 
 
-    List<VisualElement> m_AllPanels = new List<VisualElement>();
-
     const float k_LerpTime = 0.6f;
 
     Button m_EmployButton;
@@ -189,8 +187,8 @@ public class EmployScreen : MenuScreen
         m_ProgressEmployPanel.RemoveFromClassList(k_ProgressActiveClass);
         m_ProgressEmployPanel.AddToClassList(k_ProgressInActiveClass);
 
-        ShowVisualElement(m_MainPanel, false);
-        ShowVisualElement(m_EmployPanel, true);
+        //ShowVisualElement(m_MainPanel, false);
+        //ShowVisualElement(m_EmployPanel, true);
 
         AkSoundEngine.PostEvent("UI_Loading", gameObject);
     }

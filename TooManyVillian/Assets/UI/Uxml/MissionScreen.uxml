@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/UI/Uss/Mission.uss?fileID=7433441132597879392&amp;guid=419826ddddaed7a4e9a1cf6caa08e8f0&amp;type=3#Mission" />
     <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />
     <ui:VisualElement name="Mission_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column; color: rgb(255, 255, 255);">
-        <ui:VisualElement name="Mission__location" style="width: 100%; height: 90%; position: absolute; top: 10%; left: auto; display: flex;">
+        <ui:VisualElement name="Mission__location" style="width: 100%; height: 90%; position: absolute; top: 10%; left: auto; display: none;">
             <ui:Label text="정복할 대상을 선택하세요" display-tooltip-when-elided="true" name="Mission__location-bio" style="left: 2%; top: 5%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
             <ui:ScrollView mode="Horizontal" name="Mission__location-ScrollView" style="top: 14%; left: 2%;">
                 <ui:Button text="Button" display-tooltip-when-elided="true" name="Mission__location-amargo" class="location-default">
@@ -93,10 +93,10 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Button text="선택" display-tooltip-when-elided="true" name="Mission__location-nextPage" style="position: absolute; right: 3%; bottom: 5%; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/UI/Textures/bt_play.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#bt_play&apos;); width: 400px; height: 100px; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 32px;" />
-            <ui:VisualElement name="Mission__LifeGauge" style="position: absolute; width: 800px; height: 60px; right: 14%; top: 5%; flex-direction: row; align-items: center;">
+            <ui:VisualElement name="Mission__LifeGauge" style="position: absolute; width: 800px; height: 63px; right: 14%; top: 5%; flex-direction: row; align-items: center;">
                 <ui:VisualElement name="Mission__LifeGauge-bar" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge.png?fileID=2800000&amp;guid=5cf990eee642c5946965487b53fade12&amp;type=3#Mission_lifeGauge&apos;); width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: center;">
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
-                    <ui:VisualElement name="Mission__LifeGauge-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge_logo.png?fileID=2800000&amp;guid=b7c3bbcbefe223344bb522e745d22a5d&amp;type=3#Mission_lifeGauge_logo&apos;); width: 10%; height: 100%; position: absolute; left: -1%;" />
+                    <ui:VisualElement name="Mission__LifeGauge-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge_logo.png?fileID=2800000&amp;guid=b7c3bbcbefe223344bb522e745d22a5d&amp;type=3#Mission_lifeGauge_logo&apos;); width: 63px; height: 63px; position: absolute; left: 0;" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
@@ -106,7 +106,7 @@
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="Mission__DayNight" style="position: absolute; top: 5%; right: 3%; height: 60px; width: 169px;">
+            <ui:VisualElement name="Mission__DayNight" style="position: absolute; top: 5%; right: 3%; height: 63px; width: 169px;">
                 <ui:VisualElement name="Mission__DayNight-background" style="flex-direction: row; background-image: url(&apos;project://database/Assets/UI/Textures/Backgorund_gray.png?fileID=2800000&amp;guid=2fe23ca09461c444caf4699771f2e611&amp;type=3#Backgorund_gray&apos;); width: 100%; height: 100%; align-items: center; justify-content: center;">
                     <ui:Label text="시간대" display-tooltip-when-elided="true" name="Mission__DayNight-label" style="font-size: 28px; margin-left: 6%; margin-right: 6%;" />
                     <ui:VisualElement name="Mission__DayNight-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/icon_Day.png?fileID=2800000&amp;guid=944abddd52a7dd3428074caaa99ed080&amp;type=3#icon_Day&apos;); width: 25%; height: 50%;" />
@@ -139,6 +139,25 @@
                     <ui:VisualElement name="Mission__DayNight-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/icon_Day.png?fileID=2800000&amp;guid=944abddd52a7dd3428074caaa99ed080&amp;type=3#icon_Day&apos;); width: 25%; height: 50%;" />
                 </ui:VisualElement>
             </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Mission__list" style="position: absolute; width: 100%; height: 90%; top: 10%; display: none;">
+            <ui:VisualElement name="character_list-panel" picking-mode="Ignore" style="width: 100%; height: 100%; color: rgb(255, 255, 255); justify-content: flex-start;">
+                <ui:VisualElement name="education__sort-group" style="flex-direction: row-reverse; align-items: center; top: auto; right: 6%;">
+                    <ui:Button display-tooltip-when-elided="true" name="education__sort-button" class="menu__button_sort menu__button" style="flex-basis: 5%; background-image: url(&apos;project://database/Assets/UI/Textures/Sort_Descending.png?fileID=2800000&amp;guid=449d77cce9dfd7e4ab0e8c5382fa9bfe&amp;type=3#Sort_Descending&apos;); width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; top: 7%;" />
+                    <ui:Button text="충성도" display-tooltip-when-elided="true" name="education__sort-button_loyalty" class="menu__button menu__button_sort" />
+                    <ui:Button text="공격력" display-tooltip-when-elided="true" name="education__sort-button_strength" class="menu__button menu__button_sort" />
+                    <ui:Button text="체력" display-tooltip-when-elided="true" name="education__sort-button_health" class="menu__button menu__button_sort" />
+                    <ui:Button text="등급" display-tooltip-when-elided="true" name="education__sort-button_grade" class="menu__button menu__button_sort" />
+                    <ui:Button text="전체" display-tooltip-when-elided="true" name="education__sort-button_all" class="menu__button menu__button_sort" />
+                </ui:VisualElement>
+                <ui:ScrollView name="character_list-scrollview" mode="Vertical" focusable="false" vertical-scroller-visibility="AlwaysVisible" touch-scroll-type="Elastic" horizontal-scroller-visibility="Hidden" nested-interaction-kind="StopScrolling" style="flex-direction: column; align-items: auto; top: auto; margin-left: 2%; margin-right: 2%; height: 560px; flex-wrap: nowrap; justify-content: flex-start; flex-basis: auto; margin-top: 2%; margin-bottom: 2%;">
+                    <ui:VisualElement name="character_list-group" style="flex-direction: row; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start; -unity-text-align: middle-center;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:Button text="배치 시작" display-tooltip-when-elided="true" name="Mission__list-nextPage" style="position: absolute; right: 3%; bottom: 5%; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/UI/Textures/bt_play.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#bt_play&apos;); width: 400px; height: 100px; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 32px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Mission__squad" style="display: none; top: 10%; width: 100%; height: 90%;">
+            <ui:Button text="임무 시작" display-tooltip-when-elided="true" name="Mission__squad-nextPage" style="position: absolute; right: 3%; bottom: 5%; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/UI/Textures/bt_play.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#bt_play&apos;); width: 400px; height: 100px; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 32px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -27,11 +27,13 @@ public enum Weapon
         public uint id;
         public string Vil_Name;
         public Sprite characterProfile;
+        public Sprite characterProfile_Battle;
         public GameObject characterVisualsPrefab;
 
         [Header("Data")]
         public Rarity rarity;
-        public List<SynergyBaseSO> Vil_Synergy;
+        public SynergyBaseSO Vil_Synergy_1;
+        public SynergyBaseSO Vil_Synergy_2;
         public SkillBaseSO skill;
         public Weapon weapon;
         public bool Vil_Demon;

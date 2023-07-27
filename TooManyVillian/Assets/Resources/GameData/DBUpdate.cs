@@ -12,12 +12,12 @@ public class DBUpdate : MonoBehaviour
     public List<GameObject> Effects;
 
     [SerializeField] string m_ResourcePath = "GameData";
-    void Awake()
-    {
+    // void Awake()
+    // {
 
-    }
+    // }
 
-    void OnEnable()
+    void Start()
     {
         LoadData();
         UpdateDB();
@@ -93,14 +93,30 @@ public class DBUpdate : MonoBehaviour
                     
             }
             ////////////////// Set Synergy /////////////////////
-            GO.Vil_Synergy = new List<SynergyBaseSO>();
+            
             foreach(SynergyBaseSO s in SynergyGO)
             {
-                if(villianDB.Villian[i].Vil_Synergy_1 == s.Synergy_Name || villianDB.Villian[i].Vil_Synergy_2 == s.Synergy_Name)
+                if(villianDB.Villian[i].Vil_Synergy_1 == s.Synergy_Name)
                 {
-                    GO.Vil_Synergy.Add(s);
+                    GO.Vil_Synergy_1 = s;
+                }
+                if(villianDB.Villian[i].Vil_Synergy_2 == s.Synergy_Name)
+                {
+                    GO.Vil_Synergy_2 = s;
+                }
+                if(s.Synergy_Name == null)
+                {
+                    if(villianDB.Villian[i].Vil_Synergy_1 == null)
+                    {
+                        GO.Vil_Synergy_1 = s;
+                    }
+                    if(villianDB.Villian[i].Vil_Synergy_2 == null)
+                    {
+                        GO.Vil_Synergy_2 = s;
+                    }
                 }
             }
+
             i++;
         }
     }

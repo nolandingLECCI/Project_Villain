@@ -14,29 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Villian:
   - id: 0
-    Vil_Name: "\uAC00\uC704"
-    Vil_Rarity: Common
-    Vil_Weapon: LongSword
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: Dark_Gem
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 250
-    Vil_Str_Min: 20
-    Vil_Str_Max: 50
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 1
     Vil_Name: "\uAC10\uC790"
     Vil_Rarity: Common
     Vil_Weapon: Spear
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Mad_Scientist
-    Vil_Synergy_2: NightVil
+    Vil_Synergy_1: "\uC789\uAF2C"
+    Vil_Synergy_2: "\uD3F4\uB9AC\uD398\uC11C"
     Vil_Skill: Spear
     Vil_Cooltime: 0
     Vil_Hp_Min: 250
@@ -45,30 +29,14 @@ MonoBehaviour:
     Vil_Str_Max: 30
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 2
-    Vil_Name: "\uAC70\uC704"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: Lovers
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 250
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 3
+  - id: 1
     Vil_Name: "\uACE0\uAD6C\uB9C8"
     Vil_Rarity: Common
     Vil_Weapon: LongSword
     Range_Normal: 4
     Range_Escape: 2
-    Vil_Synergy_1: Soldier
-    Vil_Synergy_2: Bat
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: "\uBC15\uC950"
     Vil_Skill: LongSword
     Vil_Cooltime: 0
     Vil_Hp_Min: 200
@@ -77,510 +45,30 @@ MonoBehaviour:
     Vil_Str_Max: 50
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 4
-    Vil_Name: "\uAD50\uC8FC"
-    Vil_Rarity: Epic
-    Vil_Weapon: Gun
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Saibi
-    Vil_Synergy_2: Union
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 500
-    Vil_Hp_Max: 650
-    Vil_Str_Min: 400
-    Vil_Str_Max: 600
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 5
-    Vil_Name: "\uAE08\uAC15"
-    Vil_Rarity: Common
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Mad_Scientist
-    Vil_Synergy_2: 
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 250
-    Vil_Str_Min: 10
-    Vil_Str_Max: 100
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 6
-    Vil_Name: "\uAE40\uBD80\uAC01"
-    Vil_Rarity: Common
+  - id: 2
+    Vil_Name: "\uC6B0\uC5C9"
+    Vil_Rarity: Rare
     Vil_Weapon: Dagger
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: Controller
-    Vil_Skill: Dagger
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 10
-    Vil_Str_Max: 60
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 7
-    Vil_Name: "\uAE40\uC950"
-    Vil_Rarity: Common
-    Vil_Weapon: Gun
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Bat
-    Vil_Synergy_2: Polifessor
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 250
-    Vil_Str_Min: 100
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 8
-    Vil_Name: "\uB178\uB791"
-    Vil_Rarity: Rare
-    Vil_Weapon: Spear
-    Range_Normal: 2
-    Range_Escape: 1
-    Vil_Synergy_1: Confusion
-    Vil_Synergy_2: 
-    Vil_Skill: Spear
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 9
-    Vil_Name: "\uB274\uB7F0"
-    Vil_Rarity: Rare
-    Vil_Weapon: LongSword
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Bat
-    Vil_Synergy_2: Soldier
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 10
-    Vil_Name: "\uB274\uC9C4\uC2A4"
-    Vil_Rarity: Common
-    Vil_Weapon: Spear
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: NightVil
-    Vil_Synergy_2: 
-    Vil_Skill: Spear
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 20
-    Vil_Str_Max: 70
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 11
-    Vil_Name: "\uB274\uD2B8\uB85C\uC9C0\uB098"
-    Vil_Rarity: Epic
-    Vil_Weapon: Gun
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Saibi
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 500
-    Vil_Hp_Max: 600
-    Vil_Str_Min: 666
-    Vil_Str_Max: 750
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 12
-    Vil_Name: "\uB274\uD2B8\uB9AC\uC544"
-    Vil_Rarity: Common
-    Vil_Weapon: Dagger
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Mad_Scientist
-    Vil_Synergy_2: Polifessor
-    Vil_Skill: Dagger
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 20
-    Vil_Str_Max: 80
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 13
-    Vil_Name: "\uB2E4\uC2DC\uB9C8\uBD80\uAC01"
-    Vil_Rarity: Rare
-    Vil_Weapon: LongSword
-    Range_Normal: 4
-    Range_Escape: 2
-    Vil_Synergy_1: NightVil
-    Vil_Synergy_2: Lovers
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 14
-    Vil_Name: "\uB3C5\uC0AC\uACFC"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Polifessor
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 400
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 15
-    Vil_Name: "\uB450\uBAA9"
-    Vil_Rarity: Common
-    Vil_Weapon: LongSword
-    Range_Normal: 4
-    Range_Escape: 2
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: Bat
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 10
-    Vil_Str_Max: 40
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 16
-    Vil_Name: "\uB450\uBB3C\uBA38\uB9AC"
-    Vil_Rarity: Epic
-    Vil_Weapon: Gun
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 500
-    Vil_Hp_Max: 550
-    Vil_Str_Min: 666
-    Vil_Str_Max: 800
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 17
-    Vil_Name: "\uB450\uBD80"
-    Vil_Rarity: Common
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: Saibi
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 10
-    Vil_Str_Max: 30
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 18
-    Vil_Name: "\uB450\uD53C"
-    Vil_Rarity: Epic
-    Vil_Weapon: LongSword
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Complex
-    Vil_Synergy_2: Controller
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 550
-    Vil_Hp_Max: 650
-    Vil_Str_Min: 700
-    Vil_Str_Max: 750
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 19
-    Vil_Name: "\uB454\uAC01"
-    Vil_Rarity: Rare
-    Vil_Weapon: LongSword
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Mad_Scientist
-    Vil_Synergy_2: Lovers
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 350
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 20
-    Vil_Name: "\uB85C\uBA54\uC778"
-    Vil_Rarity: Rare
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Controller
-    Vil_Synergy_2: 
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 350
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 21
-    Vil_Name: "\uBC15\uC950"
-    Vil_Rarity: Common
-    Vil_Weapon: Dagger
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Bat
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
     Vil_Synergy_2: 
     Vil_Skill: Dagger
     Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 100
-    Vil_Str_Max: 100
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 22
-    Vil_Name: "\uBE68\uAC15"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Saibi
-    Vil_Synergy_2: Union
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
     Vil_Hp_Min: 350
     Vil_Hp_Max: 450
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 23
-    Vil_Name: "\uC0AC\uACFC"
-    Vil_Rarity: Rare
-    Vil_Weapon: LongSword
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Controller
-    Vil_Synergy_2: Lovers
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 450
     Vil_Str_Min: 200
     Vil_Str_Max: 300
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 24
-    Vil_Name: "\uC0D0\uB7EC\uB9AC"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Controller
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 200
-    Vil_Str_Max: 250
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 25
-    Vil_Name: "\uC2DC\uB8E8\uB5A1"
-    Vil_Rarity: Epic
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Polifessor
-    Vil_Synergy_2: 
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 550
-    Vil_Hp_Max: 650
-    Vil_Str_Min: 666
-    Vil_Str_Max: 750
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 26
-    Vil_Name: "\uC2DC\uC5B4\uBA38\uB2C8"
-    Vil_Rarity: Common
-    Vil_Weapon: Gun
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: Dark_Gem
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 30
-    Vil_Str_Max: 60
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 27
-    Vil_Name: "\uC2DC\uC791"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 250
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 28
-    Vil_Name: "\uC2DC\uC7A5"
-    Vil_Rarity: Common
-    Vil_Weapon: LongSword
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Mad_Scientist
-    Vil_Synergy_2: 
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 10
-    Vil_Str_Max: 70
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 29
-    Vil_Name: "\uC2E0\uAD00"
-    Vil_Rarity: Rare
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Saibi
-    Vil_Synergy_2: Controller
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 200
-    Vil_Str_Max: 600
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 30
-    Vil_Name: "\uC2E0\uB3C4A"
-    Vil_Rarity: Common
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: Polifessor
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 100
-    Vil_Str_Max: 100
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 31
-    Vil_Name: "\uC2E0\uB3C4B"
-    Vil_Rarity: Common
-    Vil_Weapon: Gun
-    Range_Normal: 4
-    Range_Escape: 2
-    Vil_Synergy_1: Saibi
-    Vil_Synergy_2: 
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 250
-    Vil_Str_Min: 100
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 32
-    Vil_Name: "\uC555\uB85D\uAC15"
-    Vil_Rarity: Rare
-    Vil_Weapon: LongSword
-    Range_Normal: 10
-    Range_Escape: 5
-    Vil_Synergy_1: Controller
-    Vil_Synergy_2: Polifessor
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 400
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 200
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 33
-    Vil_Name: "\uC560\uD50C"
-    Vil_Rarity: Common
-    Vil_Weapon: Spear
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Wolf
-    Vil_Synergy_2: Bat
-    Vil_Skill: Spear
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 250
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 10
-    Vil_Str_Max: 80
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 34
-    Vil_Name: "\uC5E0\uC950"
-    Vil_Rarity: Epic
-    Vil_Weapon: LongSword
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: NightVil
-    Vil_Synergy_2: Polifessor
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 500
-    Vil_Hp_Max: 650
-    Vil_Str_Min: 400
-    Vil_Str_Max: 600
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 35
+  - id: 3
     Vil_Name: "\uC5F0\uADFC"
     Vil_Rarity: Epic
     Vil_Weapon: Gun
     Range_Normal: 10
     Range_Escape: 5
-    Vil_Synergy_1: Dark_Gem
-    Vil_Synergy_2: NightVil
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: "\uAD00\uC2EC\uBCD1"
     Vil_Skill: Gun
     Vil_Cooltime: 0
     Vil_Hp_Min: 550
@@ -589,15 +77,239 @@ MonoBehaviour:
     Vil_Str_Max: 500
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 36
-    Vil_Name: "\uC608\uAC01"
+  - id: 4
+    Vil_Name: "\uCE58\uCEE4\uB9AC"
+    Vil_Rarity: Common
+    Vil_Weapon: LongSword
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 40
+    Vil_Str_Max: 100
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 5
+    Vil_Name: "\uCF00\uC77C"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uC789\uAF2C"
+    Vil_Synergy_2: "\uC0AC\uC774\uBE44"
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 6
+    Vil_Name: "\uB85C\uBA54\uC778"
+    Vil_Rarity: Rare
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: 
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 350
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 7
+    Vil_Name: "\uC0D0\uB7EC\uB9AC"
     Vil_Rarity: Rare
     Vil_Weapon: Gun
     Range_Normal: 8
     Range_Escape: 4
-    Vil_Synergy_1: Polifessor
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
     Vil_Synergy_2: 
     Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 200
+    Vil_Str_Max: 250
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 8
+    Vil_Name: "\uC2E0\uB3C4A"
+    Vil_Rarity: Common
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Synergy_2: 
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 100
+    Vil_Str_Max: 100
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 9
+    Vil_Name: "\uC2E0\uB3C4B"
+    Vil_Rarity: Common
+    Vil_Weapon: Gun
+    Range_Normal: 4
+    Range_Escape: 2
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 250
+    Vil_Str_Min: 100
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 10
+    Vil_Name: "\uC2E0\uAD00"
+    Vil_Rarity: Rare
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: "\uC0AC\uC774\uBE44"
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 200
+    Vil_Str_Max: 600
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 11
+    Vil_Name: "\uAD50\uC8FC"
+    Vil_Rarity: Epic
+    Vil_Weapon: Gun
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: "\uBC15\uC950"
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 500
+    Vil_Hp_Max: 650
+    Vil_Str_Min: 400
+    Vil_Str_Max: 600
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 12
+    Vil_Name: "\uBC15\uC950"
+    Vil_Rarity: Common
+    Vil_Weapon: Dagger
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: 
+    Vil_Skill: Dagger
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 100
+    Vil_Str_Max: 100
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 13
+    Vil_Name: "\uAE40\uC950"
+    Vil_Rarity: Common
+    Vil_Weapon: Gun
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 250
+    Vil_Str_Min: 100
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 14
+    Vil_Name: "\uC774\uC950"
+    Vil_Rarity: Rare
+    Vil_Weapon: Spear
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: Spear
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 200
+    Vil_Str_Max: 600
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 15
+    Vil_Name: "\uC5E0\uC950"
+    Vil_Rarity: Epic
+    Vil_Weapon: LongSword
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 500
+    Vil_Hp_Max: 650
+    Vil_Str_Min: 400
+    Vil_Str_Max: 600
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 16
+    Vil_Name: "\uAC00\uC704"
+    Vil_Rarity: Common
+    Vil_Weapon: LongSword
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 250
+    Vil_Str_Min: 20
+    Vil_Str_Max: 50
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 17
+    Vil_Name: "\uAC70\uC704"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 250
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 18
+    Vil_Name: "\uC9C0\uC704"
+    Vil_Rarity: Rare
+    Vil_Weapon: Dagger
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uC5B4\uB460\uC758 \uC790\uC2DD"
+    Vil_Synergy_2: 
+    Vil_Skill: Dagger
     Vil_Cooltime: 0
     Vil_Hp_Min: 350
     Vil_Hp_Max: 400
@@ -605,29 +317,173 @@ MonoBehaviour:
     Vil_Str_Max: 300
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 37
-    Vil_Name: "\uC6B0\uC5C9"
+  - id: 19
+    Vil_Name: "\uD559\uC704"
+    Vil_Rarity: Epic
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: "\uC789\uAF2C"
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 550
+    Vil_Hp_Max: 600
+    Vil_Str_Min: 700
+    Vil_Str_Max: 750
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 20
+    Vil_Name: "\uC2DC\uC7A5"
+    Vil_Rarity: Common
+    Vil_Weapon: LongSword
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 10
+    Vil_Str_Max: 70
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 21
+    Vil_Name: "\uC2DC\uC5B4\uBA38\uB2C8"
+    Vil_Rarity: Common
+    Vil_Weapon: Gun
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uC789\uAF2C"
+    Vil_Synergy_2: "\uC5F4\uB4F1\uAC10"
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 30
+    Vil_Str_Max: 60
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 22
+    Vil_Name: "\uC2DC\uC791"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uC5B4\uB460\uC758 \uC790\uC2DD"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 23
+    Vil_Name: "\uC2DC\uB8E8\uB5A1"
+    Vil_Rarity: Epic
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: 
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 550
+    Vil_Hp_Max: 650
+    Vil_Str_Min: 666
+    Vil_Str_Max: 750
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 24
+    Vil_Name: "\uC560\uD50C"
+    Vil_Rarity: Common
+    Vil_Weapon: Spear
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: 
+    Vil_Skill: Spear
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 10
+    Vil_Str_Max: 80
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 25
+    Vil_Name: "\uD30C\uC778\uC560\uD50C"
     Vil_Rarity: Rare
     Vil_Weapon: Dagger
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Soldier
-    Vil_Synergy_2: 
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: "\uC789\uAF2C"
     Vil_Skill: Dagger
     Vil_Cooltime: 0
-    Vil_Hp_Min: 350
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 250
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 26
+    Vil_Name: "\uC0AC\uACFC"
+    Vil_Rarity: Rare
+    Vil_Weapon: LongSword
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Synergy_2: "\uC789\uAF2C"
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
     Vil_Hp_Max: 450
     Vil_Str_Min: 200
     Vil_Str_Max: 300
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 38
+  - id: 27
+    Vil_Name: "\uB3C5\uC0AC\uACFC"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 400
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 28
+    Vil_Name: "\uC774\uBD88"
+    Vil_Rarity: Common
+    Vil_Weapon: Spear
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uC789\uAF2C"
+    Vil_Synergy_2: "\uBC15\uC950"
+    Vil_Skill: Spear
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 250
+    Vil_Str_Min: 10
+    Vil_Str_Max: 80
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 29
     Vil_Name: "\uC774\uB9AC"
     Vil_Rarity: Common
     Vil_Weapon: Spear
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Dark_Gem
+    Vil_Synergy_1: "\uC5B4\uB460\uC758 \uC790\uC2DD"
     Vil_Synergy_2: 
     Vil_Skill: Spear
     Vil_Cooltime: 0
@@ -637,45 +493,13 @@ MonoBehaviour:
     Vil_Str_Max: 40
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 39
-    Vil_Name: "\uC774\uBD88"
-    Vil_Rarity: Common
-    Vil_Weapon: Spear
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: Bat
-    Vil_Skill: Spear
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 250
-    Vil_Str_Min: 10
-    Vil_Str_Max: 80
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 40
-    Vil_Name: "\uC774\uC69C"
-    Vil_Rarity: Epic
-    Vil_Weapon: Gun
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Lovers
-    Vil_Synergy_2: Mad Scientist
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 550
-    Vil_Hp_Max: 650
-    Vil_Str_Min: 700
-    Vil_Str_Max: 800
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 41
+  - id: 30
     Vil_Name: "\uC774\uC720"
     Vil_Rarity: Common
     Vil_Weapon: Club
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Soldier
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
     Vil_Synergy_2: 
     Vil_Skill: Club
     Vil_Cooltime: 0
@@ -685,31 +509,63 @@ MonoBehaviour:
     Vil_Str_Max: 90
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 42
-    Vil_Name: "\uC774\uC950"
-    Vil_Rarity: Rare
-    Vil_Weapon: Spear
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Saibi
+  - id: 31
+    Vil_Name: "\uC774\uC69C"
+    Vil_Rarity: Epic
+    Vil_Weapon: Gun
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uC789\uAF2C"
     Vil_Synergy_2: 
-    Vil_Skill: Spear
+    Vil_Skill: Gun
     Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 450
-    Vil_Str_Min: 200
-    Vil_Str_Max: 600
+    Vil_Hp_Min: 550
+    Vil_Hp_Max: 650
+    Vil_Str_Min: 700
+    Vil_Str_Max: 800
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 43
-    Vil_Name: "\uC9C0\uC704"
-    Vil_Rarity: Rare
+  - id: 32
+    Vil_Name: "\uAE40\uBD80\uAC01"
+    Vil_Rarity: Common
     Vil_Weapon: Dagger
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Union
-    Vil_Synergy_2: 
+    Vil_Synergy_1: "\uBE44\uB9B0\uC774"
+    Vil_Synergy_2: "\uC789\uAF2C"
     Vil_Skill: Dagger
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 10
+    Vil_Str_Max: 60
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 33
+    Vil_Name: "\uB2E4\uC2DC\uB9C8\uBD80\uAC01"
+    Vil_Rarity: Rare
+    Vil_Weapon: LongSword
+    Range_Normal: 4
+    Range_Escape: 2
+    Vil_Synergy_1: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Synergy_2: "\uC789\uAF2C"
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 34
+    Vil_Name: "\uC608\uAC01"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uC5B4\uB460\uC758 \uC790\uC2DD"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
     Vil_Cooltime: 0
     Vil_Hp_Min: 350
     Vil_Hp_Max: 400
@@ -717,13 +573,205 @@ MonoBehaviour:
     Vil_Str_Max: 300
     Vil_Demon: 0
     Vil_Loyalty: 50
+  - id: 35
+    Vil_Name: "\uB454\uAC01"
+    Vil_Rarity: Rare
+    Vil_Weapon: LongSword
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: "\uC789\uAF2C"
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 350
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 36
+    Vil_Name: "\uB274\uC9C4\uC2A4"
+    Vil_Rarity: Common
+    Vil_Weapon: Spear
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
+    Vil_Synergy_2: 
+    Vil_Skill: Spear
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 20
+    Vil_Str_Max: 70
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 37
+    Vil_Name: "\uB274\uD2B8\uB9AC\uC544"
+    Vil_Rarity: Common
+    Vil_Weapon: Dagger
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Skill: Dagger
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 20
+    Vil_Str_Max: 80
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 38
+    Vil_Name: "\uB274\uB7F0"
+    Vil_Rarity: Rare
+    Vil_Weapon: LongSword
+    Range_Normal: 6
+    Range_Escape: 3
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: "\uAD00\uC2EC\uBCD1"
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 39
+    Vil_Name: "\uB274\uD2B8\uB85C\uC9C0\uB098"
+    Vil_Rarity: Epic
+    Vil_Weapon: Gun
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 500
+    Vil_Hp_Max: 600
+    Vil_Str_Min: 666
+    Vil_Str_Max: 750
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 40
+    Vil_Name: "\uAE08\uAC15"
+    Vil_Rarity: Common
+    Vil_Weapon: Club
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uAD00\uC2EC\uBCD1"
+    Vil_Synergy_2: 
+    Vil_Skill: Club
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 250
+    Vil_Str_Min: 10
+    Vil_Str_Max: 100
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 41
+    Vil_Name: "\uD55C\uD0C4\uAC15"
+    Vil_Rarity: Common
+    Vil_Weapon: Dagger
+    Range_Normal: 2
+    Range_Escape: 1
+    Vil_Synergy_1: "\uC5B4\uB460\uC758 \uC790\uC2DD"
+    Vil_Synergy_2: "\uC0AC\uC774\uBE44"
+    Vil_Skill: Dagger
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 250
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 30
+    Vil_Str_Max: 80
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 42
+    Vil_Name: "\uD55C\uAC15"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uC5F4\uB4F1\uAC10"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 250
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 43
+    Vil_Name: "\uC555\uB85D\uAC15"
+    Vil_Rarity: Rare
+    Vil_Weapon: LongSword
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: "\uD3F4\uB9AC\uD398\uC11C"
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 400
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 200
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
   - id: 44
+    Vil_Name: "\uD30C\uB791"
+    Vil_Rarity: Common
+    Vil_Weapon: Dagger
+    Range_Normal: 1
+    Range_Escape: 1
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: "\uC789\uAF2C"
+    Vil_Skill: Dagger
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 200
+    Vil_Hp_Max: 300
+    Vil_Str_Min: 10
+    Vil_Str_Max: 60
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 45
+    Vil_Name: "\uB178\uB791"
+    Vil_Rarity: Rare
+    Vil_Weapon: Spear
+    Range_Normal: 2
+    Range_Escape: 1
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: Spear
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 300
+    Vil_Hp_Max: 400
+    Vil_Str_Min: 200
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 46
+    Vil_Name: "\uBE68\uAC15"
+    Vil_Rarity: Rare
+    Vil_Weapon: Gun
+    Range_Normal: 8
+    Range_Escape: 4
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: "\uBC15\uC950"
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 350
+    Vil_Hp_Max: 450
+    Vil_Str_Min: 250
+    Vil_Str_Max: 300
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 47
     Vil_Name: "\uCD08\uB85D"
     Vil_Rarity: Epic
     Vil_Weapon: Gun
     Range_Normal: 8
     Range_Escape: 4
-    Vil_Synergy_1: Bat
+    Vil_Synergy_1: "\uBC15\uC950"
     Vil_Synergy_2: 
     Vil_Skill: Gun
     Vil_Cooltime: 0
@@ -733,116 +781,68 @@ MonoBehaviour:
     Vil_Str_Max: 800
     Vil_Demon: 0
     Vil_Loyalty: 50
-  - id: 45
-    Vil_Name: "\uCE58\uCEE4\uB9AC"
+  - id: 48
+    Vil_Name: "\uB450\uBD80"
     Vil_Rarity: Common
-    Vil_Weapon: LongSword
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Complex
-    Vil_Synergy_2: 
-    Vil_Skill: LongSword
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 200
-    Vil_Hp_Max: 300
-    Vil_Str_Min: 40
-    Vil_Str_Max: 100
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 46
-    Vil_Name: "\uCF00\uC77C"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 6
-    Range_Escape: 3
-    Vil_Synergy_1: Complex
-    Vil_Synergy_2: Saibi
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 300
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 47
-    Vil_Name: "\uD30C\uB791"
-    Vil_Rarity: Common
-    Vil_Weapon: Dagger
+    Vil_Weapon: Club
     Range_Normal: 1
     Range_Escape: 1
-    Vil_Synergy_1: Confusion
-    Vil_Synergy_2: Dark_Gem
-    Vil_Skill: Dagger
+    Vil_Synergy_1: "\uC0AC\uC774\uBE44"
+    Vil_Synergy_2: 
+    Vil_Skill: Club
     Vil_Cooltime: 0
     Vil_Hp_Min: 200
     Vil_Hp_Max: 300
     Vil_Str_Min: 10
-    Vil_Str_Max: 60
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 48
-    Vil_Name: "\uD30C\uC778\uC560\uD50C"
-    Vil_Rarity: Rare
-    Vil_Weapon: Dagger
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Confusion
-    Vil_Synergy_2: Lovers
-    Vil_Skill: Dagger
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 250
+    Vil_Str_Max: 30
     Vil_Demon: 0
     Vil_Loyalty: 50
   - id: 49
-    Vil_Name: "\uD559\uC704"
-    Vil_Rarity: Epic
-    Vil_Weapon: Club
-    Range_Normal: 1
-    Range_Escape: 1
-    Vil_Synergy_1: Confusion
-    Vil_Synergy_2: Lovers
-    Vil_Skill: Club
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 550
-    Vil_Hp_Max: 600
-    Vil_Str_Min: 700
-    Vil_Str_Max: 750
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 50
-    Vil_Name: "\uD55C\uAC15"
-    Vil_Rarity: Rare
-    Vil_Weapon: Gun
-    Range_Normal: 8
-    Range_Escape: 4
-    Vil_Synergy_1: Wolf
-    Vil_Synergy_2: 
-    Vil_Skill: Gun
-    Vil_Cooltime: 0
-    Vil_Hp_Min: 300
-    Vil_Hp_Max: 400
-    Vil_Str_Min: 200
-    Vil_Str_Max: 250
-    Vil_Demon: 0
-    Vil_Loyalty: 50
-  - id: 51
-    Vil_Name: "\uD55C\uD0C4\uAC15"
+    Vil_Name: "\uB450\uBAA9"
     Vil_Rarity: Common
-    Vil_Weapon: Dagger
-    Range_Normal: 2
-    Range_Escape: 1
-    Vil_Synergy_1: Complex
-    Vil_Synergy_2: Saibi
-    Vil_Skill: Dagger
+    Vil_Weapon: LongSword
+    Range_Normal: 4
+    Range_Escape: 2
+    Vil_Synergy_1: "\uBE4C\uB9B0\uC774"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
     Vil_Cooltime: 0
     Vil_Hp_Min: 250
     Vil_Hp_Max: 300
-    Vil_Str_Min: 30
-    Vil_Str_Max: 80
+    Vil_Str_Min: 10
+    Vil_Str_Max: 40
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 50
+    Vil_Name: "\uB450\uBB3C\uBA38\uB9AC"
+    Vil_Rarity: Epic
+    Vil_Weapon: Gun
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uBC15\uC950"
+    Vil_Synergy_2: 
+    Vil_Skill: Gun
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 500
+    Vil_Hp_Max: 550
+    Vil_Str_Min: 666
+    Vil_Str_Max: 800
+    Vil_Demon: 0
+    Vil_Loyalty: 50
+  - id: 51
+    Vil_Name: "\uB450\uD53C"
+    Vil_Rarity: Epic
+    Vil_Weapon: LongSword
+    Range_Normal: 10
+    Range_Escape: 5
+    Vil_Synergy_1: "\uC5F4\uB4F1\uAC10"
+    Vil_Synergy_2: 
+    Vil_Skill: LongSword
+    Vil_Cooltime: 0
+    Vil_Hp_Min: 550
+    Vil_Hp_Max: 650
+    Vil_Str_Min: 700
+    Vil_Str_Max: 750
     Vil_Demon: 0
     Vil_Loyalty: 50
   Skill:

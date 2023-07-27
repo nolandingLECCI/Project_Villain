@@ -15,7 +15,8 @@ public class CharacterData
     public GameObject              m_characterVisualsPrefab;
 
     public string                  m_rarity;
-    public List<SynergyBaseSO>     m_Vil_Synergy;
+    public SynergyBaseSO           m_Vil_Synergy_1;
+    public SynergyBaseSO           m_Vil_Synergy_2;
     public SkillBaseSO             m_skill;
     public string                  m_weapon;
     public bool                    m_Vil_Demon;
@@ -45,7 +46,6 @@ public class CharacterData
         this.m_characterVisualsPrefab = null;
 
         this.m_rarity = null;
-        this.m_Vil_Synergy = new List<SynergyBaseSO>(2);
         this.m_skill  = null;
         this.m_weapon = null;
         this.m_Vil_Demon = false;

@@ -10,6 +10,7 @@ public class VilScreen : MenuScreen
     const string k_CharaListPanel = "character_list-group";
 
     VisualElement m_CharaListPanel;
+    VisualElement m_EmptyCharaListPanel;
 
     [Header("Character List")]
     [Tooltip("Character List Asset to instantiate ")]
@@ -27,10 +28,12 @@ public class VilScreen : MenuScreen
 
     void OnPoolUpdated(GameData gameData)
     {
+        m_CharaListPanel.Clear();
         CreateCharacterList(gameData.CharaData, m_CharaListPanel);
     }
     void CreateCharacterList(List<CharacterData> charaList, VisualElement parentElement)
     {
+
         foreach (CharacterData charaData in charaList)
         {
             CreateCharacterPortraitElement(charaData, parentElement);
@@ -54,5 +57,6 @@ public class VilScreen : MenuScreen
     {
         base.SetVisualElements();
         m_CharaListPanel = m_Root.Q<VisualElement>(k_CharaListPanel);
+        m_EmptyCharaListPanel = m_CharaListPanel;
     }
 }

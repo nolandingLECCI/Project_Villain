@@ -7,5 +7,10 @@ public class SynergyBaseSO : ScriptableObject
 {
     public string Synergy_Name;
     public Sprite Synergy_Icon;
+    public SynergyBaseSO()
+    {
+        this.Synergy_Name = null;
+        this.Synergy_Icon = null;
+    }
 }   
 
