@@ -27,7 +27,6 @@ public class GameDataManager : MonoBehaviour
 
     void OnEnable()
     {
-        SortByRarity();
         EmployScreen.GetRandomCharacter += GetRandomCharacters;
         SettingScreen.ResetGame += OnResetGame;
         SettingScreen.IncreaseGold += OnGoldIncrease;
@@ -55,7 +54,9 @@ public class GameDataManager : MonoBehaviour
         m_IsGameDataInitialized = true;
 
         UpdateFunds();
-        UpdatePool();    
+        UpdatePool();
+
+        SortByRarity();
     }
 
     // transaction methods 
@@ -182,11 +183,11 @@ public class GameDataManager : MonoBehaviour
     }
     void SortByRarity()
     {
-            m_CharaList.AddRange(Resources.LoadAll<CharacterBaseSO>(m_ResourcePath));
-            foreach(GatchaRate g in gatcha)
-            {
-                g.reward = m_CharaList.Where(c => c.rarity == g.rarity).ToList();
-            }
+        m_CharaList.AddRange(Resources.LoadAll<CharacterBaseSO>(m_ResourcePath));
+        foreach(GatchaRate g in gatcha)
+        {
+            g.reward = m_CharaList.Where(c => c.rarity == g.rarity).ToList();
+        }
     }
     void SortCharaListByObtained()
     {

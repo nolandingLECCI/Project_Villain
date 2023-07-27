@@ -5,11 +5,14 @@ using System.IO;
 
 public class DBUpdate : MonoBehaviour
 {
-    public DB villianDB;
-    public List<CharacterBaseSO> CharaGO;
-    public List<SkillBaseSO> SkillGO;
-    public List<SynergyBaseSO> SynergyGO;
-    public List<GameObject> Effects;
+    [SerializeField] private DB villianDB;
+    [SerializeField] private List<CharacterBaseSO> CharaGO;
+    [SerializeField] private List<SkillBaseSO> SkillGO;
+    [SerializeField] private List<SynergyBaseSO> SynergyGO;
+    [SerializeField] private List<GameObject> Effects;
+
+    [SerializeField] private List<Sprite> ProfileImages;
+    [SerializeField] private List<Sprite> ProfileImages_battle;
 
     [SerializeField] string m_ResourcePath = "GameData";
     // void Awake()
@@ -116,6 +119,9 @@ public class DBUpdate : MonoBehaviour
                     }
                 }
             }
+            //////////////////////// Set Image /////////////////////
+            GO.characterProfile = ProfileImages[i];
+            GO.characterProfile_Battle = ProfileImages_battle[i];
 
             i++;
         }
@@ -127,8 +133,14 @@ public class DBUpdate : MonoBehaviour
         SkillGO = new List<SkillBaseSO>();
         SynergyGO = new List<SynergyBaseSO>();
 
+        ProfileImages = new List<Sprite>();
+        ProfileImages_battle = new List<Sprite>();
+
         CharaGO.AddRange(Resources.LoadAll<CharacterBaseSO>(m_ResourcePath+"/Characters"));
         SkillGO.AddRange(Resources.LoadAll<SkillBaseSO>(m_ResourcePath+"/Skills"));
         SynergyGO.AddRange(Resources.LoadAll<SynergyBaseSO>(m_ResourcePath+"/Synergys"));
+
+        ProfileImages.AddRange(Resources.LoadAll<Sprite>(m_ResourcePath+"/Profile"));
+        ProfileImages_battle.AddRange(Resources.LoadAll<Sprite>(m_ResourcePath+"/Profile_battle"));
     }
 }

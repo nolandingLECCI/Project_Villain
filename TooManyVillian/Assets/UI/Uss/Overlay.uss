@@ -3,6 +3,8 @@
     height: 740px;
     color: rgb(255, 255, 255);
     transition-duration: 0.25s;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .settings__panel--inactive {
@@ -13,6 +15,8 @@
     scale: 0.8 0.8;
     transition-property: opacity;
     transition-duration: 0.25s;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .progress__panel {
@@ -20,6 +24,8 @@
     height: 315px;
     color: rgb(255, 255, 255);
     transition-duration: 0.25s;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .progress__panel--inactive {
@@ -30,4 +36,6 @@
     scale: 0.8 0.8;
     transition-property: opacity;
     transition-duration: 0.25s;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }

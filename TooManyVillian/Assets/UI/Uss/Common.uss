@@ -5,6 +5,8 @@
 }
 
 .menu__button--active {
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .menu__button {
@@ -24,6 +26,8 @@
     background-color: rgba(56, 56, 56, 0);
     margin-left: 10px;
     margin-right: 10px;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .menu_icon {
@@ -32,6 +36,8 @@
     height: 55px;
     background-color: rgb(255, 255, 255);
     -unity-background-scale-mode: scale-to-fit;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .menu_label {
@@ -45,6 +51,8 @@
     flex-grow: 0;
     align-items: auto;
     justify-content: flex-start;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .menu__button_home {
@@ -58,6 +66,8 @@
     margin-right: 10px;
     font-size: 25px;
     -unity-text-align: lower-center;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .menu__button_sort {
@@ -70,12 +80,16 @@
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
     font-size: 24px;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .panel__active {
     position: absolute;
     width: 100%;
     height: 100%;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Resources/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&guid=c29ac6499bf2375459be9cd19be7e4c2&type=3#KimjungchulMyungjo-Regular');
 }
 
 .panel__inactive {
@@ -83,12 +97,18 @@
     width: 100%;
     height: 100%;
     display: none;
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .sort--descending {
     background-image: url('project://database/Assets/UI/Textures/Sort_Descending.png?fileID=2800000&guid=449d77cce9dfd7e4ab0e8c5382fa9bfe&type=3#Sort_Descending');
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }
 
 .sort--ascending {
     background-image: url('project://database/Assets/UI/Textures/Sort_ascending.png?fileID=2800000&guid=5266682ef057a37429c52e2afb496d75&type=3#Sort_ascending');
+    -unity-font-definition: none;
+    -unity-font: resource('Fonts/KimjungchulMyungjo-Regular');
 }

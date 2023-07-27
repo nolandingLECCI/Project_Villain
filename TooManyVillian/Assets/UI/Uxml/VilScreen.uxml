@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />
-    <ui:VisualElement name="villian_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column-reverse;">
+    <ui:VisualElement name="villian_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column-reverse; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&amp;guid=c29ac6499bf2375459be9cd19be7e4c2&amp;type=3#KimjungchulMyungjo-Regular&apos;);">
         <ui:VisualElement name="villian-character_list-panel" style="width: 100%; height: 90%; flex-direction: column; justify-content: flex-start; align-items: auto;">
             <ui:VisualElement name="CharacterList" style="width: 100%; height: 100%;">
                 <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />

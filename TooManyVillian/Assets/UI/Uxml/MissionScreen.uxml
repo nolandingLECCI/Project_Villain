@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Uss/Mission.uss?fileID=7433441132597879392&amp;guid=419826ddddaed7a4e9a1cf6caa08e8f0&amp;type=3#Mission" />
     <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />
-    <ui:VisualElement name="Mission_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column; color: rgb(255, 255, 255);">
+    <ui:VisualElement name="Mission_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column; color: rgb(255, 255, 255); -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&amp;guid=c29ac6499bf2375459be9cd19be7e4c2&amp;type=3#KimjungchulMyungjo-Regular&apos;);">
         <ui:VisualElement name="Mission__location" style="width: 100%; height: 90%; position: absolute; top: 10%; left: auto; display: none;">
             <ui:Label text="정복할 대상을 선택하세요" display-tooltip-when-elided="true" name="Mission__location-bio" style="left: 2%; top: 5%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
             <ui:ScrollView mode="Horizontal" name="Mission__location-ScrollView" style="top: 14%; left: 2%;">

@@ -1,27 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UIElements;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class TitleMenu : MonoBehaviour
+public class TitleMenu : MenuScreen
 {
-    public void OnClickNewGame()
-    {
+    const string k_newGame = "newgame";
 
-    }
-    public void OnClickLoad()
+    Button m_newGame;
+
+    protected override void SetVisualElements()
     {
-        
+        base.SetVisualElements();
+
+        m_newGame = m_Root.Q<Button>(k_newGame);
     }
-    public void OnClickSetting()
+    protected override void RegisterButtonCallbacks()
     {
-        
+       m_newGame?.RegisterCallback<ClickEvent>(StartNewGame);
     }
-    public void OnClickQuit()
+
+    void StartNewGame(ClickEvent evt)
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
-    }
+        SceneManager.LoadScene("Main");
+    }   
 }
+
