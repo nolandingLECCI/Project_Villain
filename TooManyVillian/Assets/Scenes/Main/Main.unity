@@ -3179,6 +3179,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
+      propertyPath: m_GameData.CharaCap
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604618984879133272, guid: 069f799e95b55d24293a9514cb407267, type: 3}
       propertyPath: m_CharaList.Array.size
       value: 16
       objectReference: {fileID: 0}
