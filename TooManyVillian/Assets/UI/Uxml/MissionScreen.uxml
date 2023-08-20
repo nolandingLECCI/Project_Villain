@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Uss/Mission.uss?fileID=7433441132597879392&amp;guid=419826ddddaed7a4e9a1cf6caa08e8f0&amp;type=3#Mission" />
     <Style src="project://database/Assets/UI/Uss/Common.uss?fileID=7433441132597879392&amp;guid=f9729ad542c89e444a231707222e412b&amp;type=3#Common" />
-    <ui:VisualElement name="Mission_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column; color: rgb(255, 255, 255); -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&amp;guid=c29ac6499bf2375459be9cd19be7e4c2&amp;type=3#KimjungchulMyungjo-Regular&apos;);">
+    <ui:VisualElement name="Mission_panel" style="width: 100%; height: 100%; background-color: rgb(35, 35, 35); flex-direction: column; color: rgb(255, 255, 255); -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Resources/Fonts/KimjungchulMyungjo-Regular.ttf?fileID=12800000&amp;guid=c29ac6499bf2375459be9cd19be7e4c2&amp;type=3#KimjungchulMyungjo-Regular&apos;);">
         <ui:VisualElement name="Mission__location" style="width: 100%; height: 90%; position: absolute; top: 10%; left: auto; display: none;">
             <ui:Label text="정복할 대상을 선택하세요" display-tooltip-when-elided="true" name="Mission__location-bio" style="left: 2%; top: 5%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
             <ui:ScrollView mode="Horizontal" name="Mission__location-ScrollView" style="top: 14%; left: 2%;">
@@ -31,7 +31,7 @@
                 </ui:Button>
                 <ui:Button text="Button" display-tooltip-when-elided="true" name="Mission__location-amargo" class="location-default">
                     <ui:VisualElement name="Mission__location-amargo_background" style="background-image: url(&apos;project://database/Assets/UI/Textures/default_background_seamless.png?fileID=2800000&amp;guid=59ea1d2d9748a5a4d8c226a8a2f63a8f&amp;type=3#default_background_seamless&apos;); width: 100%; height: 100%;">
-                        <ui:VisualElement name="Mission__location-amargo_image" style="background-image: url(&apos;project://database/Assets/UI/Textures/BG_kutoroka.png?fileID=2800000&amp;guid=d172e0a5243767440a670c23adff285d&amp;type=3#BG_kutoroka&apos;); width: 100%; height: 64%;" />
+                        <ui:VisualElement name="Mission__location-amargo_image" style="background-image: url(&apos;project://database/Assets/UI/Textures/BG_kutoroka.png?fileID=2800000&amp;guid=d172e0a5243767440a670c23adff285d&amp;type=3#BG_kutoroka&apos;); width: 100%; height: 64%; display: flex;" />
                         <ui:VisualElement name="Mission__location-amargo_description" style="background-image: none; width: auto; height: auto; flex-direction: row; align-items: center; top: 3%;">
                             <ui:VisualElement name="Mission__location-amargo_logo" style="align-items: auto; background-image: url(&apos;project://database/Assets/UI/Textures/logo_kutoroka.png?fileID=2800000&amp;guid=0294bd88212bb674a9edd5a96ae969d3&amp;type=3#logo_kutoroka&apos;); width: 75px; height: 60px; left: 2%;" />
                             <ui:Label text="쿠토로카" display-tooltip-when-elided="true" name="Mission__location-amargo_name" style="color: rgb(255, 255, 255); font-size: 40px; -unity-font-style: bold; left: 4%;" />
@@ -113,17 +113,15 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Mission__type" style="width: 100%; height: 90%; position: absolute; top: 10%; left: auto; display: none;">
+        <ui:VisualElement name="Mission__type" style="width: 100%; height: 90%; position: absolute; top: 108px; left: -2px; display: flex;">
             <ui:VisualElement name="Mission__location-amargo_description" style="background-image: none; width: auto; height: auto; flex-direction: row; align-items: center; top: 5%;">
                 <ui:VisualElement name="Mission__location-amargo_logo" style="align-items: auto; background-image: url(&apos;project://database/Assets/UI/Textures/logo_amargo.png?fileID=2800000&amp;guid=a7ec492a40a7c8141b56f51ecbbe7673&amp;type=3#logo_amargo&apos;); width: 75px; height: 60px; left: 2%;" />
                 <ui:Label text="아마르고" display-tooltip-when-elided="true" name="Mission__location-amargo_name" style="color: rgb(255, 255, 255); font-size: 40px; -unity-font-style: bold; left: 4%;" />
             </ui:VisualElement>
             <ui:Label text="임무 유형을 선택하세요" display-tooltip-when-elided="true" name="Mission__type-bio" style="left: 2%; top: 7%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
-            <ui:Button text="투입 인원" display-tooltip-when-elided="true" name="Mission__type-nextPage" style="position: absolute; right: 3%; bottom: 5%; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/UI/Textures/bt_play.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#bt_play&apos;); width: 400px; height: 100px; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 32px;" />
             <ui:VisualElement name="Mission__LifeGauge" style="position: absolute; width: 800px; height: 60px; right: 14%; top: 5%; flex-direction: row; align-items: center;">
                 <ui:VisualElement name="Mission__LifeGauge-bar" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge.png?fileID=2800000&amp;guid=5cf990eee642c5946965487b53fade12&amp;type=3#Mission_lifeGauge&apos;); width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: center;">
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
-                    <ui:VisualElement name="Mission__LifeGauge-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge_logo.png?fileID=2800000&amp;guid=b7c3bbcbefe223344bb522e745d22a5d&amp;type=3#Mission_lifeGauge_logo&apos;); width: 10%; height: 100%; position: absolute; left: -1%;" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
@@ -131,6 +129,7 @@
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
                     <ui:VisualElement name="Mission__LifeGauge-life" class="lifeGauge-life" />
+                    <ui:VisualElement name="Mission__LifeGauge-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/Mission_lifeGauge_logo.png?fileID=2800000&amp;guid=b7c3bbcbefe223344bb522e745d22a5d&amp;type=3#Mission_lifeGauge_logo&apos;); width: 62px; height: 100%; position: absolute; left: -1%;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Mission__DayNight" style="position: absolute; top: 5%; right: 3%; height: 60px; width: 169px;">
@@ -138,6 +137,22 @@
                     <ui:Label text="시간대" display-tooltip-when-elided="true" name="Mission__DayNight-label" style="font-size: 28px; margin-left: 6%; margin-right: 6%;" />
                     <ui:VisualElement name="Mission__DayNight-icon" style="background-image: url(&apos;project://database/Assets/UI/Textures/icon_Day.png?fileID=2800000&amp;guid=944abddd52a7dd3428074caaa99ed080&amp;type=3#icon_Day&apos;); width: 25%; height: 50%;" />
                 </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="left: 15px; top: 100px; width: 400px; height: 90px; margin-bottom: 1%; background-image: url(&apos;project://database/Assets/UI/Textures/Mission_type_terro%201.png?fileID=2800000&amp;guid=6ec0c9bd5641eb942bf819e68a6669b7&amp;type=3#Mission_type_terro 1&apos;);" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="left: 15px; top: 100px; width: 400px; height: 90px; margin-bottom: 1%;" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="left: 15px; top: 100px; width: 400px; height: 90px; margin-bottom: 1%;" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="left: 15px; top: 100px; width: 400px; height: 90px; margin-bottom: 1%;" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="left: 15px; top: 100px; width: 400px; height: 90px; margin-bottom: 1%;" />
+            <ui:VisualElement style="left: 440px; width: 1000px; bottom: 0; background-image: url(&apos;project://database/Assets/UI/Textures/Mission_type_script_box.png?fileID=2800000&amp;guid=e7a663cfc4efd0f40bd822c4dff8b972&amp;type=3#Mission_type_script_box&apos;); position: absolute; top: 195px; justify-content: flex-start; align-items: stretch; height: 750px;">
+                <ui:IMGUIContainer style="width: 1000px; height: 300px; justify-content: flex-start; align-items: stretch; left: 0; bottom: 0; top: 0; background-image: url(&apos;project://database/Assets/UI/Textures/BG_amargo.png?fileID=21300000&amp;guid=8fa543758e7f901408ad3348c90c1880&amp;type=3#BG_amargo&apos;); position: relative;" />
+                <ui:Label text="테러 " display-tooltip-when-elided="true" name="Mission__location-amargo_name" style="color: rgb(255, 255, 255); font-size: 40px; -unity-font-style: bold; left: 2%; top: 2%;" />
+                <ui:Label text="슈퍼샤이 슈퍼샤이 " display-tooltip-when-elided="true" name="Mission__type-bio" style="left: 2%; top: 7%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255); width: auto; right: auto;" />
+            </ui:VisualElement>
+            <ui:Button text="투입 인원" display-tooltip-when-elided="true" name="Mission__type-nextPage" style="position: absolute; right: 39px; bottom: 39px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/UI/Textures/bt_play.png?fileID=2800000&amp;guid=b911fca53cba465498595357740d6123&amp;type=3#bt_play&apos;); width: 330px; height: 100px; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 32px; margin-left: 3px;" />
+            <ui:VisualElement style="position: absolute; left: 1470px; top: 195px; width: 350px; height: 600px; background-image: url(&apos;project://database/Assets/UI/Textures/mission_place.png?fileID=2800000&amp;guid=4a4a32afc7b173d41bb9878d4693bd41&amp;type=3#mission_place&apos;);">
+                <ui:IMGUIContainer style="width: 340px; height: 160px; background-image: url(&apos;project://database/Assets/UI/Textures/Group%20200.png?fileID=2800000&amp;guid=ad0c00d9c6acb994f96f75ea4a052109&amp;type=3#Group 200&apos;); align-items: center; margin-left: 1.5%; margin-top: 1%;" />
+                <ui:Label text="아마르고 " display-tooltip-when-elided="true" name="Mission__location-amargo_name" style="color: rgb(255, 255, 255); font-size: 40px; -unity-font-style: bold; left: 2%; top: 2%; margin-left: 5%; margin-right: 5%;" />
+                <ui:Label text="호에엥" display-tooltip-when-elided="true" name="Mission__type-bio" style="left: 2%; top: 7%; font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255); width: auto; right: auto;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Mission__list" style="position: absolute; width: 100%; height: 90%; top: 10%; display: none;">
