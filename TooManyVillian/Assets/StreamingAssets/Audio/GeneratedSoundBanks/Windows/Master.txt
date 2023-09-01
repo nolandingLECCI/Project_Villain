@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	210525899	MUS_Terror			\Default Work Unit\MUS\MUS_Terror	
+	1226245493	Mon_1_1			\Default Work Unit\SFX\Mon_1_1	
+	1226245494	Mon_1_2			\Default Work Unit\SFX\Mon_1_2	
+	1226245495	Mon_1_3			\Default Work Unit\SFX\Mon_1_3	
+	1294103118	UI_Change			\Default Work Unit\SFX\UI_Change	
+	1597483820	MUS_Amargo			\Default Work Unit\MUS\MUS_Amargo	
+	2065478991	Uni_Knife			\Default Work Unit\SFX\Uni_Knife	
+	2563992102	UI_Loading			\Default Work Unit\SFX\UI_Loading	
+	2774129122	UI_Select			\Default Work Unit\SFX\UI_Select	
+	2893004387	MUS_Kutoroka			\Default Work Unit\MUS\MUS_Kutoroka	
+	3114676872	Uni_Jump			\Default Work Unit\SFX\Uni_Jump	
+	3964023307	Uni_Hit			\Default Work Unit\SFX\Uni_Hit	
+	4032266626	Uni_Gun			\Default Work Unit\SFX\Uni_Gun	
+	4158128212	MUS_Magye			\Default Work Unit\MUS\MUS_Magye	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	80175734	Gun1	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\GunshotRevolver_BW.57316_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SkillSFX\Wep_Gun\Gun1		279616
+	120839895	Hit1	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\FF_AF_foley_bullet_flyby_indigo_99E280A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\StageSFX\Hit\Hit1		145212
+	128003867	Mon2_Att	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Game_Item_Pick_Up_3_Impact_Electronic_Pick_Up_Sci_Fi_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Mon2_Att	사탕이 어택 	138296
+	133509527	Kinfe1	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Empire_Game_Warfare_Dagger_2_Knife_Weapon_Slash_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SkillSFX\Wep_Kni\Kinfe1		114744
+	205671149	BGM_Main_Magyetheme	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\BGM_Main_Magyetheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Magye_Theme\BGM_Main_Magyetheme\BGM_Main_Magyetheme		18603156
+	284545888	ESM_Card_Game_Achievement_Chime_Light_01_Magic_Upgrade_Positive_Enahance_Level_Up	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Card_Game_Achievement_Chime_Light_01_Magic_Upgrade_Positive_Enahance_Level_Up_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GeneralSFX\LoadingCircle\loading\ESM_Card_Game_Achievement_Chime_Light_01_Magic_Upgrade_Positive_Enahance_Level_Up		695764
+	326894524	Gun1_02	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\GunshotPistol_BW.56966_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SkillSFX\Wep_Gun\Gun1_02		241728
+	328539730	SelectUI	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ButtonPressType2_HV.111_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GeneralSFX\SelectUI		27712
+	405925872	Mon3_Att	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Hollow_Power_Up_1_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Mon3_Att		157332
+	477401204	Kinfe1_01	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Empire_Game_Warfare_Dagger_1_Knife_Weapon_Slash_Attack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SkillSFX\Wep_Kni\Kinfe1_01		103748
+	491790252	Gun1_01	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\GunshotRevolver_BW.57314_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SkillSFX\Wep_Gun\Gun1_01		677952
+	618044836	쿠토로카_연합 버전	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\쿠토로카_연합 버전_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\StageMUS\Kutoroka\쿠토로카_연합 버전\쿠토로카_연합 버전		6703264
+	629730966	ESM_Level_Up_Sound_FX_Arcade_Casino_Kids_Mobile_App	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Level_Up_Sound_FX_Arcade_Casino_Kids_Mobile_App_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GeneralSFX\LoadingCircle\loading\ESM_Level_Up_Sound_FX_Arcade_Casino_Kids_Mobile_App		225232
+	736870312	Hit2	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\FF_AF_fx_whoosh_bullet_flyby_turquoise_A4174281.wem		\Actor-Mixer Hierarchy\Default Work Unit\StageSFX\Hit\Hit2		183696
+	883658904	Mon1_Att	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\TS_FUTURE_fx_one_shot_whip_chase_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Mon1_Att	프레첼 어택 	89492
+	910585342	terror_New	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\terror_New_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Mission_Terror\terror_New\terror_New		9031744
+	987665194	Jump	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Ninja_Jump_2_Airy_Whoosh_Pass_By_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GeneralSFX\Jump		38624
+	1021820050	ChangeUI	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\ESM_Main_Button_Tonal_Classic_Game_Synth_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GeneralSFX\ChangeUI		47828
+	1055839035	MUS_Stage1_Kawaii Bass_bpm150_4-4	E:\GameDev\[Billon] Project_Villain\VillanSound\.cache\Windows\SFX\MUS_Stage1_Kawaii Bass_bpm150_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\StageMUS\Amargo\MUS_Stage1_Kawaii Bass_bpm150_4-4\MUS_Stage1_Kawaii Bass_bpm150_4-4		7372864
+
