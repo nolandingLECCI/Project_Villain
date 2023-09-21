@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="GameWinScreen" src="project://database/Assets/UI/Uxml/GameWinScreen.uxml?fileID=9197481963319205126&amp;guid=4bdc6dbaac7b43942b583e61ca450dc8&amp;type=3#GameWinScreen" />
+    <ui:Template name="GameLoseScreen" src="project://database/Assets/UI/Uxml/GameLoseScreen.uxml?fileID=9197481963319205126&amp;guid=f047743f2cc5f314983ed0c1011e5eda&amp;type=3#GameLoseScreen" />
+    <ui:Template name="PauseScreen" src="project://database/Assets/UI/Uxml/PauseScreen.uxml?fileID=9197481963319205126&amp;guid=a9bbb2ab53989bc499eebbac1e250841&amp;type=3#PauseScreen" />
+    <ui:VisualElement name="game-background" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:VisualElement name="pause__button-panel" picking-mode="Ignore" style="margin-left: 12px; margin-right: 12px; margin-top: 12px; margin-bottom: 12px; width: 100px; height: 100px; top: 0; right: 0; position: absolute;">
+        <ui:Button display-tooltip-when-elided="true" name="pause__button" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Textures/icon_settings.png?fileID=2800000&amp;guid=f1a0abb431e15a94cb1def19538ad738&amp;type=3#icon_settings&apos;); background-color: rgba(255, 255, 255, 0);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="game-char__panel" picking-mode="Ignore" style="position: absolute; left: 40px; bottom: auto; height: 250px; width: 1300px;" />
+    <ui:Instance template="GameWinScreen" name="GameWinScreen" style="display: none; width: 100%; height: 100%;" />
+    <ui:Instance template="GameLoseScreen" name="GameLoseScreen" style="display: none; width: 100%; height: 100%;" />
+    <ui:Instance template="PauseScreen" name="PauseScreen" style="width: 100%; height: 100%; display: none;" />
+</ui:UXML>

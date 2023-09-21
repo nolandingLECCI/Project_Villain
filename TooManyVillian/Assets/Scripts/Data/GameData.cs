@@ -13,6 +13,7 @@ public class GameData
 
     //캐릭터 풀
     public List<CharacterData> CharaData;
+    public List<CharacterData> BattleCharaData;
     //캐릭터 수용치
     public uint CharaCap;
 

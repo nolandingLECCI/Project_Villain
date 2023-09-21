@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance; // 싱글톤을 할당할 전역 변수
-
+    public GameDataManager Data;
+    public List<Animator> m_animator;
+    [SerializeField] private List<CharacterData> m_BattleCharaData;
     public GameObject[] playerCharacters;
     public GameObject[] enemyGroups;
     public GameObject bossCharacter;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
             // instance가, GameManager가 존재한다면 GameObject 제거 
             Destroy(this.gameObject);
         }
+        Init();
     }
 
     public GameObject[] GetCharacterList() 
@@ -39,4 +42,33 @@ public class GameManager : MonoBehaviour
     {
         return bossCharacter;
     }
+
+    private void Init()
+    {
+        m_BattleCharaData = Data.GameData.BattleCharaData;
+        if(m_BattleCharaData!=null)
+        {
+            SetupCharacters();
+        }
+    }
+    private void SetupCharacters()
+    {
+        BaseCharacterController controller;
+        Animator animator;
+        for(int i = 0 ; i<playerCharacters.Length ; i++)
+        {
+            controller = playerCharacters[i].GetComponent<BaseCharacterController>();
+            controller.maxHealth = (int)m_BattleCharaData[i].m_Vil_Hp;
+            controller.strength = (int)m_BattleCharaData[i].m_Vil_Str;
+            controller.attackRange = (int)m_BattleCharaData[i].m_Range_Normal;
+
+            animator = playerCharacters[i].GetComponent<Animator>();
+            if(m_BattleCharaData[i].m_weapon == "LongSword")
+            {
+                animator.runtimeAnimatorController = Resources.Load("GameData/Animator/LongKnife") as RuntimeAnimatorController;
+            }
+        }
+        
+    }
+
 }
