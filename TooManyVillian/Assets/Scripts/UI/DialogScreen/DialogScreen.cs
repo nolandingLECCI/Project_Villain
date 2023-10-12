@@ -16,10 +16,14 @@ public class DialogScreen : MonoBehaviour
     public event Action ScreenEnded;
 
     //Dialog System
-    private bool isAutoStart = false;
+    [SerializeField] private Dialog dialogDB;
+    [SerializeField] private List<DialogEntity> dialogs;
+    
+    public int branch = 1;
+    private bool isAutoStart = true;
     private bool isFirst = true;
     private bool playOnlyFirstTime = true;
-    private int currentDialogIndex = -1;
+    [SerializeField] private int currentDialogIndex = -1;
     private int currentSpeakerIndex = 0;
     private float defaultTypingSpeed = 0.1f;
     private float ffTypingSpeed = 0.05f;
@@ -73,7 +77,17 @@ public class DialogScreen : MonoBehaviour
 
     void OnEnable()
     {
+        dialogs = new List<DialogEntity>();
+        for(int i = 0 ; i < dialogDB.DialogDB.Count; ++i)
+        {
+            if(dialogDB.DialogDB[i].branch == branch)
+            {
+                dialogs.Add(dialogDB.DialogDB[i]);
+            }
+        }
+        currentDialogIndex = (int)dialogs[0].idx-1;
         ShowScreen();
+        Start();
     }
 
     private void SetVisualElements()
@@ -108,7 +122,17 @@ public class DialogScreen : MonoBehaviour
 
     void ScreenClicked(ClickEvent evt)
     {
-        //m_Text.text = "test test test test test test test test test test test test test test test test test test test test test test test test ";
+        if(isTypingEffect == true)
+        {
+            isTypingEffect = false;
+            StopCoroutine("OnTypingText");
+            m_Text.text = dialogs[currentDialogIndex].dialog;
+            //speakers[currentSpeakerIndex].objectArrow.SetActive(true);
+        }
+        if(dialogs.Count > currentDialogIndex + 1)
+        {
+            SetNextDialog();
+        }
     }
     void Skip(ClickEvent evt)
     {
@@ -170,17 +194,25 @@ public class DialogScreen : MonoBehaviour
 
     private void Setup()
     {
-
+        
     }
 
-    // public bool UpdateDialog()
-    // {
-        
-    // }
-    // private void SetNextDialog()
-    // {
-
-    // }
+    public bool UpdateDialog()
+    {
+        if(isFirst == true)
+        {
+            if(isAutoStart) SetNextDialog();
+            isFirst = false;
+        }
+        return false;
+    }
+    private void SetNextDialog()
+    {
+        currentDialogIndex++;
+        m_Text.text = dialogs[currentDialogIndex].dialog;
+        m_Name.text = dialogs[currentDialogIndex].name;
+        //StartCoroutine("OnTypingText");
+    }
     private IEnumerator OnTypingText()
     {
         int idx = 0;
@@ -202,5 +234,13 @@ public class DialogScreen : MonoBehaviour
         isTypingEffect = false;
 
         //speakers[currentSpeakerIndex].objectArrow.SetActive(true);
+    }
+    private IEnumerator Start()
+    {
+        yield return new WaitUntil(()=>UpdateDialog());
+
+        yield return new WaitForSeconds(2);
+        Debug.Log("대화종료");
+        //UnityEditor.EditorApplication.ExitPlaymode();
     }
 }
