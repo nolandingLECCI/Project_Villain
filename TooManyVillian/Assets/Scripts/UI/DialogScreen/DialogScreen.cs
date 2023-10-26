@@ -7,6 +7,12 @@ using UnityEngine.UIElements;
 
 public class DialogScreen : MonoBehaviour
 {
+    string m_ResourcePath = "GameData/Dialog";
+    private uint Question1Idx;
+    private uint Question2Idx;
+    private uint Question3Idx;
+
+    [SerializeField] private Sprite m_DefaultImage; 
     //Screen Settings
     [SerializeField] protected UIDocument m_Document;
     protected VisualElement m_Screen;
@@ -23,7 +29,7 @@ public class DialogScreen : MonoBehaviour
     private bool isAutoStart = true;
     private bool isFirst = true;
     private bool playOnlyFirstTime = true;
-    [SerializeField] private int currentDialogIndex = -1;
+    [SerializeField] private int currentDialogIndex = 0;
     private int currentSpeakerIndex = 0;
     private float defaultTypingSpeed = 0.1f;
     private float ffTypingSpeed = 0.05f;
@@ -48,11 +54,27 @@ public class DialogScreen : MonoBehaviour
 
     const string k_Next = "Dialog_Text-next";
 
+    const string k_SpeakingClass = "Speaking";
+    const string k_NotSpeakingClass = "NotSpeaking";
+
+    const string k_QuestionActive = "question_active";
+    const string k_QuestionInactive = "question_inactive";
+
+    const string k_Question = "Questions";
+
     Button m_ClickButton;
 
     Button m_SkipButton;
     Button m_FFButton;
     Button m_AutoButton;
+
+    Button m_Question_1_Button;
+    Button m_Question_2_Button;
+    Button m_Question_3_Button;
+
+    Label m_Question_1_Label;
+    Label m_Question_2_Label;
+    Label m_Question_3_Label;
 
     VisualElement m_CenterImage;
     VisualElement m_RightImage;
@@ -63,6 +85,10 @@ public class DialogScreen : MonoBehaviour
 
     VisualElement m_Next;
 
+    void Start()
+    {
+        LoadData();
+    }
     protected virtual void Awake()
     {
         if (m_Document == null)
@@ -85,9 +111,9 @@ public class DialogScreen : MonoBehaviour
                 dialogs.Add(dialogDB.DialogDB[i]);
             }
         }
-        currentDialogIndex = (int)dialogs[0].idx-1;
+        SetNextDialog();
         ShowScreen();
-        Start();
+        DialogStart();
     }
 
     private void SetVisualElements()
@@ -101,6 +127,14 @@ public class DialogScreen : MonoBehaviour
         m_SkipButton = m_Root.Q<Button>(k_SkipButton);
         m_FFButton = m_Root.Q<Button>(k_FFButton);
         m_AutoButton = m_Root.Q<Button>(k_AutoButton);
+
+        m_Question_1_Button = m_Root.Q<Button>(k_Question+"-1");
+        m_Question_2_Button = m_Root.Q<Button>(k_Question+"-2");
+        m_Question_3_Button = m_Root.Q<Button>(k_Question+"-3");
+
+        m_Question_1_Label = m_Root.Q<Label>(k_Question+"-1_text");
+        m_Question_2_Label = m_Root.Q<Label>(k_Question+"-2_text");
+        m_Question_3_Label = m_Root.Q<Label>(k_Question+"-3_text");
 
         m_CenterImage = m_Root.Q<VisualElement>(k_CenterImage);
         m_LeftImage = m_Root.Q<VisualElement>(k_LeftImage);
@@ -118,20 +152,58 @@ public class DialogScreen : MonoBehaviour
         m_SkipButton?.RegisterCallback<ClickEvent>(Skip);
         m_FFButton?.RegisterCallback<ClickEvent>(FF);
         m_AutoButton?.RegisterCallback<ClickEvent>(Auto);
+
+        m_Question_1_Button?.RegisterCallback<ClickEvent>(Question1);
+        m_Question_2_Button?.RegisterCallback<ClickEvent>(Question2);
+        m_Question_3_Button?.RegisterCallback<ClickEvent>(Question3);
     }
 
     void ScreenClicked(ClickEvent evt)
     {
-        if(isTypingEffect == true)
+        if(dialogs[currentDialogIndex+1].type == "dialog")
         {
-            isTypingEffect = false;
-            StopCoroutine("OnTypingText");
-            m_Text.text = dialogs[currentDialogIndex].dialog;
-            //speakers[currentSpeakerIndex].objectArrow.SetActive(true);
+            if(isTypingEffect == true)
+            {
+                isTypingEffect = false;
+                StopCoroutine("OnTypingText");
+                m_Text.text = dialogs[currentDialogIndex].dialog;
+                //speakers[currentSpeakerIndex].objectArrow.SetActive(true);
+            }
+            if(dialogs.Count > currentDialogIndex + 1)
+            {
+                SetNextDialog();
+            }
+            else
+            {
+                Debug.Log("Dialog End");
+            }
         }
-        if(dialogs.Count > currentDialogIndex + 1)
+        else
         {
-            SetNextDialog();
+            if(dialogs.Count > currentDialogIndex + 1)
+            {
+                if(dialogs[currentDialogIndex+1].type == "question")
+                {
+                    m_Question_1_Label.text = dialogs[currentDialogIndex+1].dialog;
+                    m_Question_1_Button.RemoveFromClassList(k_QuestionInactive);
+                    m_Question_1_Button.AddToClassList(k_QuestionActive);
+                    Question1Idx = dialogs[currentDialogIndex+1].nextIdx;
+                }
+                if(dialogs[currentDialogIndex+2].type == "question")
+                {
+                    m_Question_2_Button.RemoveFromClassList(k_QuestionInactive);
+                    m_Question_2_Button.AddToClassList(k_QuestionActive);
+                    m_Question_2_Label.text = dialogs[currentDialogIndex+2].dialog;
+                    Question2Idx = dialogs[currentDialogIndex+2].nextIdx;
+                }
+                if(dialogs[currentDialogIndex+3].type == "question")
+                {
+                    m_Question_3_Button.RemoveFromClassList(k_QuestionInactive);
+                    m_Question_3_Button.AddToClassList(k_QuestionActive);
+                    m_Question_3_Label.text = dialogs[currentDialogIndex+3].dialog;
+                    Question3Idx = dialogs[currentDialogIndex+3].nextIdx;
+                }
+            }
         }
     }
     void Skip(ClickEvent evt)
@@ -147,6 +219,24 @@ public class DialogScreen : MonoBehaviour
     {
         if(!isAutoStart)    isAutoStart = true;
         else                isAutoStart = false;
+    }
+    void Question1(ClickEvent evt)
+    {
+        currentDialogIndex = (int)Question1Idx;
+        InactiveQuestions();
+        SetNextDialog();
+    }
+    void Question2(ClickEvent evt)
+    {
+        currentDialogIndex = (int)Question2Idx;
+        InactiveQuestions();
+        SetNextDialog();
+    }
+    void Question3(ClickEvent evt)
+    {
+        currentDialogIndex = (int)Question2Idx;
+        InactiveQuestions();
+        SetNextDialog();
     }
     
 
@@ -194,7 +284,7 @@ public class DialogScreen : MonoBehaviour
 
     private void Setup()
     {
-        
+        InactiveQuestions();
     }
 
     public bool UpdateDialog()
@@ -208,9 +298,50 @@ public class DialogScreen : MonoBehaviour
     }
     private void SetNextDialog()
     {
-        currentDialogIndex++;
+        if(currentDialogIndex >= 0 )    currentDialogIndex++;
         m_Text.text = dialogs[currentDialogIndex].dialog;
         m_Name.text = dialogs[currentDialogIndex].name;
+        string SpeakerName = dialogs[currentDialogIndex].name;
+        string SpeakerEmotion = dialogs[currentDialogIndex].emotion;
+        uint SpeakerIdx = dialogs[currentDialogIndex].speakerIdx;
+        Sprite SpeakerImage = Resources.Load<Sprite>(m_ResourcePath+"/"+SpeakerName+"/"+SpeakerName+"_"+SpeakerEmotion);
+
+        switch(SpeakerIdx)
+        {
+            case 0:
+                HighlightSpeaker(0);
+                if(SpeakerImage == null)
+                {
+                    m_LeftImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_LeftImage.style.backgroundImage = new StyleBackground(SpeakerImage);
+                }
+                break;
+            case 1:
+                HighlightSpeaker(1);
+                if(SpeakerImage == null)
+                {
+                    m_RightImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_RightImage.style.backgroundImage = new StyleBackground(SpeakerImage);
+                }
+                break;
+            case 2:
+                HighlightSpeaker(2);
+                if(SpeakerImage == null)
+                {
+                    m_CenterImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_CenterImage.style.backgroundImage = new StyleBackground(SpeakerImage);
+                }
+                break;
+        }
         //StartCoroutine("OnTypingText");
     }
     private IEnumerator OnTypingText()
@@ -235,12 +366,56 @@ public class DialogScreen : MonoBehaviour
 
         //speakers[currentSpeakerIndex].objectArrow.SetActive(true);
     }
-    private IEnumerator Start()
+    private IEnumerator DialogStart()
     {
         yield return new WaitUntil(()=>UpdateDialog());
 
         yield return new WaitForSeconds(2);
         Debug.Log("대화종료");
         //UnityEditor.EditorApplication.ExitPlaymode();
+    }
+
+    private void LoadData()
+    {
+        m_DefaultImage = Resources.Load<Sprite>(m_ResourcePath+"/Default");
+    }
+    private void HighlightSpeaker(uint idx)
+    {
+        switch(idx)
+        {
+            case 0:
+                m_LeftImage.RemoveFromClassList(k_NotSpeakingClass);
+                m_LeftImage.AddToClassList(k_SpeakingClass);
+                m_RightImage.RemoveFromClassList(k_SpeakingClass);
+                m_RightImage.AddToClassList(k_NotSpeakingClass);
+                m_CenterImage.RemoveFromClassList(k_SpeakingClass);
+                m_CenterImage.AddToClassList(k_NotSpeakingClass);
+                break;
+            case 1:
+                m_LeftImage.RemoveFromClassList(k_SpeakingClass);
+                m_LeftImage.AddToClassList(k_NotSpeakingClass);
+                m_RightImage.RemoveFromClassList(k_NotSpeakingClass);
+                m_RightImage.AddToClassList(k_SpeakingClass);
+                m_CenterImage.RemoveFromClassList(k_SpeakingClass);
+                m_CenterImage.AddToClassList(k_NotSpeakingClass);
+                break;
+            case 2:
+                m_LeftImage.RemoveFromClassList(k_SpeakingClass);
+                m_LeftImage.AddToClassList(k_NotSpeakingClass);
+                m_RightImage.RemoveFromClassList(k_SpeakingClass);
+                m_RightImage.AddToClassList(k_NotSpeakingClass);
+                m_CenterImage.RemoveFromClassList(k_NotSpeakingClass);
+                m_CenterImage.AddToClassList(k_SpeakingClass);
+                break;
+        }
+    }
+    private void InactiveQuestions()
+    {
+        m_Question_1_Button.RemoveFromClassList(k_QuestionActive);
+        m_Question_1_Button.AddToClassList(k_QuestionInactive);
+        m_Question_2_Button.RemoveFromClassList(k_QuestionActive);
+        m_Question_2_Button.AddToClassList(k_QuestionInactive);
+        m_Question_3_Button.RemoveFromClassList(k_QuestionActive);
+        m_Question_3_Button.AddToClassList(k_QuestionInactive);
     }
 }

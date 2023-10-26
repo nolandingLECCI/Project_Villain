@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Dialog_panel" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%; align-items: auto;">
+    <Style src="project://database/Assets/UI/Uss/Dialog.uss?fileID=7433441132597879392&amp;guid=c27a9a935b873c841ac5ddbb2a951b65&amp;type=3#Dialog" />
+    <ui:VisualElement name="Dialog_panel" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%; align-items: auto; -unity-font-definition: resource(&apos;Fonts/KimjungchulMyungjo-Regular SDF 1&apos;);">
         <ui:VisualElement name="Dialog_Background" picking-mode="Ignore" style="width: 100%; height: 100%; position: absolute; background-image: url(&apos;project://database/Assets/UI/Textures/Dialog_background_default.png?fileID=2800000&amp;guid=d9b2748c6a0e1fd4495b9cb755bafcc9&amp;type=3#Dialog_background_default&apos;); flex-direction: column;">
             <ui:VisualElement name="Dialog_Menu" picking-mode="Ignore" style="height: 10%; flex-direction: row-reverse;">
                 <ui:VisualElement name="Dialog_Menu-skip" style="height: 100%; margin-left: 1%; margin-right: 1%; margin-top: 0; margin-bottom: 0; width: 180px; padding-top: 0; padding-bottom: 0; flex-direction: row; align-items: center;">
@@ -13,9 +14,9 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Dialog_Image" picking-mode="Ignore" style="height: 60%;">
-                <ui:VisualElement name="Dialog_Image-center" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column; left: 25%;" />
-                <ui:VisualElement name="Dialog_Image-left" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column;" />
-                <ui:VisualElement name="Dialog_Image-right" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column; left: 50%;" />
+                <ui:VisualElement name="Dialog_Image-center" class="Speaking" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column; left: 25%;" />
+                <ui:VisualElement name="Dialog_Image-left" class="Speaking" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column;" />
+                <ui:VisualElement name="Dialog_Image-right" class="Speaking" style="position: absolute; width: 50%; height: 100%; align-items: auto; flex-direction: column; left: 50%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Dialog_Text" picking-mode="Ignore" style="height: 30%; color: rgb(255, 255, 255);">
                 <ui:VisualElement name="Dialog_Text-background" style="width: auto; height: 100%; position: relative; background-image: url(&apos;project://database/Assets/UI/Textures/Dialog_textBackground.png?fileID=2800000&amp;guid=18624fdf669be5c47be50dfec66f8a50&amp;type=3#Dialog_textBackground&apos;); align-items: center; margin-left: 1%; margin-right: 1%; margin-top: 0; margin-bottom: 1%;">
@@ -25,10 +26,16 @@
                 </ui:VisualElement>
                 <ui:VisualElement name="Dialog_Text-next" style="position: absolute; background-image: url(&apos;project://database/Assets/UI/Textures/Dialog_next.png?fileID=2800000&amp;guid=08a18c73dbd46454c8b2ce6e2e5783a5&amp;type=3#Dialog_next&apos;); width: 50px; height: 35px; right: 4%; bottom: 12%;" />
             </ui:VisualElement>
-            <ui:VisualElement name="Dialog_Questions" style="position: absolute; width: 600px; top: 40%; right: 2%; flex-direction: column-reverse; height: 280px;">
-                <ui:VisualElement name="Questions-3" style="width: 100%; height: 80px; background-image: url(&apos;project://database/Assets/Resources/Fonts/KimjungchulMyungjo-Bold%20SDF%201.asset?fileID=11400000&amp;guid=fac3b9ce47901c848a835b56e3c87579&amp;type=2#KimjungchulMyungjo-Bold SDF 1&apos;); margin-top: 5px; margin-bottom: 5px; display: none;" />
-                <ui:VisualElement name="Questions-2" style="width: 100%; height: 80px; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); margin-top: 5px; margin-bottom: 5px; display: none;" />
-                <ui:VisualElement name="Questions-1" style="width: 100%; height: 80px; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); margin-top: 5px; margin-bottom: 5px; display: none;" />
+            <ui:VisualElement name="Dialog_Questions" style="position: absolute; width: 600px; top: 40%; right: 2%; flex-direction: column-reverse; height: 280px; color: rgb(255, 255, 255);">
+                <ui:Button display-tooltip-when-elided="true" name="Questions-1" class="question_inactive" style="width: 100%; height: 80px; margin-left: 0; margin-right: 0; margin-top: 5px; margin-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    <ui:Label text="질문1" display-tooltip-when-elided="true" name="Questions-1_text" style="width: 100%; height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; font-size: 36px; -unity-text-align: middle-left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="Questions-2" class="question_inactive" style="width: 100%; height: 80px; margin-left: 0; margin-right: 0; margin-top: 5px; margin-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    <ui:Label text="질문2" display-tooltip-when-elided="true" name="Questions-2_text" style="width: 100%; height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; font-size: 36px; -unity-text-align: middle-left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="Questions-3" class="question_inactive" style="width: 100%; height: 80px; margin-left: 0; margin-right: 0; margin-top: 5px; margin-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-image: url(&apos;project://database/Assets/UI/Textures/default_background.png?fileID=2800000&amp;guid=1f7a07afd6976bf4fb1d7322c0e2981f&amp;type=3#default_background&apos;); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    <ui:Label text="질문3" display-tooltip-when-elided="true" name="Questions-3_text" style="width: 100%; height: 100%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; font-size: 36px; -unity-text-align: middle-left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                </ui:Button>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

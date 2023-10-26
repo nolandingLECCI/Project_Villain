@@ -16,7 +16,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 0
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC5B4\uC11C\uC624\uC138\uC694 \uB9C8\uC655\uB2D8. \uC800\uB294 \uB9C8\uC655\uB2D8\uC744
@@ -26,7 +26,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 1
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uD68C\uC0AC \uC6B4\uC601\uC774 \uCC98\uC74C\uC778 \uB9C8\uC655\uB2D8\uC744
@@ -37,7 +37,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 2
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uBA3C\uC800 \uB9C8\uC655\uB2D8\uC774 \uC778\uAC04\uACC4\uC5D0 \uBA38\uBB34\uB974\uB294
@@ -47,7 +47,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 3
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC774 \uACF3\uC758 \uC791\uC804\uC774 \uC5B4\uB5BB\uAC8C \uC9C4\uD589\uB418\uB0D0\uC5D0
@@ -58,7 +58,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 1
     idx: 4
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: dialog
     emotion: default
     dialog: "[\uC54C\uACA0\uC5B4]"
@@ -66,7 +66,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 5
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC774\uD574\uD574\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4!
@@ -76,7 +76,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 6
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC800\uD76C\uB294 [\uCC44\uC6A9] [\uAD50\uC721] [\uC784\uBB34] \uCD1D
@@ -86,7 +86,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 1
     idx: 7
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: question
     emotion: default
     dialog: "[\uCC44\uC6A9]\uC5D0 \uB300\uD574 \uC54C\uB824\uC918"
@@ -94,7 +94,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 1
     idx: 8
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: question
     emotion: default
     dialog: "[\uAD50\uC721]\uC5D0 \uB300\uD574 \uC54C\uB824\uC918"
@@ -102,7 +102,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 1
     idx: 9
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: question
     emotion: default
     dialog: "[\uC784\uBB34]\uC5D0 \uB300\uD574 \uC54C\uB824\uC918"
@@ -110,7 +110,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 10
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "[\uCC44\uC6A9]\uC740 \uBE4C\uB7F0\uC774 \uB420 \uC778\uC7AC\uB97C \uC601\uC785\uD558\uACE0,
@@ -120,7 +120,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 11
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "[\uCC44\uC6A9]\uC740 [\uACF5\uAC1C \uCC44\uC6A9] [\uC2A4\uCE74\uC6B0\uD2B8]
@@ -142,7 +142,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 12
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "[\uAD50\uC721]\uC740 \uC720\uB2DB\uC744 \uAC15\uD654\uD558\uACE0 \uAD00\uB9AC\uD558\uB294
@@ -158,7 +158,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 13
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "[\uAD50\uC721]\uC740 \uAC00\uC7A5 \uAE30\uBCF8\uC801\uC778 \uAC15\uD654
@@ -169,7 +169,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 14
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "[\uC138\uB1CC]\uC5D0 \uB300\uD574 \uB9D0\uC500\uB4DC\uB9AC\uAE30 \uC804\uC5D0,
@@ -186,7 +186,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 15
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC800\uD76C\uB294 \uC545\uC774\uB2C8\uAE4C.. \uADF8\uB7F0 \uAC70 \uD544\uC694\uC5C6\uC796\uC544\uC694?
@@ -201,7 +201,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 16
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uB2E4\uC74C\uC740 [\uAC1C\uD654]\uC785\uB2C8\uB2E4. \uAC1C\uD654\uB294
@@ -215,7 +215,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 17
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uC5B4\uB824\uC6B4\uAC00\uC694? \uAC71\uC815\uD558\uC9C0\uB9C8\uC138\uC694.
@@ -225,7 +225,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 18
-    name: "\uC81C\uC774"
+    name: J
     type: dialog
     emotion: default
     dialog: "\uB9C8\uC9C0\uB9C9\uC73C\uB85C [\uB9C8\uC871\uD654]\uC5D0\uC694. \uB9C8\uACC4\uC758
@@ -240,7 +240,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 19
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "[\uC784\uBB34]\uB294 \uC81C\uAC00 \uC124\uBA85\uD574\uC8FC\uC9C0\uC694.
@@ -251,7 +251,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 20
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "\uC2B9\uB9AC\uB294 \uD798\uACFC \uC804\uB7B5 \uBAA8\uB450\uB97C \uC5BB\uC740
@@ -261,7 +261,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 21
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "\uC784\uBB34\uB294 \uC778\uAC04\uB4E4\uC758 \uC2DC\uAC04\uC73C\uB85C
@@ -273,7 +273,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 22
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "\uC784\uBB34\uC5D0\uB294 \uBE4C\uB7F0 1\uBA85\uC5D0\uC11C 4\uBA85\uC73C\uB85C
@@ -285,7 +285,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 23
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "\uC774 \uC2DC\uB108\uC9C0\uB294 \uC9C0\uD718\uAD00\uC774\uC790, \uAE30\uC5C5\uC758
@@ -295,7 +295,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 0
     idx: 24
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: "\uCD94\uAC00\uC801\uC778 \uC0AC\uD56D\uB4E4\uC740, \uBCF8\uACA9\uC801\uC778
@@ -305,7 +305,7 @@ MonoBehaviour:
   - branch: 1
     speakerIdx: 1
     idx: 25
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: dialog
     emotion: default
     dialog: "\uC218\uACE0\uD588\uC5B4. \uC774\uC81C \uBB50\uBD80\uD130 \uD574\uC57C
@@ -314,7 +314,7 @@ MonoBehaviour:
   - branch: 2
     speakerIdx: 0
     idx: 26
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: test1
@@ -322,7 +322,7 @@ MonoBehaviour:
   - branch: 2
     speakerIdx: 1
     idx: 27
-    name: "\uB9B4\uB9AC\uC2A4"
+    name: Lilith
     type: dialog
     emotion: default
     dialog: test2
@@ -330,7 +330,7 @@ MonoBehaviour:
   - branch: 2
     speakerIdx: 0
     idx: 28
-    name: "\uB85C\uC774"
+    name: Roy
     type: dialog
     emotion: default
     dialog: test3

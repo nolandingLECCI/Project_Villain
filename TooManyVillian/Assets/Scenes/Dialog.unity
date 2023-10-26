@@ -385,8 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3921d8cfed8d28c44a14c43637716a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DefaultImage: {fileID: 0}
   m_Document: {fileID: 1674656420}
   dialogDB: {fileID: 11400000, guid: 43be4416a4cdd81489ef87c7570d321b, type: 2}
   dialogs: []
   branch: 1
-  currentDialogIndex: -1
+  currentDialogIndex: 0

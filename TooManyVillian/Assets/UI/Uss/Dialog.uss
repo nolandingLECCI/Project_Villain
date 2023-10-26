@@ -1,0 +1,13 @@
+.Speaking {
+}
+
+.NotSpeaking {
+    opacity: 0.5;
+}
+
+.question_active {
+}
+
+.question_inactive {
+    display: none;
+}
