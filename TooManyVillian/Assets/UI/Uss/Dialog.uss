@@ -1,8 +1,16 @@
 .Speaking {
+    transition-duration: 0.25s;
+    opacity: 1;
 }
 
-.NotSpeaking {
-    opacity: 0.5;
+.NotSpeaking-left {
+    opacity: 0;
+    width: 50%;
+    height: 60%;
+    transition-property: opacity, translate;
+    transition-duration: 0.25s, 0.25s;
+    translate: -400px 0;
+    transition-timing-function: ease, ease;
 }
 
 .question_active {
@@ -10,4 +18,21 @@
 
 .question_inactive {
     display: none;
+}
+
+.NotSpeaking-right {
+    opacity: 0;
+    width: 50%;
+    height: 60%;
+    transition-property: opacity, translate;
+    transition-duration: 0.5s, 0.5s;
+    translate: 400px 0;
+}
+
+.NotSpeaking {
+    opacity: 0;
+    width: 50%;
+    height: 60%;
+    transition-property: opacity, left;
+    transition-duration: 0.5s, 0.5s;
 }

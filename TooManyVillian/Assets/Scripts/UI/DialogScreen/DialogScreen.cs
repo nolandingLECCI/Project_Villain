@@ -56,6 +56,8 @@ public class DialogScreen : MonoBehaviour
 
     const string k_SpeakingClass = "Speaking";
     const string k_NotSpeakingClass = "NotSpeaking";
+    const string k_NotSpeakingLeftClass = "NotSpeaking-left";
+    const string k_NotSpeakingRightClass = "NotSpeaking-right";
 
     const string k_QuestionActive = "question_active";
     const string k_QuestionInactive = "question_inactive";
@@ -106,6 +108,10 @@ public class DialogScreen : MonoBehaviour
         dialogs = new List<DialogEntity>();
         for(int i = 0 ; i < dialogDB.DialogDB.Count; ++i)
         {
+            if(i==0)
+            {
+                currentDialogIndex = (int)dialogDB.DialogDB[i].idx-1;
+            }
             if(dialogDB.DialogDB[i].branch == branch)
             {
                 dialogs.Add(dialogDB.DialogDB[i]);
@@ -298,7 +304,7 @@ public class DialogScreen : MonoBehaviour
     }
     private void SetNextDialog()
     {
-        if(currentDialogIndex >= 0 )    currentDialogIndex++;
+        currentDialogIndex++;
         m_Text.text = dialogs[currentDialogIndex].dialog;
         m_Name.text = dialogs[currentDialogIndex].name;
         string SpeakerName = dialogs[currentDialogIndex].name;
@@ -306,42 +312,13 @@ public class DialogScreen : MonoBehaviour
         uint SpeakerIdx = dialogs[currentDialogIndex].speakerIdx;
         Sprite SpeakerImage = Resources.Load<Sprite>(m_ResourcePath+"/"+SpeakerName+"/"+SpeakerName+"_"+SpeakerEmotion);
 
-        switch(SpeakerIdx)
+        
+        if(currentDialogIndex>0)
         {
-            case 0:
-                HighlightSpeaker(0);
-                if(SpeakerImage == null)
-                {
-                    m_LeftImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
-                }
-                else
-                {
-                    m_LeftImage.style.backgroundImage = new StyleBackground(SpeakerImage);
-                }
-                break;
-            case 1:
-                HighlightSpeaker(1);
-                if(SpeakerImage == null)
-                {
-                    m_RightImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
-                }
-                else
-                {
-                    m_RightImage.style.backgroundImage = new StyleBackground(SpeakerImage);
-                }
-                break;
-            case 2:
-                HighlightSpeaker(2);
-                if(SpeakerImage == null)
-                {
-                    m_CenterImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
-                }
-                else
-                {
-                    m_CenterImage.style.backgroundImage = new StyleBackground(SpeakerImage);
-                }
-                break;
+            Debug.Log(SpeakerName!=dialogs[currentDialogIndex+1].name&&SpeakerIdx==dialogs[currentDialogIndex+1].speakerIdx);
+            StartCoroutine(HighlightSpeaker(SpeakerIdx, SpeakerName!=dialogs[currentDialogIndex-1].name&&SpeakerIdx==dialogs[currentDialogIndex-1].speakerIdx, SpeakerImage));
         }
+        else    StartCoroutine(HighlightSpeaker(SpeakerIdx, true, SpeakerImage));
         //StartCoroutine("OnTypingText");
     }
     private IEnumerator OnTypingText()
@@ -379,35 +356,79 @@ public class DialogScreen : MonoBehaviour
     {
         m_DefaultImage = Resources.Load<Sprite>(m_ResourcePath+"/Default");
     }
-    private void HighlightSpeaker(uint idx)
+    IEnumerator HighlightSpeaker(uint idx, bool sameSpeakerIdx, Sprite img)
     {
         switch(idx)
         {
             case 0:
-                m_LeftImage.RemoveFromClassList(k_NotSpeakingClass);
+                if(sameSpeakerIdx)
+                {
+                    Debug.Log("same idx, differnt name");
+                    m_LeftImage.RemoveFromClassList(k_SpeakingClass);
+                    m_LeftImage.AddToClassList(k_NotSpeakingLeftClass);
+                    yield  return new WaitForSecondsRealtime(0.25f);
+                }
+                if(img == null)
+                {
+                    m_LeftImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_LeftImage.style.backgroundImage = new StyleBackground(img);
+                }
+                m_LeftImage.RemoveFromClassList(k_NotSpeakingLeftClass);
                 m_LeftImage.AddToClassList(k_SpeakingClass);
                 m_RightImage.RemoveFromClassList(k_SpeakingClass);
-                m_RightImage.AddToClassList(k_NotSpeakingClass);
+                m_RightImage.AddToClassList(k_NotSpeakingRightClass);
                 m_CenterImage.RemoveFromClassList(k_SpeakingClass);
                 m_CenterImage.AddToClassList(k_NotSpeakingClass);
                 break;
             case 1:
+               if(sameSpeakerIdx)
+                {
+                    m_RightImage.RemoveFromClassList(k_SpeakingClass);
+                    m_RightImage.AddToClassList(k_NotSpeakingRightClass);
+                    yield  return new WaitForSecondsRealtime(0.25f);
+                }
+                if(img == null)
+                {
+                    m_RightImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_RightImage.style.backgroundImage = new StyleBackground(img);
+                }
                 m_LeftImage.RemoveFromClassList(k_SpeakingClass);
-                m_LeftImage.AddToClassList(k_NotSpeakingClass);
-                m_RightImage.RemoveFromClassList(k_NotSpeakingClass);
+                m_LeftImage.AddToClassList(k_NotSpeakingLeftClass);
+                m_RightImage.RemoveFromClassList(k_NotSpeakingRightClass);
                 m_RightImage.AddToClassList(k_SpeakingClass);
                 m_CenterImage.RemoveFromClassList(k_SpeakingClass);
                 m_CenterImage.AddToClassList(k_NotSpeakingClass);
                 break;
             case 2:
+                if(sameSpeakerIdx)
+                {
+                    m_CenterImage.RemoveFromClassList(k_SpeakingClass);
+                    m_CenterImage.AddToClassList(k_NotSpeakingLeftClass);
+                    yield  return new WaitForSecondsRealtime(0.25f);
+                }
+                if(img == null)
+                {
+                    m_CenterImage.style.backgroundImage = new StyleBackground(m_DefaultImage);
+                }
+                else
+                {
+                    m_CenterImage.style.backgroundImage = new StyleBackground(img);
+                }
                 m_LeftImage.RemoveFromClassList(k_SpeakingClass);
-                m_LeftImage.AddToClassList(k_NotSpeakingClass);
+                m_LeftImage.AddToClassList(k_NotSpeakingLeftClass);
                 m_RightImage.RemoveFromClassList(k_SpeakingClass);
-                m_RightImage.AddToClassList(k_NotSpeakingClass);
+                m_RightImage.AddToClassList(k_NotSpeakingRightClass);
                 m_CenterImage.RemoveFromClassList(k_NotSpeakingClass);
                 m_CenterImage.AddToClassList(k_SpeakingClass);
                 break;
         }
+        yield break;
     }
     private void InactiveQuestions()
     {
